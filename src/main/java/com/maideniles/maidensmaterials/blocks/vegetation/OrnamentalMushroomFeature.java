@@ -28,25 +28,6 @@ public abstract class OrnamentalMushroomFeature extends FlowersFeature {
         super((Codec) dynamicFunction);
     }
 
-    /*
-        @Override
-        public BlockState getRandomFlower(Random random, BlockPos pos) {
-
-            int j = random.nextInt(3);
-            switch(j)
-            {
-                case 0:
-                    return ModBlocks.ornamentalMushroom.get().getDefaultState();
-                case 1:
-                    return Blocks.POPPY.getDefaultState();
-                case 2:
-                default:
-                    return Blocks.DANDELION.getDefaultState();
-            }
-        }
-    */
-
-
     @Override
     public int getFlowerCount(IFeatureConfig config) {
         return 0;

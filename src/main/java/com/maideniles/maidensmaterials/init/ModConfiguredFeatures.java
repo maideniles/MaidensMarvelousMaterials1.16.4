@@ -1,6 +1,7 @@
 package com.maideniles.maidensmaterials.init;
 
 
+import com.maideniles.maidensmaterials.blocks.vegetation.OrnamentalMushroomBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
@@ -20,14 +21,10 @@ public class ModConfiguredFeatures
                             new SimpleBlockPlacer())).tries(64).build();
 
 
-    public static final ConfiguredFeature<?, ?> ORNAMENTAL_MUSHROOM_FEATURE =
-            Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "ornamental_mushroom_feature",
-                    Feature.FLOWER.withConfiguration(ORNAMENTAL_MUSHROOM_CONFIG)
-                            .withPlacement(Placement.CHANCE.configure(new ChanceConfig(200))));
-
-
-
-
+            public static final ConfiguredFeature<?, ?> ORNAMENTAL_MUSHROOM_FEATURE =
+                    Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "ornamental_mushroom_feature",
+                            Feature.RANDOM_PATCH.withConfiguration((new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(mushroom), SimpleBlockPlacer.PLACER))
+                                    .tries(64).func_227317_b_().build()).withPlacement(Placement.CHANCE.configure(new ChanceConfig(200))));
 }
 
 
