@@ -10,6 +10,7 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorldReader;
+import net.minecraftforge.common.IPlantable;
 
 public class OrnamentalMushroomBlock extends FlowerBlock {
 
@@ -32,5 +33,10 @@ public class OrnamentalMushroomBlock extends FlowerBlock {
         if (state.getBlock() == this) //Forge: This function is called during world gen and placement, before this block is set, so if we are not 'here' then assume it's the pre-check.
             return worldIn.getBlockState(blockpos).canSustainPlant(worldIn, blockpos, Direction.UP, this);
         return this.isValidGround(worldIn.getBlockState(blockpos), worldIn, blockpos);
+    }
+
+    @Override
+    public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction facing, IPlantable plantable) {
+        return false;
     }
 }

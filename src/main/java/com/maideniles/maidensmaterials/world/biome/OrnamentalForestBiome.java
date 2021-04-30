@@ -23,6 +23,7 @@ public class OrnamentalForestBiome {
     //ADD MOBS TO BIOME//
         MobSpawnInfo.Builder mobspawninfo$builder = new MobSpawnInfo.Builder();
         DefaultBiomeFeatures.withPassiveMobs(mobspawninfo$builder);
+
         DefaultBiomeFeatures.withBatsAndHostiles(mobspawninfo$builder);
         mobspawninfo$builder.withSpawner(EntityClassification.CREATURE,
                 new MobSpawnInfo.Spawners(ModEntities.FAIRY_FLY.get(), 40, 4, 8));
@@ -47,10 +48,14 @@ public class OrnamentalForestBiome {
 
 
 
+
     //ADD FLOWERS TO BIOME//
-        DefaultBiomeFeatures.withAllForestFlowerGeneration(biomegenerationsettings$builder);
+       DefaultBiomeFeatures.withWarmFlowers(biomegenerationsettings$builder);
+       DefaultBiomeFeatures.withDefaultFlowers(biomegenerationsettings$builder);
+       DefaultBiomeFeatures.withAllForestFlowerGeneration(biomegenerationsettings$builder);
 
         biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.ORCHID_CONFIG);
+        biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.FOREST_FLOWERS_CONFIG);
         biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.ORNAMENTAL_MUSHROOM_FEATURE);
 
   //FINISH CONFIGURATION OF BIOME--COLORS, ETC//

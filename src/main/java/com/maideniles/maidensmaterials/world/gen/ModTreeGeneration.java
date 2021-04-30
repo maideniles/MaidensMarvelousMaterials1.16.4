@@ -2,18 +2,23 @@ package com.maideniles.maidensmaterials.world.gen;
 
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
+import com.maideniles.maidensmaterials.init.ModBlocks;
+import com.maideniles.maidensmaterials.init.ModConfiguredFeatures;
 import com.maideniles.maidensmaterials.world.feature.tree.*;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
+import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
+import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.Features;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.placement.IPlacementConfig;
-import net.minecraft.world.gen.placement.NoPlacementConfig;
-import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.*;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -24,8 +29,10 @@ import java.util.Set;
 import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(modid = MaidensMaterials.MOD_ID)
-public class ModTreeGeneration
-{
+public class ModTreeGeneration {
+
+
+
     @SubscribeEvent
     public static void onBiomeLoad(BiomeLoadingEvent event)
     {
@@ -36,8 +43,11 @@ public class ModTreeGeneration
         {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
+
+
+
 //ADD NORMAL TREES//
-            base.add(() -> Feature.TREE.withConfiguration(CedarTree.CEDAR_TREE_CONFIG)
+           base.add(() -> Feature.TREE.withConfiguration(CedarTree.CEDAR_TREE_CONFIG)
                     .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
            base.add(() -> Feature.TREE.withConfiguration(CrabappleTree.CRABAPPLE_TREE_CONFIG)
                     .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
@@ -79,6 +89,8 @@ public class ModTreeGeneration
                     .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
             base.add(() -> Feature.TREE.withConfiguration(SilverbellTree.SILVERBELL_TREE_VINES_CONFIG)
                     .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
+
+
 
         }
     }
