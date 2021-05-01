@@ -4,6 +4,7 @@ import com.maideniles.maidensmaterials.util.Registration;
 import com.maideniles.maidensmaterials.world.gen.decorator.tree.leaf.MaidensLeafVineDecorator;
 
 import com.maideniles.maidensmaterials.world.gen.decorator.tree.mushroom.MaidensMushroomDecorator;
+import com.maideniles.maidensmaterials.world.gen.decorator.tree.trunk.MaidensCoconutDecorator;
 import com.maideniles.maidensmaterials.world.gen.decorator.tree.trunk.MaidensTrunkVineDecorator;
 import com.mojang.serialization.Codec;
 import net.minecraft.util.ResourceLocation;
@@ -34,6 +35,11 @@ public class MaidensTreeDecoratorTypes  {
     public static final RegistryObject<TreeDecoratorType<MaidensMushroomDecorator>> MAIDENS_MUSHROOM =
             (RegistryObject<TreeDecoratorType<MaidensMushroomDecorator>>) register("maidens_mushroom_decorator",
                     MaidensMushroomDecorator.field_236874_c_);
+
+
+    public static final RegistryObject<TreeDecoratorType<MaidensCoconutDecorator>> MAIDENS_COCONUT =
+            (RegistryObject<TreeDecoratorType<MaidensCoconutDecorator>>) register("maidens_coconut_decorator",
+                    MaidensCoconutDecorator.field_236874_c_);
 
 
     public static void register(){}

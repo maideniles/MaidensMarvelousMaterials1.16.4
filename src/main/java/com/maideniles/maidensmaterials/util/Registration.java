@@ -51,7 +51,8 @@ public class Registration {
     public static final DeferredRegister<SurfaceBuilder<?>> SURFACE_BUILDERS =
             DeferredRegister.create(ForgeRegistries.SURFACE_BUILDERS, MaidensMaterials.MOD_ID);
 
-
+    public static final DeferredRegister<Feature<?>> FEATURES =
+            DeferredRegister.create(ForgeRegistries.FEATURES, MaidensMaterials.MOD_ID);
 
 
 
@@ -68,6 +69,7 @@ public class Registration {
         SOUNDS.register(eventBus);
         BIOMES.register(eventBus);
         SURFACE_BUILDERS.register(eventBus);
+        FEATURES.register(eventBus);
 
 
     }

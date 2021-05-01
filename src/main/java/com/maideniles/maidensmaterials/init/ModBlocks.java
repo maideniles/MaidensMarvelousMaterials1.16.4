@@ -9,6 +9,7 @@ import com.maideniles.maidensmaterials.blocks.tree.sapling.CrabappleSaplingBlock
 import com.maideniles.maidensmaterials.blocks.vase.*;
 import com.maideniles.maidensmaterials.blocks.vegetation.*;
 import com.maideniles.maidensmaterials.util.Registration;
+import com.maideniles.maidensmaterials.world.feature.base.MaidensTreeCategory;
 import com.maideniles.maidensmaterials.world.feature.tree.*;
 import com.maideniles.maidensmaterials.world.feature.tree.fruit.*;
 
@@ -864,10 +865,8 @@ public static final RegistryObject<Block> GROWING_APPLE_LEAVES = register("apple
                     ()-> new CedarTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
   //TODO
-  public static final RegistryObject<Block> PALM_SAPLING = register("palm_sapling",
-          ()-> new CrabappleSaplingBlock(
-                  ()-> new CedarTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
-
+  public static final RegistryObject<SaplingBlock> PALM_SAPLING = register(
+          "palm_sapling", Builder.sapling(MaidensTreeCategory.PALM, () -> ModBlocks.SPARKLING_SAND.get()));
 
     public static final RegistryObject<Block> APPLE_SAPLING = register("apple_sapling",
             ()-> new CrabappleSaplingBlock(
