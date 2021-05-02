@@ -17,8 +17,7 @@ import java.util.function.Supplier;
 public class OrnamentalOrchardBiome {
 
 
-    public static Biome makeOrnamentalOrchardBiome(final Supplier<ConfiguredSurfaceBuilder<?>> surfaceBuilder, float depth, float scale)
-    {
+    public static Biome makeOrnamentalOrchardBiome(final Supplier<ConfiguredSurfaceBuilder<?>> surfaceBuilder, float depth, float scale) {
 
         //ADD MOBS TO BIOME//
         MobSpawnInfo.Builder mobspawninfo$builder = new MobSpawnInfo.Builder();
@@ -46,8 +45,8 @@ public class OrnamentalOrchardBiome {
         DefaultBiomeFeatures.withLavaAndWaterSprings(biomegenerationsettings$builder);
 
 
-DefaultBiomeFeatures.withPlainGrassVegetation(biomegenerationsettings$builder);
-DefaultBiomeFeatures.withTallGrass(biomegenerationsettings$builder);
+        DefaultBiomeFeatures.withPlainGrassVegetation(biomegenerationsettings$builder);
+        DefaultBiomeFeatures.withTallGrass(biomegenerationsettings$builder);
 
         //ADD FLOWERS TO BIOME//
         DefaultBiomeFeatures.withWarmFlowers(biomegenerationsettings$builder);
@@ -69,7 +68,6 @@ DefaultBiomeFeatures.withTallGrass(biomegenerationsettings$builder);
                 .withMobSpawnSettings(mobspawninfo$builder.copy())
                 .withGenerationSettings(biomegenerationsettings$builder.build()).build();
     }
-
 
 
     private static int getSkyColorWithTemperatureModifier(float temperature) {

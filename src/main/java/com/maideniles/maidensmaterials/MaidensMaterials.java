@@ -65,7 +65,7 @@ public class MaidensMaterials
         ModPotions.register();
         ModEntities.register();
         ModSounds.register();
-ModFeatures.register();
+        ModFeatures.register();
    
 
 
@@ -91,6 +91,9 @@ ModFeatures.register();
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
 
         DeferredWorkQueue.runLater(() -> {
+            // Done here to avoid race conditions and possible crashes if the WorldGenRegistry is accessed at same time.
+            // Forge regsitries are safe. WorldGenRegistries is said to not be threadsafe.
+            ModConfiguredFeatures.registerCFs();
             GlobalEntityTypeAttributes.put(ModEntities.FAIRY_FLY.get(), FairyFlyEntity.setCustomAttributes().create());
         });
     }
