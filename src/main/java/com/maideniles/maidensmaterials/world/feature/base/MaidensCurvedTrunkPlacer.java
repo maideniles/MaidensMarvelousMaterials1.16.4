@@ -43,11 +43,16 @@ public class MaidensCurvedTrunkPlacer extends AbstractTrunkPlacer {
 
     public List<FoliagePlacer.Foliage> func_230382_a_(IWorldGenerationReader p_230382_1_, Random p_230382_2_, int p_230382_3_, BlockPos p_230382_4_, Set<BlockPos> p_230382_5_, MutableBoundingBox p_230382_6_, BaseTreeFeatureConfig p_230382_7_) {
         func_236909_a_(p_230382_1_, p_230382_4_.down());
+
+
+
         List<FoliagePlacer.Foliage> list = Lists.newArrayList();
         Direction direction = Direction.Plane.HORIZONTAL.random(p_230382_2_);
         int i = p_230382_3_ - p_230382_2_.nextInt(1) - 5;  //this seems to control how tall the second fork is//
         int j = 3 - p_230382_2_.nextInt(1);  //this controls how far out it forks//
         BlockPos.Mutable blockpos$mutable = new BlockPos.Mutable();
+
+
         int k = p_230382_4_.getX();
         int l = p_230382_4_.getZ();
         int i1 = 0;
@@ -80,6 +85,7 @@ public class MaidensCurvedTrunkPlacer extends AbstractTrunkPlacer {
         if (TreeFeature.isReplaceableAt(p_236911_0_, p_236911_2_)) {
             func_236913_a_(p_236911_0_, p_236911_2_, p_236911_5_.trunkProvider.getBlockState(p_236911_1_, p_236911_2_), p_236911_4_);
             p_236911_3_.add(p_236911_2_.toImmutable());
+
             return true;
         } else {
             return false;

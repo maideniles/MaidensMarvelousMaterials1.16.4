@@ -41,6 +41,8 @@ public class MaidensPalmFoliagePlacer extends AcaciaFoliagePlacer {
 
         BlockPos blockpos = foliage.func_236763_a_().up(p_230372_9_);
 
+        BlockPos.Mutable blockpos$mutable = new BlockPos.Mutable();
+
 
         //place leaf blocks for top of palm//
 
@@ -48,6 +50,89 @@ public class MaidensPalmFoliagePlacer extends AcaciaFoliagePlacer {
 
         this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 1, k + 0), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
         this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 1, k + 10), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 2, k + 0), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 2, k + 10), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 7, j + 2, k + 2), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+        this.func_236753_a_(world, random, config, blockpos.add(i + 7, j + 2, k + 8), +foliage.func_236764_b_()-1, leaves, 0, flag, box );//moved this one
+        this.func_236753_a_(world, random, config, blockpos.add(i + 1, j + 2, k + 2), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 1, j + 2, k + 8), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+
+        this.func_236753_a_(world, random, config, blockpos.add(i + 1, j + 3, k + 2), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 1, j + 3, k + 8), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 3, k + 1), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 3, k + 9), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+        this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 3, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 3, k + 6), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+
+        this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 3, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 3, k + 6), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+
+        this.func_236753_a_(world, random, config, blockpos.add(i + 8, j + 3, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+        //testing this one here//
+        this.func_236753_a_(world, random, config, blockpos.add(i + 0, j + 3, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 0, j + 4, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+        //testing this one to fill hole
+        this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 4, k + 6), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 4, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+
+        this.func_236753_a_(world, random, config, blockpos.add(i + 7, j + 3, k + 2), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 7, j + 3, k + 8), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+
+        this.func_236753_a_(world, random, config, blockpos.add(i + 1, j + 4, k + 2), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 2, j + 4, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 2, j + 4, k + 7), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 4, k + 1), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 4, k + 3), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 4, k + 7), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 4, k + 9), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 4, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 4, k + 6), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 6, j + 4, k + 3), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 6, j + 4, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 7, j + 4, k + 8), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 8, j + 4, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+
+        this.func_236753_a_(world, random, config, blockpos.add(i + 2, j + 5, k + 3), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 2, j + 5, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 1, j + 5, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 5, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 5, k + 6), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 5, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 5, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 5, k + 6), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 5, k + 2), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 5, k + 3), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 5, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 5, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 5, k + 6), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 5, k + 7), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 5, k + 8), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 7, j + 5, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 5, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 5, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 5, k + 6), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 6, j + 5, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 6, j + 5, k + 7), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+
+
+        this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 6, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 6, k + 6), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 6, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 6, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 6, k + 6), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
 
 
 

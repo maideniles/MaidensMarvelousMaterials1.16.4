@@ -11,21 +11,20 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.ISeedReader;
 import net.minecraft.world.gen.ChunkGenerator;
+import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 
 import java.util.Random;
-public class PalmTreeFeature extends Feature<NoFeatureConfig>
+public class PalmTreeFeature extends Feature<BaseTreeFeatureConfig>
 {
-    public PalmTreeFeature(Codec<NoFeatureConfig> configFactory)
+    public PalmTreeFeature(Codec<BaseTreeFeatureConfig> configFactory)
     {
         super(configFactory);
     }
 
-
     @Override
-    public boolean generate(ISeedReader world, ChunkGenerator chunkGenerator, Random rand, BlockPos position, NoFeatureConfig p_212245_5_)
-    {
+    public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos position, BaseTreeFeatureConfig config) {
         BlockPos.Mutable blockpos$Mutable = new BlockPos.Mutable().setPos(position).move(Direction.DOWN, 2);
 
         //creates vertical log blocks
@@ -64,4 +63,8 @@ public class PalmTreeFeature extends Feature<NoFeatureConfig>
 
         return true;
     }
+
+
+    /// fix this later///
+
 }

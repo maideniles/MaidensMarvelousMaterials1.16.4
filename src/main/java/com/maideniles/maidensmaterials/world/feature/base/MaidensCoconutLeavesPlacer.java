@@ -39,30 +39,16 @@ public class MaidensCoconutLeavesPlacer extends AcaciaFoliagePlacer {
 
         BlockPos pos = new BlockPos(k, j, i);
 
+        BlockPos.Mutable blockpos$mutable = new BlockPos.Mutable();
+
         BlockPos blockpos = foliage.func_236763_a_().up(p_230372_9_);
 
 
         //place leaf blocks for top of palm//
 
-        if(random.nextInt(10) == 0) {
 
-            this.func_236753_a_(world, random, config, blockpos.add(i + 3, j + 7, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
-        }
-        if(random.nextInt(10) == 0) {
 
-            this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 7, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
-        }
-
-        if(random.nextInt(10) == 0) {
-            this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 7, k + 5),+foliage.func_236764_b_()-1, leaves, 0, flag, box );
-        }
-
-        if(random.nextInt(10) == 0) {
-
-            this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 7, k + 6), +foliage.func_236764_b_() - 1, leaves, 0, flag, box);
-
-        }
-   /*     this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 1, k + 0), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
+        this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 1, k + 0), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
         this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 1, k + 10), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
 
 
@@ -147,7 +133,8 @@ public class MaidensCoconutLeavesPlacer extends AcaciaFoliagePlacer {
         this.func_236753_a_(world, random, config, blockpos.add(i + 4, j + 6, k + 5), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
         this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 6, k + 4), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
         this.func_236753_a_(world, random, config, blockpos.add(i + 5, j + 6, k + 6), +foliage.func_236764_b_()-1, leaves, 0, flag, box );
-*/
+
+   //     world.setBlockState(blockpos$mutable.add(5,20,6), Blocks.DIAMOND_BLOCK.getDefaultState(), 3);  //testing another placement
     }
 
     @Override

@@ -65,7 +65,7 @@ public class MaidensMaterials
         ModPotions.register();
         ModEntities.register();
         ModSounds.register();
-        ModFeatures.register();
+ModFeatures.register();
    
 
 

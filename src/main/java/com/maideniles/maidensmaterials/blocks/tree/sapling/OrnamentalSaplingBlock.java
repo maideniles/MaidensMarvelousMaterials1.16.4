@@ -17,12 +17,12 @@ import net.minecraftforge.event.ForgeEventFactory;
 import java.util.Random;
 import java.util.function.Supplier;
 
-public class CrabappleSaplingBlock extends BushBlock implements IGrowable {
+public class OrnamentalSaplingBlock extends BushBlock implements IGrowable {
 
     private final Supplier<Tree> tree;
     public static final IntegerProperty STAGE = BlockStateProperties.STAGE_0_1;
 
-        public CrabappleSaplingBlock(Supplier<Tree> treeIn, Properties properties) {
+        public OrnamentalSaplingBlock(Supplier<Tree> treeIn, Properties properties) {
             super(properties);
             this.tree = treeIn;
         }

@@ -1,3 +1,4 @@
+
 package com.maideniles.maidensmaterials.world.feature.base;
 
 import com.maideniles.maidensmaterials.init.ModFeatures;
@@ -62,9 +63,9 @@ public class MaidensTreeCategory {
         protected PalmTreeFeature getMaidensTreeFeature(Random random, boolean generateBeehive) {
 
 
-                return (PalmTreeFeature) ModFeatures.PALM_TREE.get();
+            return (PalmTreeFeature) ModFeatures.PALM_TREE.get();
 
-            }
+        }
 
     };
 }

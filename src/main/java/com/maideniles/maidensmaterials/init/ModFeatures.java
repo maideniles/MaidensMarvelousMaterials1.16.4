@@ -9,8 +9,8 @@ import net.minecraftforge.fml.RegistryObject;
 
 public class ModFeatures {
 
-    public static final RegistryObject<Feature<NoFeatureConfig>> PALM_TREE = Registration.FEATURES.register("palm_tree",
-            () -> new PalmTreeFeature(NoFeatureConfig.field_236558_a_));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> PALM_TREE = Registration.FEATURES.register("palm_tree",
+            () -> new PalmTreeFeature(BaseTreeFeatureConfig.CODEC));
 
     public static void register() {}
 }

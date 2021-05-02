@@ -36,6 +36,12 @@ public class ModBiomeGeneration
     {
         registerBiome(ModConfiguredSurfaceBuilders.ORNAMENTAL_FOREST_SURFACE.getLocation(),
                ModBlocks.ORNAMENTAL_GRASS.get().getDefaultState(), Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState());
+
+        registerBiome(ModConfiguredSurfaceBuilders.OASIS_SHORE_SURFACE.getLocation(),
+                ModBlocks.SPARKLING_SAND.get().getDefaultState(), Blocks.SAND.getDefaultState(), Blocks.SAND.getDefaultState());
+
+        registerBiome(ModConfiguredSurfaceBuilders.ORNAMENTAL_ORCHARD_SURFACE.getLocation(),
+                Blocks.GRASS_BLOCK.getDefaultState(), Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState());
     }
 
     @SubscribeEvent
@@ -44,6 +50,10 @@ public class ModBiomeGeneration
         event.enqueueWork(() ->
         {
             addBiome(ModBiomes.ORNAMENTAL_FOREST_BIOME.get(), BiomeManager.BiomeType.WARM, 100, MAGICAL, LUSH, FOREST);
+
+            addBiome(ModBiomes.OASIS_SHORE_BIOME.get(), BiomeManager.BiomeType.WARM, 100, BEACH, SANDY, HOT );
+
+            addBiome(ModBiomes.ORNAMENTAL_ORCHARD_BIOME.get(), BiomeManager.BiomeType.WARM, 100, PLAINS, LUSH, RIVER );
         });
     }
 
