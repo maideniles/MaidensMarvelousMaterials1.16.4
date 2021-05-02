@@ -89,7 +89,7 @@ public class Builder {
             protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
                 final Block block = state.getBlock();
                 if (validPlantBlocks == null || validPlantBlocks.length == 0) {
-                    return block == Blocks.GRASS_BLOCK || block == Blocks.DIRT || block == Blocks.COARSE_DIRT || block == Blocks.PODZOL || block == Blocks.FARMLAND;
+                    return super.isValidGround(state, worldIn, pos);
                 } else {
                     return Arrays.stream(validPlantBlocks).map(Supplier::get).anyMatch(b -> b == block);
                 }
