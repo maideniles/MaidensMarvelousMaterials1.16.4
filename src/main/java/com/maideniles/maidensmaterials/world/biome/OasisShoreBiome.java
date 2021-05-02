@@ -63,10 +63,9 @@ DefaultBiomeFeatures.withDesertVegetation(biomegenerationsettings$builder);
         DefaultBiomeFeatures.withDefaultFlowers(biomegenerationsettings$builder);
         DefaultBiomeFeatures.withAllForestFlowerGeneration(biomegenerationsettings$builder);
 
-       biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.ORCHID_ORCHARD_CONFIG);
-        biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.FOREST_FLOWERS_ORCHARD_CONFIG);
-      biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.ORNAMENTAL_MUSHROOM_ORCHARD_FEATURE);
-
+        biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.ORCHID_ORCHARD_CONFIG);
+        biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.FOREST_FLOWERS_ORCHARD_CONFIG);
+        biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.ORNAMENTAL_MUSHROOM_ORCHARD_FEATURE);
         //FINISH CONFIGURATION OF BIOME--COLORS, ETC//
 
         return (new Biome.Builder()).precipitation(Biome.RainType.RAIN).category(Biome.Category.BEACH)

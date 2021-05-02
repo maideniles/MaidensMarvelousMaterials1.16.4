@@ -54,10 +54,9 @@ public class OrnamentalForestBiome {
        DefaultBiomeFeatures.withDefaultFlowers(biomegenerationsettings$builder);
        DefaultBiomeFeatures.withAllForestFlowerGeneration(biomegenerationsettings$builder);
 
-        biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.ORCHID_CONFIG);
-        biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.FOREST_FLOWERS_CONFIG);
-        biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModConfiguredFeatures.ORNAMENTAL_MUSHROOM_FEATURE);
-
+        biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.ORCHID_CONFIG);
+        biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.FOREST_FLOWERS_CONFIG);
+        biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.ORNAMENTAL_MUSHROOM_FEATURE);
   //FINISH CONFIGURATION OF BIOME--COLORS, ETC//
 
         return (new Biome.Builder()).precipitation(Biome.RainType.RAIN).category(Biome.Category.FOREST)
