@@ -90,7 +90,7 @@ public class ModTreeGeneration {
                     .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
 
         }
-//ADD TROPICAL TREES TO TROPICAL BIOME//
+/*/ADD TROPICAL TREES TO TROPICAL BIOME//
         if(types.contains(BiomeDictionary.Type.BEACH)) {
             List<Supplier<ConfiguredFeature<?, ?>>> tropical =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
@@ -103,7 +103,7 @@ public class ModTreeGeneration {
                     .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.1F, 1))));
 
         }
-
+*/
         if(types.contains(BiomeDictionary.Type.PLAINS)) {
 
             List<Supplier<ConfiguredFeature<?, ?>>> orchard =

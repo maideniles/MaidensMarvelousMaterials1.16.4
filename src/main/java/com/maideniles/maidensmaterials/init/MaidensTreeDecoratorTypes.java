@@ -4,19 +4,11 @@ import com.maideniles.maidensmaterials.util.Registration;
 import com.maideniles.maidensmaterials.world.gen.decorator.tree.leaf.MaidensLeafVineDecorator;
 
 import com.maideniles.maidensmaterials.world.gen.decorator.tree.mushroom.MaidensMushroomDecorator;
-import com.maideniles.maidensmaterials.world.gen.decorator.tree.trunk.MaidensCoconutDecorator;
 import com.maideniles.maidensmaterials.world.gen.decorator.tree.trunk.MaidensTrunkVineDecorator;
 import com.mojang.serialization.Codec;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.IForgeRegistryEntry;
-import org.lwjgl.system.CallbackI;
-
-import javax.annotation.Nullable;
 
 public class MaidensTreeDecoratorTypes  {
     private static <T extends TreeDecorator> RegistryObject<?> register(String p_236877_0_, Codec<T> p_236877_1_) {
@@ -37,9 +29,7 @@ public class MaidensTreeDecoratorTypes  {
                     MaidensMushroomDecorator.field_236874_c_);
 
 
-    public static final RegistryObject<TreeDecoratorType<MaidensCoconutDecorator>> MAIDENS_COCONUT =
-            (RegistryObject<TreeDecoratorType<MaidensCoconutDecorator>>) register("maidens_coconut_decorator",
-                    MaidensCoconutDecorator.field_236874_c_);
+
 
 
     public static void register(){}

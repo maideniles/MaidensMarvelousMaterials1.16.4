@@ -864,7 +864,7 @@ public static final RegistryObject<Block> GROWING_APPLE_LEAVES = register("apple
 
   //TODO
   public static final RegistryObject<SaplingBlock> PALM_SAPLING = register(
-          "palm_sapling", Builder.sapling(new ModTreeSelector(), ModBlocks.SPARKLING_SAND));
+          "palm_sapling", ()->  new SaplingBlock(  new ModTreeSelector(), AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> APPLE_SAPLING = register("apple_sapling",
             ()-> new OrnamentalSaplingBlock(

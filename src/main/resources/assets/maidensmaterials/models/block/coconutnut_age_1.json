@@ -7,22 +7,36 @@
 	"elements": [
 		{
 			"name": "nut2",
-			"from": [1, 6, 0],
-			"to": [6, 11, 5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5, 9, 12]},
+			"from": [2, 6, 10],
+			"to": [7, 11, 15],
+			"rotation": {"angle": 0, "axis": "x", "origin": [9, 1, 8]},
 			"faces": {
-				"north": {"uv": [0, 0, 7, 7], "rotation": 270, "texture": "#0"},
-				"east": {"uv": [0, 0, 7, 7], "texture": "#0"},
-				"south": {"uv": [0, 0, 7, 7], "rotation": 90, "texture": "#0"},
-				"west": {"uv": [0, 0, 7, 7], "rotation": 180, "texture": "#0"},
-				"up": {"uv": [0, 0, 7, 7], "rotation": 90, "texture": "#0"},
-				"down": {"uv": [0, 0, 7, 7], "rotation": 90, "texture": "#0"}
+				"north": {"uv": [0, 0, 7, 7], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 0, 7, 7], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [0, 0, 7, 7], "texture": "#0"},
+				"west": {"uv": [0, 0, 7, 7], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 7, 7], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 0, 7, 7], "texture": "#0"}
+			}
+		},
+		{
+			"name": "nut3",
+			"from": [11, 9, 9],
+			"to": [16, 14, 14],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 7, 7], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 0, 7, 7], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [0, 0, 7, 7], "texture": "#0"},
+				"west": {"uv": [0, 0, 7, 7], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 7, 7], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 0, 7, 7], "texture": "#0"}
 			}
 		},
 		{
 			"name": "nut",
-			"from": [9, 8, 0],
-			"to": [14, 13, 5],
+			"from": [6, 9, 1],
+			"to": [11, 14, 6],
 			"rotation": {"angle": 0, "axis": "x", "origin": [8, 5, 8]},
 			"faces": {
 				"north": {"uv": [0, 0, 7, 7], "rotation": 180, "texture": "#0"},
@@ -35,8 +49,8 @@
 		},
 		{
 			"name": "nutstem1",
-			"from": [11, 13, 1],
-			"to": [12, 15, 2],
+			"from": [8, 14, 3],
+			"to": [9, 16, 4],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 8]},
 			"faces": {
 				"north": {"uv": [5, 5, 6, 7], "texture": "#0"},
@@ -49,21 +63,21 @@
 		},
 		{
 			"name": "nut2stemtop",
-			"from": [3, 15, 0],
-			"to": [4, 16, 1],
+			"from": [12, 14, 11],
+			"to": [13, 16, 12],
 			"faces": {
-				"north": {"uv": [1, 1, 2, 2], "rotation": 180, "texture": "#0"},
-				"east": {"uv": [2, 1, 3, 2], "rotation": 270, "texture": "#0"},
-				"south": {"uv": [2, 1, 3, 2], "texture": "#0"},
-				"west": {"uv": [2, 2, 3, 3], "rotation": 90, "texture": "#0"},
-				"up": {"uv": [1, 1, 2, 2], "rotation": 180, "texture": "#0"},
-				"down": {"uv": [2, 2, 3, 3], "texture": "#0"}
+				"north": {"uv": [2, 0, 3, 1], "texture": "#0"},
+				"east": {"uv": [2, 0, 3, 1], "texture": "#0"},
+				"south": {"uv": [2, 0, 3, 1], "texture": "#0"},
+				"west": {"uv": [2, 0, 3, 1], "texture": "#0"},
+				"up": {"uv": [2, 0, 3, 1], "texture": "#0"},
+				"down": {"uv": [2, 0, 3, 1], "texture": "#0"}
 			}
 		},
 		{
 			"name": "nut2stemtop",
-			"from": [11, 15, 0],
-			"to": [12, 16, 1],
+			"from": [6, 15, 11],
+			"to": [7, 16, 12],
 			"faces": {
 				"north": {"uv": [1, 1, 2, 2], "rotation": 180, "texture": "#0"},
 				"east": {"uv": [2, 1, 3, 2], "rotation": 270, "texture": "#0"},
@@ -75,38 +89,31 @@
 		},
 		{
 			"name": "nut3stemtop",
-			"from": [3, 11, 2],
-			"to": [4, 13, 3],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5, 9, 12]},
+			"from": [4, 11, 11],
+			"to": [5, 13, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 3, 8]},
 			"faces": {
 				"north": {"uv": [1, 0, 2, 2], "texture": "#0"},
 				"east": {"uv": [1, 0, 2, 2], "texture": "#0"},
 				"south": {"uv": [1, 0, 2, 2], "texture": "#0"},
 				"west": {"uv": [1, 0, 2, 2], "texture": "#0"},
-				"up": {"uv": [1, 1, 2, 2], "rotation": 270, "texture": "#0"},
-				"down": {"uv": [1, 0, 2, 2], "rotation": 90, "texture": "#0"}
+				"up": {"uv": [1, 1, 2, 2], "texture": "#0"},
+				"down": {"uv": [1, 0, 2, 2], "texture": "#0"}
 			}
 		},
 		{
 			"name": "nut2topcurve",
-			"from": [3, 13, 1],
-			"to": [4, 15, 2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5, 9, 12]},
+			"from": [5, 13, 11],
+			"to": [6, 15, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 3, 8]},
 			"faces": {
-				"north": {"uv": [0, 1, 1, 3], "texture": "#0"},
-				"east": {"uv": [5, 1, 6, 3], "texture": "#0"},
-				"south": {"uv": [6, 2, 7, 4], "texture": "#0"},
-				"west": {"uv": [5, 1, 6, 3], "texture": "#0"},
-				"up": {"uv": [2, 1, 3, 2], "rotation": 270, "texture": "#0"},
-				"down": {"uv": [2, 1, 3, 2], "rotation": 90, "texture": "#0"}
+				"north": {"uv": [5, 1, 6, 3], "texture": "#0"},
+				"east": {"uv": [0, 1, 1, 3], "texture": "#0"},
+				"south": {"uv": [5, 1, 6, 3], "texture": "#0"},
+				"west": {"uv": [6, 2, 7, 4], "texture": "#0"},
+				"up": {"uv": [2, 1, 3, 2], "texture": "#0"},
+				"down": {"uv": [2, 1, 3, 2], "texture": "#0"}
 			}
-		}
-	],
-	"groups": [
-		{
-			"name": "coconutnut_age_1",
-			"origin": [8, 8, 8],
-			"children": [0, 1, 2, 3, 4, 5, 6]
 		}
 	]
 }

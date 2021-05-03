@@ -67,6 +67,18 @@ public class ModConfiguredFeatures {
                     new StraightTrunkPlacer(1, 1, 1),
                     new TwoLayerFeature(1, 1, 1)).setIgnoreVines().build());
 
+    public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> PALM_TREE_CONFIGURED_FEATURE_BEES = ModFeatures.PALM_TREE_INSTANCE.withConfiguration(
+            new BaseTreeFeatureConfig.Builder(
+                    new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()), new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()),
+                    new BlobFoliagePlacer(FeatureSpread.func_242252_a(1), FeatureSpread.func_242252_a(1), 1),
+                    new StraightTrunkPlacer(1, 1, 1),
+              //place decorator when figured out//
+                    new TwoLayerFeature(1, 1, 1)).setIgnoreVines()
+
+                    .build());
+
+
+
 
     public static void registerCFs() {
         Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "ornamental_mushroom_feature", ORNAMENTAL_MUSHROOM_FEATURE);
@@ -76,6 +88,7 @@ public class ModConfiguredFeatures {
         Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "orchid_orchard_spread_feature", ORCHID_ORCHARD_CONFIG);
         Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "forest_flower_orchard_spread_feature", FOREST_FLOWERS_ORCHARD_CONFIG);
         Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "palm_tree_configured_feature", PALM_TREE_CONFIGURED_FEATURE);
+        Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "palm_tree_configured_feature_bees", PALM_TREE_CONFIGURED_FEATURE_BEES);
     }
 }
 

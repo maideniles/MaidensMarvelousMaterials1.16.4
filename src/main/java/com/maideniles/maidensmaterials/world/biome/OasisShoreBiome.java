@@ -66,6 +66,10 @@ public class OasisShoreBiome {
         biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.FOREST_FLOWERS_ORCHARD_CONFIG);
         biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.ORNAMENTAL_MUSHROOM_ORCHARD_FEATURE);
 
+     //   biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.PALM_TREE_CONFIGURED_FEATURE
+      //          .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
+
+
         //FINISH CONFIGURATION OF BIOME--COLORS, ETC//
         return (new Biome.Builder()).precipitation(Biome.RainType.RAIN).category(Biome.Category.BEACH)
                 .depth(depth).scale(scale).temperature(0.8F).downfall(0.9F)

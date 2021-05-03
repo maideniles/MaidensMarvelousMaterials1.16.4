@@ -3,21 +3,16 @@ package com.maideniles.maidensmaterials.world.feature.tree;
 import com.google.common.collect.ImmutableList;
 import com.maideniles.maidensmaterials.init.ModBlocks;
 
-import com.maideniles.maidensmaterials.world.feature.base.MaidensCurvedTrunkPlacer;
-import com.maideniles.maidensmaterials.world.feature.base.MaidensPalmFoliagePlacer;
 import com.maideniles.maidensmaterials.world.feature.base.MaidensStraightTrunkPlacer;
 
 import com.maideniles.maidensmaterials.world.gen.decorator.tree.leaf.MaidensLeafVineDecorator;
 import com.maideniles.maidensmaterials.world.gen.decorator.tree.mushroom.MaidensMushroomDecorator;
-import com.maideniles.maidensmaterials.world.gen.decorator.tree.trunk.MaidensCoconutDecorator;
 import com.maideniles.maidensmaterials.world.gen.decorator.tree.trunk.MaidensTrunkVineDecorator;
 import net.minecraft.block.trees.Tree;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.foliageplacer.AcaciaFoliagePlacer;
 import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
 import net.minecraft.world.gen.treedecorator.BeehiveTreeDecorator;
-import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 
 import javax.annotation.Nullable;
 import java.util.Random;
