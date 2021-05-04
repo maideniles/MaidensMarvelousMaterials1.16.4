@@ -33,7 +33,7 @@ import java.util.Set;
 public class PalmTreeFeature extends Feature<BaseTreeFeatureConfig> {
 
 
-    private final int maxHeight = 15;
+    private final int maxHeight = 20;
 
 
     public PalmTreeFeature(Codec<BaseTreeFeatureConfig> configFactory) {
@@ -52,9 +52,9 @@ public class PalmTreeFeature extends Feature<BaseTreeFeatureConfig> {
             return false;
         } else {
 
-        int seg1Height = inclusiveBoundedRandom(rand, 1, 7),
-                seg2Height = inclusiveBoundedRandom(rand, 1, 3),
-                seg3Height = inclusiveBoundedRandom(rand, 1, 5);
+        int seg1Height = inclusiveBoundedRandom(rand, 1, 9),
+                seg2Height = inclusiveBoundedRandom(rand, 1, 4),
+                seg3Height = inclusiveBoundedRandom(rand, 1, 7);
         int height = 0;
 
 

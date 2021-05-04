@@ -9,6 +9,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.gen.blockplacer.ColumnBlockPlacer;
 import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.blockstateprovider.ForestFlowerBlockStateProvider;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
@@ -88,6 +89,13 @@ public class ModConfiguredFeatures {
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
             .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.2F, 1)));
 
+ /*   public static final ConfiguredFeature<?, ?>  SUGAR_CANE_PATCH_OASIS_CONFIG = (Feature.withConfiguration(
+     new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.SUGAR_CANE.getDefaultState()),
+     new ColumnBlockPlacer(2, 2))).tries(64).xSpread(4).ySpread(0).zSpread(4).func_227317_b_().requiresWater().build();
+*/
+
+
+
 
     public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> PALM_TREE_CONFIGURED_FEATURE = ModFeatures.PALM_TREE_INSTANCE.withConfiguration(
             new BaseTreeFeatureConfig.Builder(
@@ -131,6 +139,7 @@ public class ModConfiguredFeatures {
         Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "ornamental_mushroom_orchard_feature", ORNAMENTAL_MUSHROOM_OASIS_FEATURE);
         Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "orchid_orchard_spread_feature", ORCHID_OASIS_CONFIG);
         Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "forest_flower_orchard_spread_feature", FOREST_FLOWERS_OASIS_CONFIG);
+  //      Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "sugar_cane_oasis_config", SUGAR_CANE_PATCH_OASIS_CONFIG);
 
     //SAPLING TREE CONFIGS//
         Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "palm_tree_configured_feature", PALM_TREE_CONFIGURED_FEATURE);
