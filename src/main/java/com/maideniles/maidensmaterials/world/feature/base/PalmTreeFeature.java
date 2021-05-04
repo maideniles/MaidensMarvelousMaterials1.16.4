@@ -48,7 +48,7 @@ public class PalmTreeFeature extends Feature<BaseTreeFeatureConfig> {
         BlockPos.Mutable myMutableBlockPos = new BlockPos.Mutable().setPos(position).move(Direction.DOWN);
 
         // check if block underneath is viable, if not, don't gen tree//
-        if (Feature.isDirtAt(world, position.down())) {
+        if (!world.getBlockState(position.down()).getBlock().isIn(net.minecraftforge.common.Tags.Blocks.DIRT)) {
             return false;
         } else {
 
