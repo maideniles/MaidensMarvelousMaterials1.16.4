@@ -1,7 +1,7 @@
 package com.maideniles.maidensmaterials.init;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
-import com.maideniles.maidensmaterials.blocks.Builder;
+
 import com.maideniles.maidensmaterials.blocks.VineTieBlock;
 import com.maideniles.maidensmaterials.blocks.tree.leaves.MaidenLeavesBlock;
 import com.maideniles.maidensmaterials.blocks.tree.leaves.PalmLeavesBlock;
@@ -10,7 +10,7 @@ import com.maideniles.maidensmaterials.blocks.tree.sapling.OrnamentalSaplingBloc
 import com.maideniles.maidensmaterials.blocks.vase.*;
 import com.maideniles.maidensmaterials.blocks.vegetation.*;
 import com.maideniles.maidensmaterials.util.Registration;
-import com.maideniles.maidensmaterials.world.feature.base.MaidensTreeCategory;
+
 import com.maideniles.maidensmaterials.world.feature.base.ModTreeSelector;
 import com.maideniles.maidensmaterials.world.feature.tree.*;
 import com.maideniles.maidensmaterials.world.feature.tree.fruit.*;
@@ -81,6 +81,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BROWN_CLAY_BLOCK = register("brown_clay_block",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
+
+
+
+
 
     //COLORED BRICK BLOCKS//
     public static final RegistryObject<Block> RED_BRICK_BLOCK = register("red_brick_block",
@@ -295,6 +299,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ROSE_QUARTZ_TILE_1 = register("rose_quartz_tile_1",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
+    public static final RegistryObject<Block> MICA_TILE_1 = register("mica_tile_1",
+            ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
+
     //GEMSTONE TILE 2//
     public static final RegistryObject<Block> JASPER_TILE_2 = register("jasper_tile_2",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
@@ -327,6 +334,9 @@ public class ModBlocks {
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
     public static final RegistryObject<Block> ROSE_QUARTZ_TILE_2 = register("rose_quartz_tile_2",
+            ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
+
+    public static final RegistryObject<Block> MICA_TILE_2 = register("mica_tile_2",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
     //GEMSTONE TILE 3//
@@ -363,6 +373,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ROSE_QUARTZ_TILE_3 = register("rose_quartz_tile_3",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
+    public static final RegistryObject<Block> MICA_TILE_3 = register("mica_tile_3",
+            ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
+
     //GEMSTONE TILE 4//
     public static final RegistryObject<Block> JASPER_TILE_4 = register("jasper_tile_4",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
@@ -395,6 +408,9 @@ public class ModBlocks {
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
     public static final RegistryObject<Block> ROSE_QUARTZ_TILE_4 = register("rose_quartz_tile_4",
+            ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
+
+    public static final RegistryObject<Block> MICA_TILE_4 = register("mica_tile_4",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
     //GEMSTONE TILE 5//
@@ -431,6 +447,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ROSE_QUARTZ_TILE_5 = register("rose_quartz_tile_5",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
+    public static final RegistryObject<Block> MICA_TILE_5 = register("mica_tile_5",
+            ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
+
     //GEMSTONE TILE 6//
     public static final RegistryObject<Block> JASPER_TILE_6 = register("jasper_tile_6",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
@@ -463,6 +482,9 @@ public class ModBlocks {
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
     public static final RegistryObject<Block> ROSE_QUARTZ_TILE_6 = register("rose_quartz_tile_6",
+            ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
+
+    public static final RegistryObject<Block> MICA_TILE_6 = register("mica_tile_6",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
     //ESSENCE BLOCKS//
@@ -558,6 +580,466 @@ public class ModBlocks {
 
 //    public static final RegistryObject<Block> PALM_PLANKS = register("palm_planks",
     //           ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
+
+
+    //SLABS//
+
+
+    //GEM SLABS--TILE 1//
+    public static final RegistryObject<Block> AMETHYST_SLAB_1 = register("amethyst_tile_1_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AMETHYST_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_SLAB_1 = register("aventurine_tile_1_slab" ,
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AVENTURINE_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_SLAB_1 = register("carnelian_tile_1_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CARNELIAN_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_SLAB_1 = register("chalcopyrite_tile_1_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CHALCOPYRITE_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_SLAB_1 = register("citrine_tile_1_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CITRINE_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_SLAB_1 = register("jade_tile_1_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JADE_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_SLAB_1 = register("jasper_tile_1_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JASPER_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_SLAB_1 = register("labradorite_tile_1_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.LABRADORITE_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_SLAB_1 = register("mica_tile_1_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MICA_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_SLAB_1 = register( "moonstone_tile_1_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MOONSTONE_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_SLAB_1 = register("rose_quartz_tile_1_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.ROSE_QUARTZ_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_SLAB_1 = register("sodalite_tile_1_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.SODALITE_TILE_1.get()).hardnessAndResistance(1.5F)));
+
+    //GEM SLABS--TILE 2//
+    public static final RegistryObject<Block> AMETHYST_SLAB_2 = register("amethyst_tile_2_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AMETHYST_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_SLAB_2 = register("aventurine_tile_2_slab" ,
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AVENTURINE_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_SLAB_2 = register("carnelian_tile_2_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CARNELIAN_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_SLAB_2 = register("chalcopyrite_tile_2_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CHALCOPYRITE_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_SLAB_2 = register("citrine_tile_2_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CITRINE_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_SLAB_2 = register("jade_tile_2_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JADE_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_SLAB_2 = register("jasper_tile_2_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JASPER_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_SLAB_2 = register("labradorite_tile_2_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.LABRADORITE_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_SLAB_2 = register("mica_tile_2_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MICA_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_SLAB_2 = register( "moonstone_tile_2_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MOONSTONE_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_SLAB_2 = register("rose_quartz_tile_2_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.ROSE_QUARTZ_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_SLAB_2 = register("sodalite_tile_2_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.SODALITE_TILE_2.get()).hardnessAndResistance(1.5F)));
+
+    //GEM SLABS--TILE 3//
+    public static final RegistryObject<Block> AMETHYST_SLAB_3 = register("amethyst_tile_3_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AMETHYST_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_SLAB_3 = register("aventurine_tile_3_slab" ,
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AVENTURINE_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_SLAB_3 = register("carnelian_tile_3_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CARNELIAN_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_SLAB_3 = register("chalcopyrite_tile_3_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CHALCOPYRITE_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_SLAB_3 = register("citrine_tile_3_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CITRINE_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_SLAB_3 = register("jade_tile_3_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JADE_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_SLAB_3 = register("jasper_tile_3_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JASPER_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_SLAB_3 = register("labradorite_tile_3_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.LABRADORITE_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_SLAB_3 = register("mica_tile_3_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MICA_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_SLAB_3 = register( "moonstone_tile_3_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MOONSTONE_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_SLAB_3 = register("rose_quartz_tile_3_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.ROSE_QUARTZ_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_SLAB_3 = register("sodalite_tile_3_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.SODALITE_TILE_3.get()).hardnessAndResistance(1.5F)));
+
+    //GEM SLABS--TILE 4//
+    public static final RegistryObject<Block> AMETHYST_SLAB_4 = register("amethyst_tile_4_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AMETHYST_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_SLAB_4 = register("aventurine_tile_4_slab" ,
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AVENTURINE_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_SLAB_4 = register("carnelian_tile_4_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CARNELIAN_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_SLAB_4 = register("chalcopyrite_tile_4_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CHALCOPYRITE_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_SLAB_4 = register("citrine_tile_4_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CITRINE_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_SLAB_4 = register("jade_tile_4_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JADE_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_SLAB_4 = register("jasper_tile_4_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JASPER_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_SLAB_4 = register("labradorite_tile_4_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.LABRADORITE_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_SLAB_4 = register("mica_tile_4_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MICA_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_SLAB_4 = register( "moonstone_tile_4_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MOONSTONE_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_SLAB_4 = register("rose_quartz_tile_4_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.ROSE_QUARTZ_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_SLAB_4 = register("sodalite_tile_4_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.SODALITE_TILE_4.get()).hardnessAndResistance(1.5F)));
+
+    //GEM SLABS--TILE 5//
+    public static final RegistryObject<Block> AMETHYST_SLAB_5 = register("amethyst_tile_5_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AMETHYST_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_SLAB_5 = register("aventurine_tile_5_slab" ,
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AVENTURINE_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_SLAB_5 = register("carnelian_tile_5_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CARNELIAN_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_SLAB_5 = register("chalcopyrite_tile_5_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CHALCOPYRITE_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_SLAB_5 = register("citrine_tile_5_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CITRINE_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_SLAB_5 = register("jade_tile_5_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JADE_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_SLAB_5 = register("jasper_tile_5_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JASPER_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_SLAB_5 = register("labradorite_tile_5_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.LABRADORITE_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_SLAB_5 = register("mica_tile_5_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MICA_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_SLAB_5 = register( "moonstone_tile_5_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MOONSTONE_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_SLAB_5 = register("rose_quartz_tile_5_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.ROSE_QUARTZ_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_SLAB_5 = register("sodalite_tile_5_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.SODALITE_TILE_5.get()).hardnessAndResistance(1.5F)));
+
+    //GEM SLABS--TILE 6//
+    public static final RegistryObject<Block> AMETHYST_SLAB_6 = register("amethyst_tile_6_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AMETHYST_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_SLAB_6 = register("aventurine_tile_6_slab" ,
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.AVENTURINE_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_SLAB_6 = register("carnelian_tile_6_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CARNELIAN_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_SLAB_6 = register("chalcopyrite_tile_6_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CHALCOPYRITE_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_SLAB_6 = register("citrine_tile_6_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.CITRINE_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_SLAB_6 = register("jade_tile_6_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JADE_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_SLAB_6 = register("jasper_tile_6_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.JASPER_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_SLAB_6 = register("labradorite_tile_6_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.LABRADORITE_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_SLAB_6 = register("mica_tile_6_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MICA_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_SLAB_6 = register( "moonstone_tile_6_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.MOONSTONE_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_SLAB_6 = register("rose_quartz_tile_6_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.ROSE_QUARTZ_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_SLAB_6 = register("sodalite_tile_6_slab",
+            () ->new SlabBlock(Block.Properties.from(ModBlocks.SODALITE_TILE_6.get()).hardnessAndResistance(1.5F)));
+
+    //SLABS--CLAY//
+    public static final RegistryObject<Block> RED_CLAY_SLAB = register( "red_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.RED_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ORANGE_CLAY_SLAB = register("orange_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.ORANGE_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+
+    public static final RegistryObject<Block> YELLOW_CLAY_SLAB = register("yellow_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.YELLOW_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIME_CLAY_SLAB = register("lime_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIME_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GREEN_CLAY_SLAB = register("green_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.GREEN_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CYAN_CLAY_SLAB = register("cyan_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.CYAN_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_CLAY_SLAB = register("light_blue_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIGHT_BLUE_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLUE_CLAY_SLAB = register("blue_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BLUE_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PURPLE_CLAY_SLAB = register("purple_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.PURPLE_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MAGENTA_CLAY_SLAB = register("magenta_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.MAGENTA_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PINK_CLAY_SLAB = register("pink_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.PINK_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> WHITE_CLAY_SLAB = register("white_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.WHITE_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_CLAY_SLAB = register("light_gray_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIGHT_GRAY_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GRAY_CLAY_SLAB = register("gray_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.GRAY_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLACK_CLAY_SLAB_ = register("black_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BLACK_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BROWN_CLAY_SLAB_ = register("brown_clay_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BROWN_CLAY_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    //SLABS--BRICK//
+    public static final RegistryObject<Block> RED_BRICK_SLAB_ = register( "red_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.RED_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ORANGE_BRICK_SLAB_ = register("orange_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.ORANGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+
+    public static final RegistryObject<Block> YELLOW_BRICK_SLAB_ = register("yellow_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.YELLOW_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIME_BRICK_SLAB_ = register("lime_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIME_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GREEN_BRICK_SLAB_ = register("green_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.GREEN_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CYAN_BRICK_SLAB_ = register("cyan_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.CYAN_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_BRICK_SLAB_ = register("light_blue_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIGHT_BLUE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLUE_BRICK_SLAB_ = register("blue_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BLUE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PURPLE_BRICK_SLAB_ = register("purple_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.PURPLE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MAGENTA_BRICK_SLAB_ = register("magenta_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.MAGENTA_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PINK_BRICK_SLAB_ = register("pink_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.PINK_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> WHITE_BRICK_SLAB_ = register("white_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.WHITE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_BRICK_SLAB_ = register("light_gray_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIGHT_GRAY_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GRAY_BRICK_SLAB_ = register("gray_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.GRAY_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLACK_BRICK_SLAB_ = register("black_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BLACK_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BROWN_BRICK_SLAB_ = register("brown_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BROWN_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+
+    //SLABS--LARGE BRICK//
+    public static final RegistryObject<Block> RED_LARGE_BRICK_SLAB_ = register( "red_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.RED_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ORANGE_LARGE_BRICK_SLAB_ = register("orange_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.ORANGE_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+
+    public static final RegistryObject<Block> YELLOW_LARGE_BRICK_SLAB_ = register("yellow_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.YELLOW_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIME_LARGE_BRICK_SLAB_ = register("lime_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIME_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GREEN_LARGE_BRICK_SLAB_ = register("green_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.GREEN_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CYAN_LARGE_BRICK_SLAB_ = register("cyan_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.CYAN_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_LARGE_BRICK_SLAB_ = register("light_blue_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIGHT_BLUE_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLUE_LARGE_BRICK_SLAB_ = register("blue_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BLUE_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PURPLE_LARGE_BRICK_SLAB_ = register("purple_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.PURPLE_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MAGENTA_LARGE_BRICK_SLAB_ = register("magenta_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.MAGENTA_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PINK_LARGE_BRICK_SLAB_ = register("pink_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.PINK_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> WHITE_LARGE_BRICK_SLAB_ = register("white_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.WHITE_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_LargeBRICK_SLAB_ = register("light_gray_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIGHT_GRAY_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GRAY_LARGE_BRICK_SLAB_ = register("gray_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.GRAY_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLACK_LARGE_BRICK_SLAB_ = register("black_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BLACK_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BROWN_LARGE_BRICK_SLAB_ = register("brown_large_brick_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BROWN_LARGE_BRICK_BLOCK.get()).hardnessAndResistance(1.5F)));
+
+    //SLABS--WOOD//
+    public static final RegistryObject<Block> CRABAPPLE_SLAB_ = register( "crabapple_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.CRABAPPLE_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> POINCIANA_SLAB_ = register("poinciana_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.POINCIANA_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABURNUM_SLAB_ = register("laburnum_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LABURNUM_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_SLAB_ = register("jade_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.JADE_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PAULOWNIA_SLAB_ = register("paulownia_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.PAULOWNIA_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> WISTERIA_SLAB_ = register("wisteria_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.WISTERIA_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JACARANDA_SLAB_ = register("jacaranda_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.JACARANDA_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> DOGWOOD_SLAB_ = register("dogwood_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.DOGWOOD_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SILVERBELL_SLAB_ = register("silverbell_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.SILVERBELL_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CEDAR_SLAB_ = register("cedar_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.CEDAR_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    //SLABS--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_SLAB_ = register( "red_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.RED_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_SLAB_ = register("orange_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.ORANGE_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+
+    public static final RegistryObject<Block> YELLOW_STAINED_SLAB_ = register("yellow_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.YELLOW_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_SLAB_ = register("lime_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIME_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_SLAB_ = register("green_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.GREEN_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_SLAB_ = register("cyan_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.CYAN_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_SLAB_ = register("light_blue_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIGHT_BLUE_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_SLAB_ = register("blue_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BLUE_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_SLAB_ = register("purple_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.PURPLE_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_SLAB_ = register("magenta_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.MAGENTA_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_SLAB_ = register("pink_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.PINK_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_SLAB_ = register("white_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.WHITE_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_SLAB_ = register("light_gray_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.LIGHT_GRAY_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_SLAB_ = register("gray_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.GRAY_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_SLAB_ = register("black_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BLACK_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_SLAB_ = register("brown_stained_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.BROWN_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+
 
     //VINED COBBLE BLOCKS//
     public static final RegistryObject<Block> CRABAPPLE_COBBLESTONE = register("crabapple_cobblestone",

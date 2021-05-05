@@ -5,23 +5,21 @@ import com.maideniles.maidensmaterials.init.ModBlocks;
 import net.minecraft.block.Block;
 
 public enum OreType {
-    JASPER(ModBlocks.JASPER_ORE.get(), 8,25,50),
-    CARNELIAN(ModBlocks.CARNELIAN_ORE.get(), 8,25,50),
-    CITRINE(ModBlocks.CITRINE_ORE.get(), 8,25,50),
-    AVENTURINE(ModBlocks.AVENTURINE_ORE.get(), 8,25,50),
-    JADE(ModBlocks.JADE_ORE.get(), 8,25,50),
-    CHALCOPYRITE(ModBlocks.CHALCOPYRITE_ORE.get(), 8,25,50),
-    LABRADORITE(ModBlocks.LABRADORITE_ORE.get(), 8,25,50),
-    MOONSTONE(ModBlocks.MOONSTONE_ORE.get(), 8,25,50),
-    SODALITE(ModBlocks.SODALITE_ORE.get(), 8,25,50),
-    AMETHYST(ModBlocks.AMETHYST_ORE.get(), 8,25,50),
-    ROSE_QUARTZ(ModBlocks.ROSE_QUARTZ_ORE.get(), 8,25,50),
-    MICA(ModBlocks.MICA_ORE.get(), 8,25,50);
 
+    CITRINE(ModBlocks.CITRINE_ORE.get(), 8,41,60),              //COMMON
+    JADE(ModBlocks.JADE_ORE.get(), 8,41,60),                    //COMMON
+    JASPER(ModBlocks.JASPER_ORE.get(), 8,41,60),                //COMMON
+    MOONSTONE(ModBlocks.MOONSTONE_ORE.get(), 8,41,60),          //COMMON
 
+    AVENTURINE(ModBlocks.AVENTURINE_ORE.get(), 6,21,40),        //UNCCOMMON
+    LABRADORITE(ModBlocks.LABRADORITE_ORE.get(), 6,21,40),      //UNCCOMMON
+    MICA(ModBlocks.MICA_ORE.get(), 6,21,40),                    //UNCCOMMON
+    ROSE_QUARTZ(ModBlocks.ROSE_QUARTZ_ORE.get(), 6,21,40),      //UNCCOMMON
 
-
-
+    AMETHYST(ModBlocks.AMETHYST_ORE.get(), 4,0,20),            //RARE
+    CARNELIAN(ModBlocks.CARNELIAN_ORE.get(), 4,0,20),          //RARE
+    CHALCOPYRITE(ModBlocks.CHALCOPYRITE_ORE.get(), 4,0,20),    //RARE
+    SODALITE(ModBlocks.SODALITE_ORE.get(), 4,0,20);            //RARE
     private final Block block;
     private final int maxVeinSize;
     private final int minHeight;
@@ -59,10 +57,7 @@ public enum OreType {
             if (block == ore.block){
                 return ore;
             }
-
-
         }
         return null;
     }
-
 }
