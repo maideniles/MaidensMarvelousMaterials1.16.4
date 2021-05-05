@@ -66,6 +66,8 @@ public class OasisShoreBiome {
         biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.ORCHID_OASIS_CONFIG);
         biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.FOREST_FLOWERS_OASIS_CONFIG);
         biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.ORNAMENTAL_MUSHROOM_OASIS_FEATURE);
+     //   biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.CORAL_FAN_OASIS_CONFIG);
+
 
         //ADD PALM TREE CONFIGS//
         biomegenerationsettings$builder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION.ordinal(), () -> ModConfiguredFeatures.PALM_TREE_CONFIGURED_FEATURE_WG);

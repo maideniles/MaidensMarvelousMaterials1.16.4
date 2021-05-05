@@ -35,7 +35,7 @@ public class ModBiomes
     public static final RegistryObject<Biome> OASIS_SHORE_BIOME =
             Registration.BIOMES.register("oasis_shore_biome",
                     () -> OasisShoreBiome.makeOasisShoreBiome(() -> WorldGenRegistries.CONFIGURED_SURFACE_BUILDER.getOrThrow(
-                            ModConfiguredSurfaceBuilders.OASIS_SHORE_SURFACE), 0.125f, 0.05f));
+                            ModConfiguredSurfaceBuilders.OASIS_SHORE_SURFACE), 0.105f, 0.05f));  //adjusted depth
 
     public static final RegistryObject<Biome> ORNAMENTAL_ORCHARD_BIOME =
             Registration.BIOMES.register("ornamental_orchard_biome",

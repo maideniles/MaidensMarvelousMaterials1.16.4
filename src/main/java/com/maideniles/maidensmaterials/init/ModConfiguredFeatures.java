@@ -2,6 +2,7 @@ package com.maideniles.maidensmaterials.init;
 
 
 import com.google.common.collect.ImmutableList;
+import com.maideniles.maidensmaterials.blocks.vegetation.CoralBlockStateProvider;
 import com.maideniles.maidensmaterials.world.feature.base.PalmTreeFeature;
 import com.maideniles.maidensmaterials.world.gen.decorator.tree.leaf.MaidensLeafVineDecorator;
 import net.minecraft.block.BlockState;
@@ -53,21 +54,21 @@ public class ModConfiguredFeatures {
             (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(mushroom), SimpleBlockPlacer.PLACER))
                     .tries(64).func_227317_b_().build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-            .func_242731_b(1);
+            .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.2F, 1)));
 
 
     public static final ConfiguredFeature<?, ?> ORCHID_ORCHARD_CONFIG = Feature.FLOWER.withConfiguration(
             (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(orchid), SimpleBlockPlacer.PLACER))
                     .tries(64).func_227317_b_().build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-            .func_242731_b(1);
+            .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.2F, 1)));
 
     public static final ConfiguredFeature<?, ?> FOREST_FLOWERS_ORCHARD_CONFIG = Feature.FLOWER.withConfiguration(
             (new BlockClusterFeatureConfig.Builder(ForestFlowerBlockStateProvider.PROVIDER, SimpleBlockPlacer.PLACER))
                     .tries(64).build())
             .withPlacement(Features.Placements.VEGETATION_PLACEMENT)
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-            .func_242731_b(10);
+            .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.2F, 1)));
 
     //SPECIAL CONFIG FOR OASIS BIOME//
     public static final ConfiguredFeature<?, ?> ORNAMENTAL_MUSHROOM_OASIS_FEATURE = Feature.FLOWER.withConfiguration(
@@ -89,13 +90,9 @@ public class ModConfiguredFeatures {
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
             .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.2F, 1)));
 
- /*   public static final ConfiguredFeature<?, ?>  SUGAR_CANE_PATCH_OASIS_CONFIG = (Feature.withConfiguration(
-     new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.SUGAR_CANE.getDefaultState()),
-     new ColumnBlockPlacer(2, 2))).tries(64).xSpread(4).ySpread(0).zSpread(4).func_227317_b_().requiresWater().build();
-*/
-
-
-
+    public static final ConfiguredFeature<?,?> CORAL_FAN_OASIS_CONFIG = Feature.CORAL_TREE.withConfiguration
+            (IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
+            .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(20, 0.1F, 1)));
 
     public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> PALM_TREE_CONFIGURED_FEATURE = ModFeatures.PALM_TREE_INSTANCE.withConfiguration(
             new BaseTreeFeatureConfig.Builder(
@@ -136,10 +133,11 @@ public class ModConfiguredFeatures {
         Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "forest_flower_orchard_spread_feature", FOREST_FLOWERS_ORCHARD_CONFIG);
 
     //OASIS CUSTOM FLOWERS CONFIG
-        Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "ornamental_mushroom_orchard_feature", ORNAMENTAL_MUSHROOM_OASIS_FEATURE);
-        Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "orchid_orchard_spread_feature", ORCHID_OASIS_CONFIG);
-        Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "forest_flower_orchard_spread_feature", FOREST_FLOWERS_OASIS_CONFIG);
-  //      Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "sugar_cane_oasis_config", SUGAR_CANE_PATCH_OASIS_CONFIG);
+        Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "ornamental_mushroom_oasis_feature", ORNAMENTAL_MUSHROOM_OASIS_FEATURE);
+        Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "orchid_oasis_spread_feature", ORCHID_OASIS_CONFIG);
+        Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "forest_flower_oasis_spread_feature", FOREST_FLOWERS_OASIS_CONFIG);
+        Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "coral_fan_oasis_config", CORAL_FAN_OASIS_CONFIG);
+
 
     //SAPLING TREE CONFIGS//
         Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, "palm_tree_configured_feature", PALM_TREE_CONFIGURED_FEATURE);
