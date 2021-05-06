@@ -2,6 +2,9 @@ package com.maideniles.maidensmaterials.init;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
 
+import com.maideniles.maidensmaterials.blocks.MaidensBookshelfBlock;
+import com.maideniles.maidensmaterials.blocks.MaidensDoorBlock;
+import com.maideniles.maidensmaterials.blocks.MaidensTrapDoorBlock;
 import com.maideniles.maidensmaterials.blocks.VineTieBlock;
 import com.maideniles.maidensmaterials.blocks.tree.leaves.MaidenLeavesBlock;
 import com.maideniles.maidensmaterials.blocks.tree.leaves.PalmLeavesBlock;
@@ -1038,6 +1041,1946 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BROWN_STAINED_SLAB_ = register("brown_stained_slab",
             () -> new SlabBlock(Block.Properties.from(ModBlocks.BROWN_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+    //STAIRS--WOOD--STAINED//
+    public static final RegistryObject<Block> CRABAPPLE_STAIRS = register( "crabapple_stairs",
+            () -> new StairsBlock(() -> ModBlocks.CRABAPPLE_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> POINCIANA_STAIRS = register( "poinciana_stairs",
+            () -> new StairsBlock(() -> ModBlocks.POINCIANA_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABURNUM_STAIRS = register( "laburnum_stairs",
+            () -> new StairsBlock(() -> ModBlocks.LABURNUM_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_STAIRS = register( "jade_stairs",
+            () -> new StairsBlock(() -> ModBlocks.JADE_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PAULOWNIA_STAIRS = register( "paulownia_stairs",
+            () -> new StairsBlock(() -> ModBlocks.PAULOWNIA_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> WISTERIA_STAIRS = register( "wisteria_stairs",
+            () -> new StairsBlock(() -> ModBlocks.WISTERIA_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JACARANDA_STAIRS = register( "jacaranda_stairs",
+            () -> new StairsBlock(() -> ModBlocks.JACARANDA_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> DOGWOOD_STAIRS = register( "dogwood_stairs",
+            () -> new StairsBlock(() -> ModBlocks.DOGWOOD_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SILVERBELL_STAIRS = register( "silverbell_stairs",
+            () -> new StairsBlock(() -> ModBlocks.SILVERBELL_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CEDAR_STAIRS = register( "cedar_stairs",
+            () -> new StairsBlock(() -> ModBlocks.CEDAR_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    //STAIRS//
+
+
+    //GEM STAIRS--TILE 1//
+    public static final RegistryObject<Block> AMETHYST_STAIRS_1 = register("amethyst_tile_1_stairs",
+            () ->new StairsBlock( ()->ModBlocks.AMETHYST_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_STAIRS_1 = register("aventurine_tile_1_stairs" ,
+            () ->new StairsBlock( ()->ModBlocks.AVENTURINE_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_STAIRS_1 = register("carnelian_tile_1_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CARNELIAN_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_STAIRS_1 = register("chalcopyrite_tile_1_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CHALCOPYRITE_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_STAIRS_1 = register("citrine_tile_1_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CITRINE_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_STAIRS_1 = register("jade_tile_1_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JADE_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_STAIRS_1 = register("jasper_tile_1_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JASPER_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_STAIRS_1 = register("labradorite_tile_1_stairs",
+            () ->new StairsBlock( ()->ModBlocks.LABRADORITE_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_STAIRS_1 = register("mica_tile_1_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MICA_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_STAIRS_1 = register( "moonstone_tile_1_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MOONSTONE_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_STAIRS_1 = register("rose_quartz_tile_1_stairs",
+            () ->new StairsBlock( ()->ModBlocks.ROSE_QUARTZ_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_STAIRS_1 = register("sodalite_tile_1_stairs",
+            () ->new StairsBlock( ()->ModBlocks.SODALITE_TILE_1.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    //GEM STAIRS--TILE 2//
+    public static final RegistryObject<Block> AMETHYST_STAIRS_2 = register("amethyst_tile_2_stairs",
+            () ->new StairsBlock( ()->ModBlocks.AMETHYST_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_STAIRS_2 = register("aventurine_tile_2_stairs" ,
+            () ->new StairsBlock( ()->ModBlocks.AVENTURINE_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_STAIRS_2 = register("carnelian_tile_2_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CARNELIAN_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_STAIRS_2 = register("chalcopyrite_tile_2_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CHALCOPYRITE_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_STAIRS_2 = register("citrine_tile_2_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CITRINE_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_STAIRS_2 = register("jade_tile_2_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JADE_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_STAIRS_2 = register("jasper_tile_2_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JASPER_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_STAIRS_2 = register("labradorite_tile_2_stairs",
+            () ->new StairsBlock( ()->ModBlocks.LABRADORITE_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_STAIRS_2 = register("mica_tile_2_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MICA_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_STAIRS_2 = register( "moonstone_tile_2_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MOONSTONE_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_STAIRS_2 = register("rose_quartz_tile_2_stairs",
+            () ->new StairsBlock( ()->ModBlocks.ROSE_QUARTZ_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_STAIRS_2 = register("sodalite_tile_2_stairs",
+            () ->new StairsBlock( ()->ModBlocks.SODALITE_TILE_2.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    //GEM STAIRS--TILE 3//
+    public static final RegistryObject<Block> AMETHYST_STAIRS_3 = register("amethyst_tile_3_stairs",
+            () ->new StairsBlock( ()->ModBlocks.AMETHYST_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_STAIRS_3 = register("aventurine_tile_3_stairs" ,
+            () ->new StairsBlock( ()->ModBlocks.AVENTURINE_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_STAIRS_3 = register("carnelian_tile_3_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CARNELIAN_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_STAIRS_3 = register("chalcopyrite_tile_3_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CHALCOPYRITE_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_STAIRS_3 = register("citrine_tile_3_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CITRINE_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_STAIRS_3 = register("jade_tile_3_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JADE_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_STAIRS_3 = register("jasper_tile_3_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JASPER_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_STAIRS_3 = register("labradorite_tile_3_stairs",
+            () ->new StairsBlock( ()->ModBlocks.LABRADORITE_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_STAIRS_3 = register("mica_tile_3_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MICA_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_STAIRS_3 = register( "moonstone_tile_3_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MOONSTONE_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_STAIRS_3 = register("rose_quartz_tile_3_stairs",
+            () ->new StairsBlock( ()->ModBlocks.ROSE_QUARTZ_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_STAIRS_3 = register("sodalite_tile_3_stairs",
+            () ->new StairsBlock( ()->ModBlocks.SODALITE_TILE_3.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    //GEM STAIRS--TILE 4//
+    public static final RegistryObject<Block> AMETHYST_STAIRS_4 = register("amethyst_tile_4_stairs",
+            () ->new StairsBlock( ()->ModBlocks.AMETHYST_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_STAIRS_4 = register("aventurine_tile_4_stairs" ,
+            () ->new StairsBlock( ()->ModBlocks.AVENTURINE_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_STAIRS_4 = register("carnelian_tile_4_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CARNELIAN_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_STAIRS_4 = register("chalcopyrite_tile_4_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CHALCOPYRITE_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_STAIRS_4 = register("citrine_tile_4_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CITRINE_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_STAIRS_4 = register("jade_tile_4_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JADE_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_STAIRS_4 = register("jasper_tile_4_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JASPER_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_STAIRS_4 = register("labradorite_tile_4_stairs",
+            () ->new StairsBlock( ()->ModBlocks.LABRADORITE_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_STAIRS_4 = register("mica_tile_4_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MICA_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_STAIRS_4 = register( "moonstone_tile_4_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MOONSTONE_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_STAIRS_4 = register("rose_quartz_tile_4_stairs",
+            () ->new StairsBlock( ()->ModBlocks.ROSE_QUARTZ_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_STAIRS_4 = register("sodalite_tile_4_stairs",
+            () ->new StairsBlock( ()->ModBlocks.SODALITE_TILE_4.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    //GEM STAIRS--TILE 5//
+    public static final RegistryObject<Block> AMETHYST_STAIRS_5 = register("amethyst_tile_5_stairs",
+            () ->new StairsBlock( ()->ModBlocks.AMETHYST_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_STAIRS_5 = register("aventurine_tile_5_stairs" ,
+            () ->new StairsBlock( ()->ModBlocks.AVENTURINE_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_STAIRS_5 = register("carnelian_tile_5_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CARNELIAN_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_STAIRS_5 = register("chalcopyrite_tile_5_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CHALCOPYRITE_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_STAIRS_5 = register("citrine_tile_5_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CITRINE_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_STAIRS_5 = register("jade_tile_5_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JADE_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_STAIRS_5 = register("jasper_tile_5_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JASPER_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_STAIRS_5 = register("labradorite_tile_5_stairs",
+            () ->new StairsBlock( ()->ModBlocks.LABRADORITE_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_STAIRS_5 = register("mica_tile_5_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MICA_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_STAIRS_5 = register( "moonstone_tile_5_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MOONSTONE_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_STAIRS_5 = register("rose_quartz_tile_5_stairs",
+            () ->new StairsBlock( ()->ModBlocks.ROSE_QUARTZ_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_STAIRS_5 = register("sodalite_tile_5_stairs",
+            () ->new StairsBlock( ()->ModBlocks.SODALITE_TILE_5.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    //GEM STAIRS--TILE 6//
+    public static final RegistryObject<Block> AMETHYST_STAIRS_6 = register("amethyst_tile_6_stairs",
+            () ->new StairsBlock( ()->ModBlocks.AMETHYST_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> AVENTURINE_STAIRS_6 = register("aventurine_tile_6_stairs" ,
+            () ->new StairsBlock( ()->ModBlocks.AVENTURINE_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CARNELIAN_STAIRS_6 = register("carnelian_tile_6_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CARNELIAN_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CHALCOPYRITE_STAIRS_6 = register("chalcopyrite_tile_6_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CHALCOPYRITE_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CITRINE_STAIRS_6 = register("citrine_tile_6_stairs",
+            () ->new StairsBlock( ()->ModBlocks.CITRINE_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JADE_STAIRS_6 = register("jade_tile_6_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JADE_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> JASPER_STAIRS_6 = register("jasper_tile_6_stairs",
+            () ->new StairsBlock( ()->ModBlocks.JASPER_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LABRADORITE_STAIRS_6 = register("labradorite_tile_6_stairs",
+            () ->new StairsBlock( ()->ModBlocks.LABRADORITE_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MICA_STAIRS_6 = register("mica_tile_6_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MICA_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MOONSTONE_STAIRS_6 = register( "moonstone_tile_6_stairs",
+            () ->new StairsBlock( ()->ModBlocks.MOONSTONE_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_STAIRS_6 = register("rose_quartz_tile_6_stairs",
+            () ->new StairsBlock( ()->ModBlocks.ROSE_QUARTZ_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> SODALITE_STAIRS_6 = register("sodalite_tile_6_stairs",
+            () ->new StairsBlock( ()->ModBlocks.SODALITE_TILE_6.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    //STAIRS--CLAY//
+    public static final RegistryObject<Block> RED_CLAY_STAIRS = register( "red_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.RED_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ORANGE_CLAY_STAIRS = register("orange_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.ORANGE_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+
+    public static final RegistryObject<Block> YELLOW_CLAY_STAIRS = register("yellow_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.YELLOW_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIME_CLAY_STAIRS = register("lime_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIME_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GREEN_CLAY_STAIRS = register("green_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.GREEN_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CYAN_CLAY_STAIRS = register("cyan_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.CYAN_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_CLAY_STAIRS = register("light_blue_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIGHT_BLUE_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLUE_CLAY_STAIRS = register("blue_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BLUE_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PURPLE_CLAY_STAIRS = register("purple_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.PURPLE_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MAGENTA_CLAY_STAIRS = register("magenta_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.MAGENTA_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PINK_CLAY_STAIRS = register("pink_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.PINK_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> WHITE_CLAY_STAIRS = register("white_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.WHITE_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_CLAY_STAIRS = register("light_gray_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIGHT_GRAY_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GRAY_CLAY_STAIRS = register("gray_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.GRAY_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLACK_CLAY_STAIRS_ = register("black_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BLACK_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BROWN_CLAY_STAIRS_ = register("brown_clay_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BROWN_CLAY_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    //STAIRS--BRICK//
+    public static final RegistryObject<Block> RED_BRICK_STAIRS_ = register( "red_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.RED_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ORANGE_BRICK_STAIRS_ = register("orange_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.ORANGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+
+    public static final RegistryObject<Block> YELLOW_BRICK_STAIRS_ = register("yellow_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.YELLOW_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIME_BRICK_STAIRS_ = register("lime_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIME_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GREEN_BRICK_STAIRS_ = register("green_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.GREEN_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CYAN_BRICK_STAIRS_ = register("cyan_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.CYAN_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_BRICK_STAIRS_ = register("light_blue_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIGHT_BLUE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLUE_BRICK_STAIRS_ = register("blue_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BLUE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PURPLE_BRICK_STAIRS_ = register("purple_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.PURPLE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MAGENTA_BRICK_STAIRS_ = register("magenta_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.MAGENTA_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PINK_BRICK_STAIRS_ = register("pink_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.PINK_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> WHITE_BRICK_STAIRS_ = register("white_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.WHITE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_BRICK_STAIRS_ = register("light_gray_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIGHT_GRAY_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GRAY_BRICK_STAIRS_ = register("gray_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.GRAY_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLACK_BRICK_STAIRS_ = register("black_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BLACK_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BROWN_BRICK_STAIRS_ = register("brown_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BROWN_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+
+    //STAIRS--LARGE BRICK//
+    public static final RegistryObject<Block> RED_LARGE_BRICK_STAIRS_ = register( "red_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.RED_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ORANGE_LARGE_BRICK_STAIRS_ = register("orange_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.ORANGE_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+
+    public static final RegistryObject<Block> YELLOW_LARGE_BRICK_STAIRS_ = register("yellow_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.YELLOW_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIME_LARGE_BRICK_STAIRS_ = register("lime_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIME_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GREEN_LARGE_BRICK_STAIRS_ = register("green_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.GREEN_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CYAN_LARGE_BRICK_STAIRS_ = register("cyan_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.CYAN_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_LARGE_BRICK_STAIRS_ = register("light_blue_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIGHT_BLUE_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLUE_LARGE_BRICK_STAIRS_ = register("blue_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BLUE_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PURPLE_LARGE_BRICK_STAIRS_ = register("purple_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.PURPLE_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MAGENTA_LARGE_BRICK_STAIRS_ = register("magenta_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.MAGENTA_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PINK_LARGE_BRICK_STAIRS_ = register("pink_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.PINK_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> WHITE_LARGE_BRICK_STAIRS_ = register("white_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.WHITE_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_LargeBRICK_STAIRS_ = register("light_gray_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIGHT_GRAY_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GRAY_LARGE_BRICK_STAIRS_ = register("gray_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.GRAY_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLACK_LARGE_BRICK_STAIRS_ = register("black_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BLACK_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BROWN_LARGE_BRICK_STAIRS_ = register("brown_large_brick_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BROWN_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
+
+
+
+    //STAIRS--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_STAIRS_ = register( "red_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.RED_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_STAIRS_ = register("orange_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.ORANGE_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+
+    public static final RegistryObject<Block> YELLOW_STAINED_STAIRS_ = register("yellow_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.YELLOW_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_STAIRS_ = register("lime_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIME_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_STAIRS_ = register("green_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.GREEN_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_STAIRS_ = register("cyan_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.CYAN_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_STAIRS_ = register("light_blue_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIGHT_BLUE_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_STAIRS_ = register("blue_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BLUE_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_STAIRS_ = register("purple_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.PURPLE_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_STAIRS_ = register("magenta_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.MAGENTA_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_STAIRS_ = register("pink_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.PINK_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_STAIRS_ = register("white_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.WHITE_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_STAIRS_ = register("light_gray_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.LIGHT_GRAY_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_STAIRS_ = register("gray_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.GRAY_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_STAIRS_ = register("black_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BLACK_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_STAIRS_ = register("brown_stained_stairs",
+            () -> new StairsBlock( ()->ModBlocks.BROWN_STAINED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    //BOOKSHELVES--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_BOOKSHELF = register("crabapple_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_BOOKSHELF = register( "poinciana_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_BOOKSHELF = register("laburnum_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_BOOKSHELF = register("jade_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_BOOKSHELF = register("paulownia_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_BOOKSHELF = register("wisteria_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_BOOKSHELF = register("jacaranda_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_BOOKSHELF = register("dogwood_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_BOOKSHELF = register("silverbell_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_BOOKSHELF = register("cedar_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    //BOOKSHELVES--TREES//
+    public static final RegistryObject<Block>  BIRCH_BOOKSHELF = register("birch_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   OAK_BOOKSHELF = register( "oak_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SPRUCE_BOOKSHELF = register("spruce_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  DARK_OAK_BOOKSHELF = register("dark_oak_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   ACACIA_BOOKSHELF = register("acacia_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JUNGLE_BOOKSHELF = register("jungle_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WARPED_BOOKSHELF = register("warped_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CRIMSON_BOOKSHELF = register("crimson_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+
+
+    //BOOKSHELVES--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_BOOKSHELF = register(  "red_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_BOOKSHELF = register(  "orange_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_BOOKSHELF = register(  "yellow_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_BOOKSHELF = register(  "lime_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_BOOKSHELF = register(  "green_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_BOOKSHELF = register(  "cyan_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_BOOKSHELF = register(  "light_blue_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_BOOKSHELF = register(  "blue_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_BOOKSHELF = register(  "purple_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_BOOKSHELF = register(  "magenta_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_BOOKSHELF = register(  "pink_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_BOOKSHELF = register(  "white_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_BOOKSHELF = register(  "light_gray_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_BOOKSHELF = register(  "gray_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_BOOKSHELF = register(  "black_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_BOOKSHELF = register(  "brown_stained_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    //FENCES--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_FENCE = register("crabapple_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_FENCE = register( "poinciana_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_FENCE = register("laburnum_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_FENCE = register("jade_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_FENCE = register("paulownia_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_FENCE = register("wisteria_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_FENCE = register("jacaranda_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_FENCE = register("dogwood_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_FENCE = register("silverbell_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_FENCE = register("cedar_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+
+    //FENCES--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_FENCE = register(  "red_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_FENCE = register(  "orange_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_FENCE = register(  "yellow_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_FENCE = register(  "lime_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_FENCE = register(  "green_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_FENCE = register(  "cyan_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_FENCE = register(  "light_blue_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_FENCE = register(  "blue_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_FENCE = register(  "purple_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_FENCE = register(  "magenta_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_FENCE = register(  "pink_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_FENCE = register(  "white_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_FENCE = register(  "light_gray_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_FENCE = register(  "gray_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_FENCE = register(  "black_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_FENCE = register(  "brown_stained_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    //GATES--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_FENCE_GATE = register("crabapple_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_FENCE_GATE = register( "poinciana_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_FENCE_GATE = register("laburnum_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_FENCE_GATE = register("jade_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_FENCE_GATE = register("paulownia_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_FENCE_GATE = register("wisteria_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_FENCE_GATE = register("jacaranda_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_FENCE_GATE = register("dogwood_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_FENCE_GATE = register("silverbell_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_FENCE_GATE = register("cedar_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+
+    //GATES--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_FENCE_GATE = register(  "red_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_FENCE_GATE = register(  "orange_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_FENCE_GATE = register(  "yellow_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_FENCE_GATE = register(  "lime_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_FENCE_GATE = register(  "green_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_FENCE_GATE = register(  "cyan_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_FENCE_GATE = register(  "light_blue_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_FENCE_GATE = register(  "blue_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_FENCE_GATE = register(  "purple_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_FENCE_GATE = register(  "magenta_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_FENCE_GATE = register(  "pink_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_FENCE_GATE = register(  "white_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_FENCE_GATE = register(  "light_gray_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_FENCE_GATE = register(  "gray_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_FENCE_GATE = register(  "black_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_FENCE_GATE = register(  "brown_stained_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    //PRESSURE_PLATES--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_PRESSURE_PLATE = register("crabapple_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_PRESSURE_PLATE = register( "poinciana_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_PRESSURE_PLATE = register("laburnum_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_PRESSURE_PLATE = register("jade_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_PRESSURE_PLATE = register("paulownia_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_PRESSURE_PLATE = register("wisteria_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_PRESSURE_PLATE = register("jacaranda_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_PRESSURE_PLATE = register("dogwood_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_PRESSURE_PLATE = register("silverbell_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_PRESSURE_PLATE = register("cedar_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+
+    //PRESSURE_PLATES--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_PRESSURE_PLATE = register(  "red_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_PRESSURE_PLATE = register(  "orange_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_PRESSURE_PLATE = register(  "yellow_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_PRESSURE_PLATE = register(  "lime_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_PRESSURE_PLATE = register(  "green_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_PRESSURE_PLATE = register(  "cyan_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_PRESSURE_PLATE = register(  "light_blue_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_PRESSURE_PLATE = register(  "blue_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_PRESSURE_PLATE = register(  "purple_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_PRESSURE_PLATE = register(  "magenta_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_PRESSURE_PLATE = register(  "pink_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_PRESSURE_PLATE = register(  "white_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_PRESSURE_PLATE = register(  "light_gray_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_PRESSURE_PLATE = register(  "gray_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_PRESSURE_PLATE = register(  "black_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_PRESSURE_PLATE = register(  "brown_stained_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    //BUTTONS--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_BUTTON = register("crabapple_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_BUTTON = register( "poinciana_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_BUTTON = register("laburnum_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_BUTTON = register("jade_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_BUTTON = register("paulownia_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_BUTTON = register("wisteria_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_BUTTON = register("jacaranda_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_BUTTON = register("dogwood_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_BUTTON = register("silverbell_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_BUTTON = register("cedar_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+
+    //BUTTONS--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_BUTTON = register(  "red_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_BUTTON = register(  "orange_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_BUTTON = register(  "yellow_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_BUTTON = register(  "lime_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_BUTTON = register(  "green_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_BUTTON = register(  "cyan_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_BUTTON = register(  "light_blue_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_BUTTON = register(  "blue_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_BUTTON = register(  "purple_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_BUTTON = register(  "magenta_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_BUTTON = register(  "pink_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_BUTTON = register(  "white_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_BUTTON = register(  "light_gray_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_BUTTON = register(  "gray_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_BUTTON = register(  "black_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_BUTTON = register(  "brown_stained_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    //DOOR_1--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_DOOR_1 = register("crabapple_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_DOOR_1 = register( "poinciana_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_DOOR_1 = register("laburnum_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_DOOR_1 = register("jade_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_DOOR_1 = register("paulownia_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_DOOR_1 = register("wisteria_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_DOOR_1 = register("jacaranda_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_DOOR_1 = register("dogwood_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_DOOR_1 = register("silverbell_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_DOOR_1 = register("cedar_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ACACIA_DOOR_1 = register("acacia_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> BIRCH_DOOR_1 = register("birch_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> OAK_DOOR_1 = register("oak_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> DARK_OAKDOOR_1 = register("dark_oak_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_1 = register("spruce_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_1 = register("jungle_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+
+    public static final RegistryObject<Block>   CRIMSON_DOOR_1 = register("crimson_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WARPED_DOOR_1 = register("warped_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    //DOOR_1--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_DOOR_1 = register(  "red_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_DOOR_1 = register(  "orange_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_DOOR_1 = register(  "yellow_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_DOOR_1 = register(  "lime_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_DOOR_1 = register(  "green_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_DOOR_1 = register(  "cyan_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_DOOR_1 = register(  "light_blue_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_DOOR_1 = register(  "blue_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_DOOR_1 = register(  "purple_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_DOOR_1 = register(  "magenta_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_DOOR_1 = register(  "pink_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_DOOR_1 = register(  "white_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_DOOR_1 = register(  "light_gray_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_DOOR_1 = register(  "gray_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_DOOR_1 = register(  "black_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_DOOR_1 = register(  "brown_stained_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    //DOOR_2--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_DOOR_2 = register("crabapple_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_DOOR_2 = register( "poinciana_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_DOOR_2 = register("laburnum_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_DOOR_2 = register("jade_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_DOOR_2 = register("paulownia_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_DOOR_2 = register("wisteria_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_DOOR_2 = register("jacaranda_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_DOOR_2 = register("dogwood_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_DOOR_2 = register("silverbell_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_DOOR_2 = register("cedar_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ACACIA_DOOR_2 = register("acacia_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> BIRCH_DOOR_2 = register("birch_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> OAK_DOOR_2 = register("oak_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> DARK_OAK_DOOR_2 = register("dark_oak_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_2 = register("spruce_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_2 = register("jungle_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> CRIMSON_DOOR_2 = register("crimson_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WARPED_DOOR_2 = register("warped_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    //DOOR_2--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_DOOR_2 = register(  "red_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_DOOR_2 = register(  "orange_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_DOOR_2 = register(  "yellow_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_DOOR_2 = register(  "lime_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_DOOR_2 = register(  "green_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_DOOR_2 = register(  "cyan_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_DOOR_2 = register(  "light_blue_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_DOOR_2 = register(  "blue_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_DOOR_2 = register(  "purple_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_DOOR_2 = register(  "magenta_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_DOOR_2 = register(  "pink_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_DOOR_2 = register(  "white_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_DOOR_2 = register(  "light_gray_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_DOOR_2 = register(  "gray_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_DOOR_2 = register(  "black_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_DOOR_2 = register(  "brown_stained_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    //DOOR_3--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_DOOR_3 = register("crabapple_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_DOOR_3 = register( "poinciana_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_DOOR_3 = register("laburnum_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_DOOR_3 = register("jade_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_DOOR_3 = register("paulownia_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_DOOR_3 = register("wisteria_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_DOOR_3 = register("jacaranda_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_DOOR_3 = register("dogwood_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_DOOR_3 = register("silverbell_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_DOOR_3 = register("cedar_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ACACIA_DOOR_3 = register("acacia_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> BIRCH_DOOR_3 = register("birch_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> OAK_DOOR_3 = register("oak_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> DARK_OAK_DOOR_3 = register("dark_oak_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_3 = register("spruce_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_3 = register("jungle_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> CRIMSON_DOOR_3 = register("crimson_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WARPED_DOOR_3 = register("warped_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+
+    //DOOR_3--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_DOOR_3 = register(  "red_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_DOOR_3 = register(  "orange_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_DOOR_3 = register(  "yellow_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_DOOR_3 = register(  "lime_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_DOOR_3 = register(  "green_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_DOOR_3 = register(  "cyan_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_DOOR_3 = register(  "light_blue_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_DOOR_3 = register(  "blue_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_DOOR_3 = register(  "purple_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_DOOR_3 = register(  "magenta_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_DOOR_3 = register(  "pink_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_DOOR_3 = register(  "white_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_DOOR_3 = register(  "light_gray_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_DOOR_3 = register(  "gray_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_DOOR_3 = register(  "black_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_DOOR_3 = register(  "brown_stained_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    //DOOR_4--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_DOOR_4 = register("crabapple_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_DOOR_4 = register( "poinciana_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_DOOR_4 = register("laburnum_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_DOOR_4 = register("jade_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_DOOR_4 = register("paulownia_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_DOOR_4 = register("wisteria_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_DOOR_4 = register("jacaranda_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_DOOR_4 = register("dogwood_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_DOOR_4 = register("silverbell_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_DOOR_4 = register("cedar_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ACACIA_DOOR_4 = register("acacia_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> BIRCH_DOOR_4 = register("birch_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> OAK_DOOR_4 = register("oak_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> DARK_OAK_DOOR_4 = register("dark_oak_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_4 = register("spruce_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_4 = register("jungle_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> CRIMSON_DOOR_4 = register("crimson_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WARPED_DOOR_4 = register("warped_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+
+
+    //DOOR_4--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_DOOR_4 = register(  "red_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_DOOR_4 = register(  "orange_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_DOOR_4 = register(  "yellow_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_DOOR_4 = register(  "lime_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_DOOR_4 = register(  "green_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_DOOR_4 = register(  "cyan_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_DOOR_4 = register(  "light_blue_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_DOOR_4 = register(  "blue_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_DOOR_4 = register(  "purple_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_DOOR_4 = register(  "magenta_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_DOOR_4 = register(  "pink_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_DOOR_4 = register(  "white_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_DOOR_4 = register(  "light_gray_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_DOOR_4 = register(  "gray_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_DOOR_4 = register(  "black_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_DOOR_4 = register(  "brown_stained_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+
+    //DOOR_5--TREES//
+    public static final RegistryObject<Block> CRABAPPLE_DOOR_5 = register("crabapple_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> POINCIANA_DOOR_5 = register( "poinciana_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LABURNUM_DOOR_5 = register("laburnum_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> JADE_DOOR_5 = register("jade_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PAULOWNIA_DOOR_5 = register("paulownia_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WISTERIA_DOOR_5 = register("wisteria_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> JACARANDA_DOOR_5 = register("jacaranda_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> DOGWOOD_DOOR_5 = register("dogwood_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> SILVERBELL_DOOR_5 = register("silverbell_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CEDAR_DOOR_5 = register("cedar_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ACACIA_DOOR_5 = register("acacia_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> BIRCH_DOOR_5 = register("birch_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> OAK_DOOR_5 = register("oak_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> DARK_OAK_DOOR_5 = register("dark_oak_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_5 = register("spruce_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_5 = register("jungle_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> CRIMSON_DOOR_5 = register("crimson_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WARPED_DOOR_5 = register("warped_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+
+    //DOOR_5--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_DOOR_5 = register(  "red_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_DOOR_5 = register(  "orange_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_DOOR_5 = register(  "yellow_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_DOOR_5 = register(  "lime_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_DOOR_5 = register(  "green_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_DOOR_5 = register(  "cyan_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_DOOR_5 = register(  "light_blue_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_DOOR_5 = register(  "blue_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_DOOR_5 = register(  "purple_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_DOOR_5 = register(  "magenta_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_DOOR_5 = register(  "pink_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_DOOR_5 = register(  "white_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_DOOR_5 = register(  "light_gray_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_DOOR_5 = register(  "gray_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_DOOR_5 = register(  "black_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_DOOR_5 = register(  "brown_stained_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+
+    //DOOR_6--TREES//
+    public static final RegistryObject<Block> CRABAPPLE_DOOR_6 = register("crabapple_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> POINCIANA_DOOR_6 = register( "poinciana_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LABURNUM_DOOR_6 = register("laburnum_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> JADE_DOOR_6 = register("jade_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PAULOWNIA_DOOR_6 = register("paulownia_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WISTERIA_DOOR_6 = register("wisteria_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> JACARANDA_DOOR_6 = register("jacaranda_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> DOGWOOD_DOOR_6 = register("dogwood_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> SILVERBELL_DOOR_6 = register("silverbell_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CEDAR_DOOR_6 = register("cedar_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ACACIA_DOOR_6 = register("acacia_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> BIRCH_DOOR_6 = register("birch_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> OAK_DOOR_6 = register("oak_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> DARK_OAK_DOOR_6 = register("dark_oak_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_6 = register("spruce_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_6 = register("jungle_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
+
+    public static final RegistryObject<Block> CRIMSON_DOOR_6 = register("crimson_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WARPED_DOOR_6 = register("warped_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+
+    //DOOR_6--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_DOOR_6 = register(  "red_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_DOOR_6 = register(  "orange_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_DOOR_6 = register(  "yellow_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_DOOR_6 = register(  "lime_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_DOOR_6 = register(  "green_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_DOOR_6 = register(  "cyan_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_DOOR_6 = register(  "light_blue_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_DOOR_6 = register(  "blue_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_DOOR_6 = register(  "purple_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_DOOR_6 = register(  "magenta_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_DOOR_6 = register(  "pink_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_DOOR_6 = register(  "white_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_DOOR_6 = register(  "light_gray_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_DOOR_6 = register(  "gray_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_DOOR_6 = register(  "black_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_DOOR_6 = register(  "brown_stained_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    //TRAPDOOR_1--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_TRAPDOOR_1 = register("crabapple_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_TRAPDOOR_1 = register( "poinciana_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_TRAPDOOR_1 = register("laburnum_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_TRAPDOOR_1 = register("jade_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_TRAPDOOR_1 = register("paulownia_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_TRAPDOOR_1 = register("wisteria_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_TRAPDOOR_1 = register("jacaranda_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_TRAPDOOR_1 = register("dogwood_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_TRAPDOOR_1 = register("silverbell_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_TRAPDOOR_1 = register("cedar_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ACACIA_TRAPDOOR_1 = register("acacia_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> BIRCH_TRAPDOOR_1 = register("birch_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> OAK_TRAPDOOR_1 = register("oak_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> DARK_OAK_TRAPDOOR_1 = register("dark_oak_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> SPRUCE_TRAPDOOR_1 = register("spruce_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> JUNGLE_TRAPDOOR_1 = register("jungle_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> CRIMSON_TRAPDOOR_1 = register("crimson_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WARPED_TRAPDOOR_1 = register("warped_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+
+    //TRAPDOOR_1--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_TRAPDOOR_1 = register(  "red_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_TRAPDOOR_1 = register(  "orange_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_TRAPDOOR_1 = register(  "yellow_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_TRAPDOOR_1 = register(  "lime_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_TRAPDOOR_1 = register(  "green_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_TRAPDOOR_1 = register(  "cyan_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_TRAPDOOR_1 = register(  "light_blue_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_TRAPDOOR_1 = register(  "blue_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_TRAPDOOR_1 = register(  "purple_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_TRAPDOOR_1 = register(  "magenta_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_TRAPDOOR_1 = register(  "pink_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_TRAPDOOR_1 = register(  "white_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_TRAPDOOR_1 = register(  "light_gray_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_TRAPDOOR_1 = register(  "gray_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_TRAPDOOR_1 = register(  "black_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_TRAPDOOR_1 = register(  "brown_stained_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    //TRAPDOOR_2--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_TRAPDOOR_2 = register("crabapple_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_TRAPDOOR_2 = register( "poinciana_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_TRAPDOOR_2 = register("laburnum_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_TRAPDOOR_2 = register("jade_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_TRAPDOOR_2 = register("paulownia_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_TRAPDOOR_2 = register("wisteria_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_TRAPDOOR_2 = register("jacaranda_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_TRAPDOOR_2 = register("dogwood_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_TRAPDOOR_2 = register("silverbell_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_TRAPDOOR_2 = register("cedar_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ACACIA_TRAPDOOR_2 = register("acacia_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> BIRCH_TRAPDOOR_2 = register("birch_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> OAK_TRAPDOOR_2 = register("oak_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> DARK_OAK_TRAPDOOR_2 = register("dark_oak_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> SPRUCE_TRAPDOOR_2 = register("spruce_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> JUNGLE_TRAPDOOR_2 = register("jungle_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> CRIMSON_TRAPDOOR_2 = register("crimson_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WARPED_TRAPDOOR_2 = register("warped_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+
+    //TRAPDOOR_2--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_TRAPDOOR_2 = register(  "red_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_TRAPDOOR_2 = register(  "orange_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_TRAPDOOR_2 = register(  "yellow_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_TRAPDOOR_2 = register(  "lime_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_TRAPDOOR_2 = register(  "green_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_TRAPDOOR_2 = register(  "cyan_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_TRAPDOOR_2 = register(  "light_blue_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_TRAPDOOR_2 = register(  "blue_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_TRAPDOOR_2 = register(  "purple_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_TRAPDOOR_2 = register(  "magenta_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_TRAPDOOR_2 = register(  "pink_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_TRAPDOOR_2 = register(  "white_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_TRAPDOOR_2 = register(  "light_gray_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_TRAPDOOR_2 = register(  "gray_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_TRAPDOOR_2 = register(  "black_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_TRAPDOOR_2 = register(  "brown_stained_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    //TRAPDOOR_3--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_TRAPDOOR_3 = register("crabapple_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_TRAPDOOR_3 = register( "poinciana_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_TRAPDOOR_3 = register("laburnum_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_TRAPDOOR_3 = register("jade_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_TRAPDOOR_3 = register("paulownia_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_TRAPDOOR_3 = register("wisteria_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_TRAPDOOR_3 = register("jacaranda_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_TRAPDOOR_3 = register("dogwood_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_TRAPDOOR_3 = register("silverbell_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_TRAPDOOR_3 = register("cedar_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ACACIA_TRAPDOOR_3 = register("acacia_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> BIRCH_TRAPDOOR_3 = register("birch_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> OAK_TRAPDOOR_3 = register("oak_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> DARK_OAK_TRAPDOOR_3 = register("dark_oak_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> SPRUCE_TRAPDOOR_3 = register("spruce_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> JUNGLE_TRAPDOOR_3 = register("jungle_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> CRIMSON_TRAPDOOR_3 = register("crimson_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WARPED_TRAPDOOR_3 = register("warped_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    //TRAPDOOR_3--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_TRAPDOOR_3 = register(  "red_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_TRAPDOOR_3 = register(  "orange_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_TRAPDOOR_3 = register(  "yellow_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_TRAPDOOR_3 = register(  "lime_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_TRAPDOOR_3 = register(  "green_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_TRAPDOOR_3 = register(  "cyan_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_TRAPDOOR_3 = register(  "light_blue_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_TRAPDOOR_3 = register(  "blue_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_TRAPDOOR_3 = register(  "purple_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_TRAPDOOR_3 = register(  "magenta_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_TRAPDOOR_3 = register(  "pink_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_TRAPDOOR_3 = register(  "white_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_TRAPDOOR_3 = register(  "light_gray_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_TRAPDOOR_3 = register(  "gray_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_TRAPDOOR_3 = register(  "black_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_TRAPDOOR_3 = register(  "brown_stained_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    //TRAPDOOR_4--TREES//
+    public static final RegistryObject<Block>  CRABAPPLE_TRAPDOOR_4 = register("crabapple_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   POINCIANA_TRAPDOOR_4 = register( "poinciana_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   LABURNUM_TRAPDOOR_4 = register("laburnum_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  JADE_TRAPDOOR_4 = register("jade_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PAULOWNIA_TRAPDOOR_4 = register("paulownia_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   WISTERIA_TRAPDOOR_4 = register("wisteria_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   JACARANDA_TRAPDOOR_4 = register("jacaranda_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   DOGWOOD_TRAPDOOR_4 = register("dogwood_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   SILVERBELL_TRAPDOOR_4 = register("silverbell_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   CEDAR_TRAPDOOR_4 = register("cedar_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ACACIA_TRAPDOOR_4 = register("acacia_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> BIRCH_TRAPDOOR_4 = register("birch_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> OAK_TRAPDOOR_4 = register("oak_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> DARK_OAK_TRAPDOOR_4 = register("dark_oak_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> SPRUCE_TRAPDOOR_4 = register("spruce_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> JUNGLE_TRAPDOOR_4 = register("jungle_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
+    public static final RegistryObject<Block> CRIMSON_TRAPDOOR_4 = register("crimson_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WARPED_TRAPDOOR_4 = register("warped_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    //TRAPDOOR_4--STAINED//
+    public static final RegistryObject<Block> RED_STAINED_TRAPDOOR_4 = register(  "red_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_STAINED_TRAPDOOR_4 = register(  "orange_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_STAINED_TRAPDOOR_4 = register(  "yellow_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_STAINED_TRAPDOOR_4 = register(  "lime_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_STAINED_TRAPDOOR_4 = register(  "green_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_STAINED_TRAPDOOR_4 = register(  "cyan_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_TRAPDOOR_4 = register(  "light_blue_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_STAINED_TRAPDOOR_4 = register(  "blue_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_STAINED_TRAPDOOR_4 = register(  "purple_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_TRAPDOOR_4 = register(  "magenta_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_STAINED_TRAPDOOR_4 = register(  "pink_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_STAINED_TRAPDOOR_4 = register(  "white_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_TRAPDOOR_4 = register(  "light_gray_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_STAINED_TRAPDOOR_4 = register(  "gray_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_STAINED_TRAPDOOR_4 = register(  "black_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_STAINED_TRAPDOOR_4 = register(  "brown_stained_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
 
 
 
