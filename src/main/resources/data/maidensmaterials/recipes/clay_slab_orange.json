@@ -5,30 +5,24 @@
     
     "pattern":
     [
-        "TTT",
-		"TST",
-		"TTT"
+        "SSS"
+		
+		
     ],
     
     "key":
     {
         "S":
         {
-            "item": "maidensmaterials:stain_orange"
-        },
-		
-		"T":
-		{
-			"item": "maidensmaterials:whitewashed_slab"
-			
-		}
+            "item": "maidensmaterials:orange_clay_block"
+        }
 		
 		
     },
     
     "result":
     {
-        "item": "maidensmaterials:orange_stained_slab",
+        "item": "maidensmaterials:orange_clay_slab",
 	"count": 6
     }
 }

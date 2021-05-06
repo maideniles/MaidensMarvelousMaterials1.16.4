@@ -1,6 +1,6 @@
 {
     "name": "Dye Baths Recipe",
-    "icon": "maidensmaterials:textures/item/dye_bath_blue.png",
+    "icon": "maidensmaterials:textures/item/blue_dye_bath.png",
     "category": "recipes",
     "pages": [
 	
@@ -11,50 +11,50 @@
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:dye_bath_red",
-		"recipe2": "maidensmaterials:dye_bath_orange"
+    "recipe": "maidensmaterials:red_dye_bath",
+		"recipe2": "maidensmaterials:orange_dye_bath"
 	},	
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:dye_bath_yellow",
-		 "recipe2": "maidensmaterials:dye_bath_lime"
+    "recipe": "maidensmaterials:yellow_dye_bath",
+		 "recipe2": "maidensmaterials:lime_dye_bath"
 	},
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:dye_bath_green",
-		"recipe2": "maidensmaterials:dye_bath_cyan"
+    "recipe": "maidensmaterials:green_dye_bath",
+		"recipe2": "maidensmaterials:cyan_dye_bath"
 	},
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:dye_bath_light_blue",
-		"recipe2": "maidensmaterials:dye_bath_blue"
+    "recipe": "maidensmaterials:light_blue_dye_bath",
+		"recipe2": "maidensmaterials:blue_dye_bath"
 	},
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:dye_bath_purple",
-		 "recipe2": "maidensmaterials:dye_bath_magenta"
+    "recipe": "maidensmaterials:purple_dye_bath",
+		 "recipe2": "maidensmaterials:magenta_dye_bath"
 	},
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:dye_bath_pink",
-		 "recipe2": "maidensmaterials:dye_bath_white"
+    "recipe": "maidensmaterials:pink_dye_bath",
+		 "recipe2": "maidensmaterials:white_dye_bath"
 	},
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:dye_bath_light_gray",
-		 "recipe2": "maidensmaterials:dye_bath_gray"
+    "recipe": "maidensmaterials:light_gray_dye_bath",
+		 "recipe2": "maidensmaterials:gray_dye_bath"
 	},
 	
 	{
 		"type": "crafting",
-     "recipe": "maidensmaterials:dye_bath_black",
-		 "recipe2": "maidensmaterials:dye_bath_brown"
+     "recipe": "maidensmaterials:black_dye_bath",
+		 "recipe2": "maidensmaterials:brown_dye_bath"
 	}
 	
 	

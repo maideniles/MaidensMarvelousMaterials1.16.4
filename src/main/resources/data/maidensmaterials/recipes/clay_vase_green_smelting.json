@@ -2,7 +2,7 @@
   "type": "minecraft:smelting",
   "ingredient": [
   {
-    "item": "maidensmaterials:clay_vase_green"
+    "item": "maidensmaterials:green_clay_vase"
   }
   ],
   "result": "maidensmaterials:green_vase_no_flower",

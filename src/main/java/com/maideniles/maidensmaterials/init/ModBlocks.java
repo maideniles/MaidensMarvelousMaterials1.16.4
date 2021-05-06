@@ -497,6 +497,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> FLORAL_ESSENCE_BLOCK = register("floral_essence_block",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
+    public static final RegistryObject<Block> WHITEWASHED_PLANKS = register("whitewashed_planks",
+            ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
+
 
 //STAINED PLANKS//
 
@@ -992,6 +995,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CEDAR_SLAB_ = register("cedar_slab",
             () -> new SlabBlock(Block.Properties.from(ModBlocks.CEDAR_PLANKS.get()).hardnessAndResistance(1.5F)));
 
+    public static final RegistryObject<Block> WHITEWASHED_SLAB_ = register( "whitewashed_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.RED_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
+
     //SLABS--STAINED//
     public static final RegistryObject<Block> RED_STAINED_SLAB_ = register( "red_stained_slab",
             () -> new SlabBlock(Block.Properties.from(ModBlocks.RED_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
@@ -1450,6 +1456,8 @@ public class ModBlocks {
             () -> new StairsBlock( ()->ModBlocks.BROWN_LARGE_BRICK_BLOCK.get().getDefaultState(), Block.Properties.create(Material.CLAY).hardnessAndResistance(1.5F)));
 
 
+    public static final RegistryObject<Block> WHITEWASHED_STAIRS_ = register("whitewashed_stairs",
+            () -> new StairsBlock( ()->ModBlocks.WHITEWASHED_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
 
     //STAIRS--STAINED//
     public static final RegistryObject<Block> RED_STAINED_STAIRS_ = register( "red_stained_stairs",
@@ -1639,6 +1647,10 @@ public class ModBlocks {
     public static final RegistryObject<Block>   CEDAR_FENCE = register("cedar_fence",
             () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
 
+    public static final RegistryObject<Block>  WHITEWASHED_FENCE = register("whitewashed_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+
 
     //FENCES--STAINED//
     public static final RegistryObject<Block> RED_STAINED_FENCE = register(  "red_stained_fence",
@@ -1718,6 +1730,9 @@ public class ModBlocks {
             () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block>   CEDAR_FENCE_GATE = register("cedar_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>  WHITEWASHED_FENCE_GATE = register("whitewashed_fence_gate",
             () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
 
 
@@ -3411,1451 +3426,1451 @@ public static final RegistryObject<Block> RED_VASE_NO_FLOWER = register( "red_va
     public static final RegistryObject<Block> BROWN_VASE_NO_FLOWER = register( "brown_vase_no_flower",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-//RED-FLOWER//
-public static final RegistryObject<Block> RED_VASE_RED_FLOWER = register( "red_vase_red_flower",
-        () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+    //RED-FLOWER//
+    public static final RegistryObject<Block> RED_VASE_RED_FLOWER = registerWithNullGroup( "red_vase_red_flower",
+            () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_RED_FLOWER = register( "orange_vase_red_flower",
+    public static final RegistryObject<Block> ORANGE_VASE_RED_FLOWER = registerWithNullGroup( "orange_vase_red_flower",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_RED_FLOWER = register( "yellow_vase_red_flower",
+    public static final RegistryObject<Block> YELLOW_VASE_RED_FLOWER = registerWithNullGroup( "yellow_vase_red_flower",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_RED_FLOWER = register( "lime_vase_red_flower",
+    public static final RegistryObject<Block> LIME_VASE_RED_FLOWER = registerWithNullGroup( "lime_vase_red_flower",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_RED_FLOWER = register( "green_vase_red_flower",
+    public static final RegistryObject<Block> GREEN_VASE_RED_FLOWER = registerWithNullGroup( "green_vase_red_flower",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_RED_FLOWER = register( "cyan_vase_red_flower",
+    public static final RegistryObject<Block> CYAN_VASE_RED_FLOWER = registerWithNullGroup( "cyan_vase_red_flower",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_RED_FLOWER = register( "light_blue_vase_red_flower",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_RED_FLOWER = registerWithNullGroup( "light_blue_vase_red_flower",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_RED_FLOWER = register( "blue_vase_red_flower",
+    public static final RegistryObject<Block> BLUE_VASE_RED_FLOWER = registerWithNullGroup( "blue_vase_red_flower",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_RED_FLOWER = register( "purple_vase_red_flower",
+    public static final RegistryObject<Block> PURPLE_VASE_RED_FLOWER = registerWithNullGroup( "purple_vase_red_flower",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_RED_FLOWER = register( "magenta_vase_red_flower",
+    public static final RegistryObject<Block> MAGENTA_VASE_RED_FLOWER = registerWithNullGroup( "magenta_vase_red_flower",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_RED_FLOWER = register( "pink_vase_red_flower",
+    public static final RegistryObject<Block> PINK_VASE_RED_FLOWER = registerWithNullGroup( "pink_vase_red_flower",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_RED_FLOWER = register( "white_vase_red_flower",
+    public static final RegistryObject<Block> WHITE_VASE_RED_FLOWER = registerWithNullGroup( "white_vase_red_flower",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_RED_FLOWER = register( "light_gray_vase_red_flower",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_RED_FLOWER = registerWithNullGroup( "light_gray_vase_red_flower",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_RED_FLOWER = register( "gray_vase_red_flower",
+    public static final RegistryObject<Block> GRAY_VASE_RED_FLOWER = registerWithNullGroup( "gray_vase_red_flower",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_RED_FLOWER = register( "black_vase_red_flower",
+    public static final RegistryObject<Block> BLACK_VASE_RED_FLOWER = registerWithNullGroup( "black_vase_red_flower",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_RED_FLOWER = register( "brown_vase_red_flower",
+    public static final RegistryObject<Block> BROWN_VASE_RED_FLOWER = registerWithNullGroup( "brown_vase_red_flower",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-//ORANGE-FLOWER//
-public static final RegistryObject<Block> RED_VASE_ORANGE_FLOWER = register( "red_vase_orange_flower",
-        () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+    //ORANGE-FLOWER//
+    public static final RegistryObject<Block> RED_VASE_ORANGE_FLOWER = registerWithNullGroup( "red_vase_orange_flower",
+            () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_ORANGE_FLOWER = register( "orange_vase_orange_flower",
+    public static final RegistryObject<Block> ORANGE_VASE_ORANGE_FLOWER = registerWithNullGroup( "orange_vase_orange_flower",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_ORANGE_FLOWER = register( "yellow_vase_orange_flower",
+    public static final RegistryObject<Block> YELLOW_VASE_ORANGE_FLOWER = registerWithNullGroup( "yellow_vase_orange_flower",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_ORANGE_FLOWER = register( "lime_vase_orange_flower",
+    public static final RegistryObject<Block> LIME_VASE_ORANGE_FLOWER = registerWithNullGroup( "lime_vase_orange_flower",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_ORANGE_FLOWER = register( "green_vase_orange_flower",
+    public static final RegistryObject<Block> GREEN_VASE_ORANGE_FLOWER = registerWithNullGroup( "green_vase_orange_flower",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_ORANGE_FLOWER = register( "cyan_vase_orange_flower",
+    public static final RegistryObject<Block> CYAN_VASE_ORANGE_FLOWER = registerWithNullGroup( "cyan_vase_orange_flower",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_ORANGE_FLOWER = register( "light_blue_vase_orange_flower",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_ORANGE_FLOWER = registerWithNullGroup( "light_blue_vase_orange_flower",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_ORANGE_FLOWER = register( "blue_vase_orange_flower",
+    public static final RegistryObject<Block> BLUE_VASE_ORANGE_FLOWER = registerWithNullGroup( "blue_vase_orange_flower",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_ORANGE_FLOWER = register( "purple_vase_orange_flower",
+    public static final RegistryObject<Block> PURPLE_VASE_ORANGE_FLOWER = registerWithNullGroup( "purple_vase_orange_flower",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_ORANGE_FLOWER = register( "magenta_vase_orange_flower",
+    public static final RegistryObject<Block> MAGENTA_VASE_ORANGE_FLOWER = registerWithNullGroup( "magenta_vase_orange_flower",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_ORANGE_FLOWER = register( "pink_vase_orange_flower",
+    public static final RegistryObject<Block> PINK_VASE_ORANGE_FLOWER = registerWithNullGroup( "pink_vase_orange_flower",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_ORANGE_FLOWER = register( "white_vase_orange_flower",
+    public static final RegistryObject<Block> WHITE_VASE_ORANGE_FLOWER = registerWithNullGroup( "white_vase_orange_flower",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_ORANGE_FLOWER = register( "light_gray_vase_orange_flower",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_ORANGE_FLOWER = registerWithNullGroup( "light_gray_vase_orange_flower",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_ORANGE_FLOWER = register( "gray_vase_orange_flower",
+    public static final RegistryObject<Block> GRAY_VASE_ORANGE_FLOWER = registerWithNullGroup( "gray_vase_orange_flower",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_ORANGE_FLOWER = register( "black_vase_orange_flower",
+    public static final RegistryObject<Block> BLACK_VASE_ORANGE_FLOWER = registerWithNullGroup( "black_vase_orange_flower",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_ORANGE_FLOWER = register( "brown_vase_orange_flower",
-            () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-
-//YELLOW-FLOWER//
-public static final RegistryObject<Block> RED_VASE_YELLOW_FLOWER = register( "red_vase_yellow_flower",
-        () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> ORANGE_VASE_YELLOW_FLOWER = register( "orange_vase_yellow_flower",
-            () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> YELLOW_VASE_YELLOW_FLOWER = register( "yellow_vase_yellow_flower",
-            () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> LIME_VASE_YELLOW_FLOWER = register( "lime_vase_yellow_flower",
-            () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> GREEN_VASE_YELLOW_FLOWER = register( "green_vase_yellow_flower",
-            () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> CYAN_VASE_YELLOW_FLOWER = register( "cyan_vase_yellow_flower",
-            () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_YELLOW_FLOWER = register( "light_blue_vase_yellow_flower",
-            () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> BLUE_VASE_YELLOW_FLOWER = register( "blue_vase_yellow_flower",
-            () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> PURPLE_VASE_YELLOW_FLOWER = register( "purple_vase_yellow_flower",
-            () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> MAGENTA_VASE_YELLOW_FLOWER = register( "magenta_vase_yellow_flower",
-            () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> PINK_VASE_YELLOW_FLOWER = register( "pink_vase_yellow_flower",
-            () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> WHITE_VASE_YELLOW_FLOWER = register( "white_vase_yellow_flower",
-            () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_YELLOW_FLOWER = register( "light_gray_vase_yellow_flower",
-            () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> GRAY_VASE_YELLOW_FLOWER = register( "gray_vase_yellow_flower",
-            () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> BLACK_VASE_YELLOW_FLOWER = register( "black_vase_yellow_flower",
-            () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
-
-    public static final RegistryObject<Block> BROWN_VASE_YELLOW_FLOWER = register( "brown_vase_yellow_flower",
+    public static final RegistryObject<Block> BROWN_VASE_ORANGE_FLOWER = registerWithNullGroup( "brown_vase_orange_flower",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
-//GREEN-FLOWER//
-public static final RegistryObject<Block> RED_VASE_GREEN_FLOWER = register( "red_vase_green_flower",
-        () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+    //YELLOW-FLOWER//
+    public static final RegistryObject<Block> RED_VASE_YELLOW_FLOWER = registerWithNullGroup( "red_vase_yellow_flower",
+            () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_GREEN_FLOWER = register( "orange_vase_green_flower",
+    public static final RegistryObject<Block> ORANGE_VASE_YELLOW_FLOWER = registerWithNullGroup( "orange_vase_yellow_flower",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_GREEN_FLOWER = register( "yellow_vase_green_flower",
+    public static final RegistryObject<Block> YELLOW_VASE_YELLOW_FLOWER = registerWithNullGroup( "yellow_vase_yellow_flower",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_GREEN_FLOWER = register( "lime_vase_green_flower",
+    public static final RegistryObject<Block> LIME_VASE_YELLOW_FLOWER = registerWithNullGroup( "lime_vase_yellow_flower",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_GREEN_FLOWER = register( "green_vase_green_flower",
+    public static final RegistryObject<Block> GREEN_VASE_YELLOW_FLOWER = registerWithNullGroup( "green_vase_yellow_flower",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_GREEN_FLOWER = register( "cyan_vase_green_flower",
+    public static final RegistryObject<Block> CYAN_VASE_YELLOW_FLOWER = registerWithNullGroup( "cyan_vase_yellow_flower",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_GREEN_FLOWER = register( "light_blue_vase_green_flower",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_YELLOW_FLOWER = registerWithNullGroup( "light_blue_vase_yellow_flower",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_GREEN_FLOWER = register( "blue_vase_green_flower",
+    public static final RegistryObject<Block> BLUE_VASE_YELLOW_FLOWER = registerWithNullGroup( "blue_vase_yellow_flower",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_GREEN_FLOWER = register( "purple_vase_green_flower",
+    public static final RegistryObject<Block> PURPLE_VASE_YELLOW_FLOWER = registerWithNullGroup( "purple_vase_yellow_flower",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_GREEN_FLOWER = register( "magenta_vase_green_flower",
+    public static final RegistryObject<Block> MAGENTA_VASE_YELLOW_FLOWER = registerWithNullGroup( "magenta_vase_yellow_flower",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_GREEN_FLOWER = register( "pink_vase_green_flower",
+    public static final RegistryObject<Block> PINK_VASE_YELLOW_FLOWER = registerWithNullGroup( "pink_vase_yellow_flower",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_GREEN_FLOWER = register( "white_vase_green_flower",
+    public static final RegistryObject<Block> WHITE_VASE_YELLOW_FLOWER = registerWithNullGroup( "white_vase_yellow_flower",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_GREEN_FLOWER = register( "light_gray_vase_green_flower",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_YELLOW_FLOWER = registerWithNullGroup( "light_gray_vase_yellow_flower",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_GREEN_FLOWER = register( "gray_vase_green_flower",
+    public static final RegistryObject<Block> GRAY_VASE_YELLOW_FLOWER = registerWithNullGroup( "gray_vase_yellow_flower",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_GREEN_FLOWER = register( "black_vase_green_flower",
+    public static final RegistryObject<Block> BLACK_VASE_YELLOW_FLOWER = registerWithNullGroup( "black_vase_yellow_flower",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_GREEN_FLOWER = register( "brown_vase_green_flower",
+    public static final RegistryObject<Block> BROWN_VASE_YELLOW_FLOWER = registerWithNullGroup( "brown_vase_yellow_flower",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
-//CYAN-FLOWER//
-public static final RegistryObject<Block> RED_VASE_CYAN_FLOWER = register( "red_vase_cyan_flower",
-        () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+    //GREEN-FLOWER//
+    public static final RegistryObject<Block> RED_VASE_GREEN_FLOWER = registerWithNullGroup( "red_vase_green_flower",
+            () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_CYAN_FLOWER = register( "orange_vase_cyan_flower",
+    public static final RegistryObject<Block> ORANGE_VASE_GREEN_FLOWER = registerWithNullGroup( "orange_vase_green_flower",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_CYAN_FLOWER = register( "yellow_vase_cyan_flower",
+    public static final RegistryObject<Block> YELLOW_VASE_GREEN_FLOWER = registerWithNullGroup( "yellow_vase_green_flower",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_CYAN_FLOWER = register( "lime_vase_cyan_flower",
+    public static final RegistryObject<Block> LIME_VASE_GREEN_FLOWER = registerWithNullGroup( "lime_vase_green_flower",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_CYAN_FLOWER = register( "green_vase_cyan_flower",
+    public static final RegistryObject<Block> GREEN_VASE_GREEN_FLOWER = registerWithNullGroup( "green_vase_green_flower",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_CYAN_FLOWER = register( "cyan_vase_cyan_flower",
+    public static final RegistryObject<Block> CYAN_VASE_GREEN_FLOWER = registerWithNullGroup( "cyan_vase_green_flower",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_CYAN_FLOWER = register( "light_blue_vase_cyan_flower",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_GREEN_FLOWER = registerWithNullGroup( "light_blue_vase_green_flower",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_CYAN_FLOWER = register( "blue_vase_cyan_flower",
+    public static final RegistryObject<Block> BLUE_VASE_GREEN_FLOWER = registerWithNullGroup( "blue_vase_green_flower",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_CYAN_FLOWER = register( "purple_vase_cyan_flower",
+    public static final RegistryObject<Block> PURPLE_VASE_GREEN_FLOWER = registerWithNullGroup( "purple_vase_green_flower",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_CYAN_FLOWER = register( "magenta_vase_cyan_flower",
+    public static final RegistryObject<Block> MAGENTA_VASE_GREEN_FLOWER = registerWithNullGroup( "magenta_vase_green_flower",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_CYAN_FLOWER = register( "pink_vase_cyan_flower",
+    public static final RegistryObject<Block> PINK_VASE_GREEN_FLOWER = registerWithNullGroup( "pink_vase_green_flower",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_CYAN_FLOWER = register( "white_vase_cyan_flower",
+    public static final RegistryObject<Block> WHITE_VASE_GREEN_FLOWER = registerWithNullGroup( "white_vase_green_flower",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_CYAN_FLOWER = register( "light_gray_vase_cyan_flower",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_GREEN_FLOWER = registerWithNullGroup( "light_gray_vase_green_flower",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_CYAN_FLOWER = register( "gray_vase_cyan_flower",
+    public static final RegistryObject<Block> GRAY_VASE_GREEN_FLOWER = registerWithNullGroup( "gray_vase_green_flower",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_CYAN_FLOWER = register( "black_vase_cyan_flower",
+    public static final RegistryObject<Block> BLACK_VASE_GREEN_FLOWER = registerWithNullGroup( "black_vase_green_flower",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_CYAN_FLOWER = register( "brown_vase_cyan_flower",
+    public static final RegistryObject<Block> BROWN_VASE_GREEN_FLOWER = registerWithNullGroup( "brown_vase_green_flower",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
-//BLUE-FLOWER//
-public static final RegistryObject<Block> RED_VASE_BLUE_FLOWER = register( "red_vase_blue_flower",
-        () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+    //CYAN-FLOWER//
+    public static final RegistryObject<Block> RED_VASE_CYAN_FLOWER = registerWithNullGroup( "red_vase_cyan_flower",
+            () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_BLUE_FLOWER = register( "orange_vase_blue_flower",
+    public static final RegistryObject<Block> ORANGE_VASE_CYAN_FLOWER = registerWithNullGroup( "orange_vase_cyan_flower",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_BLUE_FLOWER = register( "yellow_vase_blue_flower",
+    public static final RegistryObject<Block> YELLOW_VASE_CYAN_FLOWER = registerWithNullGroup( "yellow_vase_cyan_flower",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_BLUE_FLOWER = register( "lime_vase_blue_flower",
+    public static final RegistryObject<Block> LIME_VASE_CYAN_FLOWER = registerWithNullGroup( "lime_vase_cyan_flower",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_BLUE_FLOWER = register( "green_vase_blue_flower",
+    public static final RegistryObject<Block> GREEN_VASE_CYAN_FLOWER = registerWithNullGroup( "green_vase_cyan_flower",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_BLUE_FLOWER = register( "cyan_vase_blue_flower",
+    public static final RegistryObject<Block> CYAN_VASE_CYAN_FLOWER = registerWithNullGroup( "cyan_vase_cyan_flower",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_BLUE_FLOWER = register( "light_blue_vase_blue_flower",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_CYAN_FLOWER = registerWithNullGroup( "light_blue_vase_cyan_flower",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_BLUE_FLOWER = register( "blue_vase_blue_flower",
+    public static final RegistryObject<Block> BLUE_VASE_CYAN_FLOWER = registerWithNullGroup( "blue_vase_cyan_flower",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_BLUE_FLOWER = register( "purple_vase_blue_flower",
+    public static final RegistryObject<Block> PURPLE_VASE_CYAN_FLOWER = registerWithNullGroup( "purple_vase_cyan_flower",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_BLUE_FLOWER = register( "magenta_vase_blue_flower",
+    public static final RegistryObject<Block> MAGENTA_VASE_CYAN_FLOWER = registerWithNullGroup( "magenta_vase_cyan_flower",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_BLUE_FLOWER = register( "pink_vase_blue_flower",
+    public static final RegistryObject<Block> PINK_VASE_CYAN_FLOWER = registerWithNullGroup( "pink_vase_cyan_flower",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_BLUE_FLOWER = register( "white_vase_blue_flower",
+    public static final RegistryObject<Block> WHITE_VASE_CYAN_FLOWER = registerWithNullGroup( "white_vase_cyan_flower",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_BLUE_FLOWER = register( "light_gray_vase_blue_flower",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_CYAN_FLOWER = registerWithNullGroup( "light_gray_vase_cyan_flower",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_BLUE_FLOWER = register( "gray_vase_blue_flower",
+    public static final RegistryObject<Block> GRAY_VASE_CYAN_FLOWER = registerWithNullGroup( "gray_vase_cyan_flower",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_BLUE_FLOWER = register( "black_vase_blue_flower",
+    public static final RegistryObject<Block> BLACK_VASE_CYAN_FLOWER = registerWithNullGroup( "black_vase_cyan_flower",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_BLUE_FLOWER = register( "brown_vase_blue_flower",
+    public static final RegistryObject<Block> BROWN_VASE_CYAN_FLOWER = registerWithNullGroup( "brown_vase_cyan_flower",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
-//PURPLE-FLOWER//
-public static final RegistryObject<Block> RED_VASE_PURPLE_FLOWER = register( "red_vase_purple_flower",
-        () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+    //BLUE-FLOWER//
+    public static final RegistryObject<Block> RED_VASE_BLUE_FLOWER = registerWithNullGroup( "red_vase_blue_flower",
+            () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_PURPLE_FLOWER = register( "orange_vase_purple_flower",
+    public static final RegistryObject<Block> ORANGE_VASE_BLUE_FLOWER = registerWithNullGroup( "orange_vase_blue_flower",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_PURPLE_FLOWER = register( "yellow_vase_purple_flower",
+    public static final RegistryObject<Block> YELLOW_VASE_BLUE_FLOWER = registerWithNullGroup( "yellow_vase_blue_flower",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_PURPLE_FLOWER = register( "lime_vase_purple_flower",
+    public static final RegistryObject<Block> LIME_VASE_BLUE_FLOWER = registerWithNullGroup( "lime_vase_blue_flower",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_PURPLE_FLOWER = register( "green_vase_purple_flower",
+    public static final RegistryObject<Block> GREEN_VASE_BLUE_FLOWER = registerWithNullGroup( "green_vase_blue_flower",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_PURPLE_FLOWER = register( "cyan_vase_purple_flower",
+    public static final RegistryObject<Block> CYAN_VASE_BLUE_FLOWER = registerWithNullGroup( "cyan_vase_blue_flower",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PURPLE_FLOWER = register( "light_blue_vase_purple_flower",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_BLUE_FLOWER = registerWithNullGroup( "light_blue_vase_blue_flower",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_PURPLE_FLOWER = register( "blue_vase_purple_flower",
+    public static final RegistryObject<Block> BLUE_VASE_BLUE_FLOWER = registerWithNullGroup( "blue_vase_blue_flower",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_PURPLE_FLOWER = register( "purple_vase_purple_flower",
+    public static final RegistryObject<Block> PURPLE_VASE_BLUE_FLOWER = registerWithNullGroup( "purple_vase_blue_flower",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_PURPLE_FLOWER = register( "magenta_vase_purple_flower",
+    public static final RegistryObject<Block> MAGENTA_VASE_BLUE_FLOWER = registerWithNullGroup( "magenta_vase_blue_flower",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_PURPLE_FLOWER = register( "pink_vase_purple_flower",
+    public static final RegistryObject<Block> PINK_VASE_BLUE_FLOWER = registerWithNullGroup( "pink_vase_blue_flower",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_PURPLE_FLOWER = register( "white_vase_purple_flower",
+    public static final RegistryObject<Block> WHITE_VASE_BLUE_FLOWER = registerWithNullGroup( "white_vase_blue_flower",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PURPLE_FLOWER = register( "light_gray_vase_purple_flower",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_BLUE_FLOWER = registerWithNullGroup( "light_gray_vase_blue_flower",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_PURPLE_FLOWER = register( "gray_vase_purple_flower",
+    public static final RegistryObject<Block> GRAY_VASE_BLUE_FLOWER = registerWithNullGroup( "gray_vase_blue_flower",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_PURPLE_FLOWER = register( "black_vase_purple_flower",
+    public static final RegistryObject<Block> BLACK_VASE_BLUE_FLOWER = registerWithNullGroup( "black_vase_blue_flower",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_PURPLE_FLOWER = register( "brown_vase_purple_flower",
+    public static final RegistryObject<Block> BROWN_VASE_BLUE_FLOWER = registerWithNullGroup( "brown_vase_blue_flower",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
-//PINK-FLOWER//
-public static final RegistryObject<Block> RED_VASE_PINK_FLOWER = register( "red_vase_pink_flower",
-        () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+    //PURPLE-FLOWER//
+    public static final RegistryObject<Block> RED_VASE_PURPLE_FLOWER = registerWithNullGroup( "red_vase_purple_flower",
+            () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_PINK_FLOWER = register( "orange_vase_pink_flower",
+    public static final RegistryObject<Block> ORANGE_VASE_PURPLE_FLOWER = registerWithNullGroup( "orange_vase_purple_flower",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_PINK_FLOWER = register( "yellow_vase_pink_flower",
+    public static final RegistryObject<Block> YELLOW_VASE_PURPLE_FLOWER = registerWithNullGroup( "yellow_vase_purple_flower",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_PINK_FLOWER = register( "lime_vase_pink_flower",
+    public static final RegistryObject<Block> LIME_VASE_PURPLE_FLOWER = registerWithNullGroup( "lime_vase_purple_flower",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_PINK_FLOWER = register( "green_vase_pink_flower",
+    public static final RegistryObject<Block> GREEN_VASE_PURPLE_FLOWER = registerWithNullGroup( "green_vase_purple_flower",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_PINK_FLOWER = register( "cyan_vase_pink_flower",
+    public static final RegistryObject<Block> CYAN_VASE_PURPLE_FLOWER = registerWithNullGroup( "cyan_vase_purple_flower",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PINK_FLOWER = register( "light_blue_vase_pink_flower",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PURPLE_FLOWER = registerWithNullGroup( "light_blue_vase_purple_flower",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_PINK_FLOWER = register( "blue_vase_pink_flower",
+    public static final RegistryObject<Block> BLUE_VASE_PURPLE_FLOWER = registerWithNullGroup( "blue_vase_purple_flower",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_PINK_FLOWER = register( "purple_vase_pink_flower",
+    public static final RegistryObject<Block> PURPLE_VASE_PURPLE_FLOWER = registerWithNullGroup( "purple_vase_purple_flower",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_PINK_FLOWER = register( "magenta_vase_pink_flower",
+    public static final RegistryObject<Block> MAGENTA_VASE_PURPLE_FLOWER = registerWithNullGroup( "magenta_vase_purple_flower",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_PINK_FLOWER = register( "pink_vase_pink_flower",
+    public static final RegistryObject<Block> PINK_VASE_PURPLE_FLOWER = registerWithNullGroup( "pink_vase_purple_flower",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_PINK_FLOWER = register( "white_vase_pink_flower",
+    public static final RegistryObject<Block> WHITE_VASE_PURPLE_FLOWER = registerWithNullGroup( "white_vase_purple_flower",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PINK_FLOWER = register( "light_gray_vase_pink_flower",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PURPLE_FLOWER = registerWithNullGroup( "light_gray_vase_purple_flower",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_PINK_FLOWER = register( "gray_vase_pink_flower",
+    public static final RegistryObject<Block> GRAY_VASE_PURPLE_FLOWER = registerWithNullGroup( "gray_vase_purple_flower",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_PINK_FLOWER = register( "black_vase_pink_flower",
+    public static final RegistryObject<Block> BLACK_VASE_PURPLE_FLOWER = registerWithNullGroup( "black_vase_purple_flower",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_PINK_FLOWER = register( "brown_vase_pink_flower",
+    public static final RegistryObject<Block> BROWN_VASE_PURPLE_FLOWER = registerWithNullGroup( "brown_vase_purple_flower",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
-//WHITE-FLOWER//
-public static final RegistryObject<Block> RED_VASE_WHITE_FLOWER = register( "red_vase_white_flower",
-        () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+    //PINK-FLOWER//
+    public static final RegistryObject<Block> RED_VASE_PINK_FLOWER = registerWithNullGroup( "red_vase_pink_flower",
+            () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_WHITE_FLOWER = register( "orange_vase_white_flower",
+    public static final RegistryObject<Block> ORANGE_VASE_PINK_FLOWER = registerWithNullGroup( "orange_vase_pink_flower",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_WHITE_FLOWER = register( "yellow_vase_white_flower",
+    public static final RegistryObject<Block> YELLOW_VASE_PINK_FLOWER = registerWithNullGroup( "yellow_vase_pink_flower",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_WHITE_FLOWER = register( "lime_vase_white_flower",
+    public static final RegistryObject<Block> LIME_VASE_PINK_FLOWER = registerWithNullGroup( "lime_vase_pink_flower",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_WHITE_FLOWER = register( "green_vase_white_flower",
+    public static final RegistryObject<Block> GREEN_VASE_PINK_FLOWER = registerWithNullGroup( "green_vase_pink_flower",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_WHITE_FLOWER = register( "cyan_vase_white_flower",
+    public static final RegistryObject<Block> CYAN_VASE_PINK_FLOWER = registerWithNullGroup( "cyan_vase_pink_flower",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_WHITE_FLOWER = register( "light_blue_vase_white_flower",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PINK_FLOWER = registerWithNullGroup( "light_blue_vase_pink_flower",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_WHITE_FLOWER = register( "blue_vase_white_flower",
+    public static final RegistryObject<Block> BLUE_VASE_PINK_FLOWER = registerWithNullGroup( "blue_vase_pink_flower",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_WHITE_FLOWER = register( "purple_vase_white_flower",
+    public static final RegistryObject<Block> PURPLE_VASE_PINK_FLOWER = registerWithNullGroup( "purple_vase_pink_flower",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_WHITE_FLOWER = register( "magenta_vase_white_flower",
+    public static final RegistryObject<Block> MAGENTA_VASE_PINK_FLOWER = registerWithNullGroup( "magenta_vase_pink_flower",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_WHITE_FLOWER = register( "pink_vase_white_flower",
+    public static final RegistryObject<Block> PINK_VASE_PINK_FLOWER = registerWithNullGroup( "pink_vase_pink_flower",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_WHITE_FLOWER = register( "white_vase_white_flower",
+    public static final RegistryObject<Block> WHITE_VASE_PINK_FLOWER = registerWithNullGroup( "white_vase_pink_flower",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_WHITE_FLOWER = register( "light_gray_vase_white_flower",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PINK_FLOWER = registerWithNullGroup( "light_gray_vase_pink_flower",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_WHITE_FLOWER = register( "gray_vase_white_flower",
+    public static final RegistryObject<Block> GRAY_VASE_PINK_FLOWER = registerWithNullGroup( "gray_vase_pink_flower",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_WHITE_FLOWER = register( "black_vase_white_flower",
+    public static final RegistryObject<Block> BLACK_VASE_PINK_FLOWER = registerWithNullGroup( "black_vase_pink_flower",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_WHITE_FLOWER = register( "brown_vase_white_flower",
+    public static final RegistryObject<Block> BROWN_VASE_PINK_FLOWER = registerWithNullGroup( "brown_vase_pink_flower",
+            () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+
+    //WHITE-FLOWER//
+    public static final RegistryObject<Block> RED_VASE_WHITE_FLOWER = registerWithNullGroup( "red_vase_white_flower",
+            () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> ORANGE_VASE_WHITE_FLOWER = registerWithNullGroup( "orange_vase_white_flower",
+            () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> YELLOW_VASE_WHITE_FLOWER = registerWithNullGroup( "yellow_vase_white_flower",
+            () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> LIME_VASE_WHITE_FLOWER = registerWithNullGroup( "lime_vase_white_flower",
+            () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> GREEN_VASE_WHITE_FLOWER = registerWithNullGroup( "green_vase_white_flower",
+            () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> CYAN_VASE_WHITE_FLOWER = registerWithNullGroup( "cyan_vase_white_flower",
+            () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_WHITE_FLOWER = registerWithNullGroup( "light_blue_vase_white_flower",
+            () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> BLUE_VASE_WHITE_FLOWER = registerWithNullGroup( "blue_vase_white_flower",
+            () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> PURPLE_VASE_WHITE_FLOWER = registerWithNullGroup( "purple_vase_white_flower",
+            () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> MAGENTA_VASE_WHITE_FLOWER = registerWithNullGroup( "magenta_vase_white_flower",
+            () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> PINK_VASE_WHITE_FLOWER = registerWithNullGroup( "pink_vase_white_flower",
+            () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> WHITE_VASE_WHITE_FLOWER = registerWithNullGroup( "white_vase_white_flower",
+            () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_WHITE_FLOWER = registerWithNullGroup( "light_gray_vase_white_flower",
+            () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> GRAY_VASE_WHITE_FLOWER = registerWithNullGroup( "gray_vase_white_flower",
+            () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> BLACK_VASE_WHITE_FLOWER = registerWithNullGroup( "black_vase_white_flower",
+            () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
+
+    public static final RegistryObject<Block> BROWN_VASE_WHITE_FLOWER = registerWithNullGroup( "brown_vase_white_flower",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 //VASES--SAPLINGS//
 
 
     //RED-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_RED_SAPLING = register( "red_vase_red_sapling",
+    public static final RegistryObject<Block> RED_VASE_RED_SAPLING = registerWithNullGroup( "red_vase_red_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_RED_SAPLING = register( "orange_vase_red_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_RED_SAPLING = registerWithNullGroup( "orange_vase_red_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_RED_SAPLING = register( "yellow_vase_red_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_RED_SAPLING = registerWithNullGroup( "yellow_vase_red_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_RED_SAPLING = register( "lime_vase_red_sapling",
+    public static final RegistryObject<Block> LIME_VASE_RED_SAPLING = registerWithNullGroup( "lime_vase_red_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_RED_SAPLING = register( "green_vase_red_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_RED_SAPLING = registerWithNullGroup( "green_vase_red_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_RED_SAPLING = register( "cyan_vase_red_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_RED_SAPLING = registerWithNullGroup( "cyan_vase_red_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_RED_SAPLING = register( "light_blue_vase_red_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_RED_SAPLING = registerWithNullGroup( "light_blue_vase_red_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_RED_SAPLING = register( "blue_vase_red_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_RED_SAPLING = registerWithNullGroup( "blue_vase_red_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_RED_SAPLING = register( "purple_vase_red_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_RED_SAPLING = registerWithNullGroup( "purple_vase_red_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_RED_SAPLING = register( "magenta_vase_red_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_RED_SAPLING = registerWithNullGroup( "magenta_vase_red_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_RED_SAPLING = register( "pink_vase_red_sapling",
+    public static final RegistryObject<Block> PINK_VASE_RED_SAPLING = registerWithNullGroup( "pink_vase_red_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_RED_SAPLING = register( "white_vase_red_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_RED_SAPLING = registerWithNullGroup( "white_vase_red_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_RED_SAPLING = register( "light_gray_vase_red_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_RED_SAPLING = registerWithNullGroup( "light_gray_vase_red_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_RED_SAPLING = register( "gray_vase_red_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_RED_SAPLING = registerWithNullGroup( "gray_vase_red_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_RED_SAPLING = register( "black_vase_red_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_RED_SAPLING = registerWithNullGroup( "black_vase_red_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_RED_SAPLING = register( "brown_vase_red_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_RED_SAPLING = registerWithNullGroup( "brown_vase_red_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
     //ORANGE-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_ORANGE_SAPLING = register( "red_vase_orange_sapling",
+    public static final RegistryObject<Block> RED_VASE_ORANGE_SAPLING = registerWithNullGroup( "red_vase_orange_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_ORANGE_SAPLING = register( "orange_vase_orange_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_ORANGE_SAPLING = registerWithNullGroup( "orange_vase_orange_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_ORANGE_SAPLING = register( "yellow_vase_orange_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_ORANGE_SAPLING = registerWithNullGroup( "yellow_vase_orange_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_ORANGE_SAPLING = register( "lime_vase_orange_sapling",
+    public static final RegistryObject<Block> LIME_VASE_ORANGE_SAPLING = registerWithNullGroup( "lime_vase_orange_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_ORANGE_SAPLING = register( "green_vase_orange_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_ORANGE_SAPLING = registerWithNullGroup( "green_vase_orange_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_ORANGE_SAPLING = register( "cyan_vase_orange_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_ORANGE_SAPLING = registerWithNullGroup( "cyan_vase_orange_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_ORANGE_SAPLING = register( "light_blue_vase_orange_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_ORANGE_SAPLING = registerWithNullGroup( "light_blue_vase_orange_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_ORANGE_SAPLING = register( "blue_vase_orange_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_ORANGE_SAPLING = registerWithNullGroup( "blue_vase_orange_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_ORANGE_SAPLING = register( "purple_vase_orange_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_ORANGE_SAPLING = registerWithNullGroup( "purple_vase_orange_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_ORANGE_SAPLING = register( "magenta_vase_orange_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_ORANGE_SAPLING = registerWithNullGroup( "magenta_vase_orange_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_ORANGE_SAPLING = register( "pink_vase_orange_sapling",
+    public static final RegistryObject<Block> PINK_VASE_ORANGE_SAPLING = registerWithNullGroup( "pink_vase_orange_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_ORANGE_SAPLING = register( "white_vase_orange_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_ORANGE_SAPLING = registerWithNullGroup( "white_vase_orange_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_ORANGE_SAPLING = register( "light_gray_vase_orange_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_ORANGE_SAPLING = registerWithNullGroup( "light_gray_vase_orange_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_ORANGE_SAPLING = register( "gray_vase_orange_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_ORANGE_SAPLING = registerWithNullGroup( "gray_vase_orange_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_ORANGE_SAPLING = register( "black_vase_orange_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_ORANGE_SAPLING = registerWithNullGroup( "black_vase_orange_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_ORANGE_SAPLING = register( "brown_vase_orange_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_ORANGE_SAPLING = registerWithNullGroup( "brown_vase_orange_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //YELLOW-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_YELLOW_SAPLING = register( "red_vase_yellow_sapling",
+    public static final RegistryObject<Block> RED_VASE_YELLOW_SAPLING = registerWithNullGroup( "red_vase_yellow_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_YELLOW_SAPLING = register( "orange_vase_yellow_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_YELLOW_SAPLING = registerWithNullGroup( "orange_vase_yellow_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_YELLOW_SAPLING = register( "yellow_vase_yellow_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_YELLOW_SAPLING = registerWithNullGroup( "yellow_vase_yellow_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_YELLOW_SAPLING = register( "lime_vase_yellow_sapling",
+    public static final RegistryObject<Block> LIME_VASE_YELLOW_SAPLING = registerWithNullGroup( "lime_vase_yellow_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_YELLOW_SAPLING = register( "green_vase_yellow_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_YELLOW_SAPLING = registerWithNullGroup( "green_vase_yellow_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_YELLOW_SAPLING = register( "cyan_vase_yellow_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_YELLOW_SAPLING = registerWithNullGroup( "cyan_vase_yellow_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_YELLOW_SAPLING = register( "light_blue_vase_yellow_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_YELLOW_SAPLING = registerWithNullGroup( "light_blue_vase_yellow_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_YELLOW_SAPLING = register( "blue_vase_yellow_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_YELLOW_SAPLING = registerWithNullGroup( "blue_vase_yellow_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_YELLOW_SAPLING = register( "purple_vase_yellow_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_YELLOW_SAPLING = registerWithNullGroup( "purple_vase_yellow_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_YELLOW_SAPLING = register( "magenta_vase_yellow_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_YELLOW_SAPLING = registerWithNullGroup( "magenta_vase_yellow_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_YELLOW_SAPLING = register( "pink_vase_yellow_sapling",
+    public static final RegistryObject<Block> PINK_VASE_YELLOW_SAPLING = registerWithNullGroup( "pink_vase_yellow_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_YELLOW_SAPLING = register( "white_vase_yellow_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_YELLOW_SAPLING = registerWithNullGroup( "white_vase_yellow_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_YELLOW_SAPLING = register( "light_gray_vase_yellow_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_YELLOW_SAPLING = registerWithNullGroup( "light_gray_vase_yellow_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_YELLOW_SAPLING = register( "gray_vase_yellow_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_YELLOW_SAPLING = registerWithNullGroup( "gray_vase_yellow_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_YELLOW_SAPLING = register( "black_vase_yellow_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_YELLOW_SAPLING = registerWithNullGroup( "black_vase_yellow_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_YELLOW_SAPLING = register( "brown_vase_yellow_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_YELLOW_SAPLING = registerWithNullGroup( "brown_vase_yellow_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //GREEN-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_GREEN_SAPLING = register( "red_vase_green_sapling",
+    public static final RegistryObject<Block> RED_VASE_GREEN_SAPLING = registerWithNullGroup( "red_vase_green_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_GREEN_SAPLING = register( "orange_vase_green_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_GREEN_SAPLING = registerWithNullGroup( "orange_vase_green_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_GREEN_SAPLING = register( "yellow_vase_green_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_GREEN_SAPLING = registerWithNullGroup( "yellow_vase_green_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_GREEN_SAPLING = register( "lime_vase_green_sapling",
+    public static final RegistryObject<Block> LIME_VASE_GREEN_SAPLING = registerWithNullGroup( "lime_vase_green_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_GREEN_SAPLING = register( "green_vase_green_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_GREEN_SAPLING = registerWithNullGroup( "green_vase_green_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_GREEN_SAPLING = register( "cyan_vase_green_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_GREEN_SAPLING = registerWithNullGroup( "cyan_vase_green_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_GREEN_SAPLING = register( "light_blue_vase_green_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_GREEN_SAPLING = registerWithNullGroup( "light_blue_vase_green_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_GREEN_SAPLING = register( "blue_vase_green_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_GREEN_SAPLING = registerWithNullGroup( "blue_vase_green_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_GREEN_SAPLING = register( "purple_vase_green_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_GREEN_SAPLING = registerWithNullGroup( "purple_vase_green_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_GREEN_SAPLING = register( "magenta_vase_green_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_GREEN_SAPLING = registerWithNullGroup( "magenta_vase_green_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_GREEN_SAPLING = register( "pink_vase_green_sapling",
+    public static final RegistryObject<Block> PINK_VASE_GREEN_SAPLING = registerWithNullGroup( "pink_vase_green_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_GREEN_SAPLING = register( "white_vase_green_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_GREEN_SAPLING = registerWithNullGroup( "white_vase_green_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_GREEN_SAPLING = register( "light_gray_vase_green_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_GREEN_SAPLING = registerWithNullGroup( "light_gray_vase_green_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_GREEN_SAPLING = register( "gray_vase_green_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_GREEN_SAPLING = registerWithNullGroup( "gray_vase_green_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_GREEN_SAPLING = register( "black_vase_green_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_GREEN_SAPLING = registerWithNullGroup( "black_vase_green_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_GREEN_SAPLING = register( "brown_vase_green_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_GREEN_SAPLING = registerWithNullGroup( "brown_vase_green_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //CYAN-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_CYAN_SAPLING = register( "red_vase_cyan_sapling",
+    public static final RegistryObject<Block> RED_VASE_CYAN_SAPLING = registerWithNullGroup( "red_vase_cyan_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_CYAN_SAPLING = register( "orange_vase_cyan_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_CYAN_SAPLING = registerWithNullGroup( "orange_vase_cyan_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_CYAN_SAPLING = register( "yellow_vase_cyan_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_CYAN_SAPLING = registerWithNullGroup( "yellow_vase_cyan_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_CYAN_SAPLING = register( "lime_vase_cyan_sapling",
+    public static final RegistryObject<Block> LIME_VASE_CYAN_SAPLING = registerWithNullGroup( "lime_vase_cyan_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_CYAN_SAPLING = register( "green_vase_cyan_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_CYAN_SAPLING = registerWithNullGroup( "green_vase_cyan_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_CYAN_SAPLING = register( "cyan_vase_cyan_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_CYAN_SAPLING = registerWithNullGroup( "cyan_vase_cyan_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_CYAN_SAPLING = register( "light_blue_vase_cyan_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_CYAN_SAPLING = registerWithNullGroup( "light_blue_vase_cyan_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_CYAN_SAPLING = register( "blue_vase_cyan_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_CYAN_SAPLING = registerWithNullGroup( "blue_vase_cyan_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_CYAN_SAPLING = register( "purple_vase_cyan_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_CYAN_SAPLING = registerWithNullGroup( "purple_vase_cyan_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_CYAN_SAPLING = register( "magenta_vase_cyan_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_CYAN_SAPLING = registerWithNullGroup( "magenta_vase_cyan_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_CYAN_SAPLING = register( "pink_vase_cyan_sapling",
+    public static final RegistryObject<Block> PINK_VASE_CYAN_SAPLING = registerWithNullGroup( "pink_vase_cyan_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_CYAN_SAPLING = register( "white_vase_cyan_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_CYAN_SAPLING = registerWithNullGroup( "white_vase_cyan_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_CYAN_SAPLING = register( "light_gray_vase_cyan_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_CYAN_SAPLING = registerWithNullGroup( "light_gray_vase_cyan_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_CYAN_SAPLING = register( "gray_vase_cyan_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_CYAN_SAPLING = registerWithNullGroup( "gray_vase_cyan_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_CYAN_SAPLING = register( "black_vase_cyan_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_CYAN_SAPLING = registerWithNullGroup( "black_vase_cyan_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_CYAN_SAPLING = register( "brown_vase_cyan_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_CYAN_SAPLING = registerWithNullGroup( "brown_vase_cyan_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //BLUE-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_BLUE_SAPLING = register( "red_vase_blue_sapling",
+    public static final RegistryObject<Block> RED_VASE_BLUE_SAPLING = registerWithNullGroup( "red_vase_blue_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_BLUE_SAPLING = register( "orange_vase_blue_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_BLUE_SAPLING = registerWithNullGroup( "orange_vase_blue_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_BLUE_SAPLING = register( "yellow_vase_blue_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_BLUE_SAPLING = registerWithNullGroup( "yellow_vase_blue_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_BLUE_SAPLING = register( "lime_vase_blue_sapling",
+    public static final RegistryObject<Block> LIME_VASE_BLUE_SAPLING = registerWithNullGroup( "lime_vase_blue_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_BLUE_SAPLING = register( "green_vase_blue_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_BLUE_SAPLING = registerWithNullGroup( "green_vase_blue_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_BLUE_SAPLING = register( "cyan_vase_blue_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_BLUE_SAPLING = registerWithNullGroup( "cyan_vase_blue_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_BLUE_SAPLING = register( "light_blue_vase_blue_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_BLUE_SAPLING = registerWithNullGroup( "light_blue_vase_blue_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_BLUE_SAPLING = register( "blue_vase_blue_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_BLUE_SAPLING = registerWithNullGroup( "blue_vase_blue_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_BLUE_SAPLING = register( "purple_vase_blue_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_BLUE_SAPLING = registerWithNullGroup( "purple_vase_blue_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_BLUE_SAPLING = register( "magenta_vase_blue_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_BLUE_SAPLING = registerWithNullGroup( "magenta_vase_blue_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_BLUE_SAPLING = register( "pink_vase_blue_sapling",
+    public static final RegistryObject<Block> PINK_VASE_BLUE_SAPLING = registerWithNullGroup( "pink_vase_blue_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_BLUE_SAPLING = register( "white_vase_blue_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_BLUE_SAPLING = registerWithNullGroup( "white_vase_blue_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_BLUE_SAPLING = register( "light_gray_vase_blue_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_BLUE_SAPLING = registerWithNullGroup( "light_gray_vase_blue_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_BLUE_SAPLING = register( "gray_vase_blue_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_BLUE_SAPLING = registerWithNullGroup( "gray_vase_blue_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_BLUE_SAPLING = register( "black_vase_blue_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_BLUE_SAPLING = registerWithNullGroup( "black_vase_blue_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_BLUE_SAPLING = register( "brown_vase_blue_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_BLUE_SAPLING = registerWithNullGroup( "brown_vase_blue_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //PURPLE-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_PURPLE_SAPLING = register( "red_vase_purple_sapling",
+    public static final RegistryObject<Block> RED_VASE_PURPLE_SAPLING = registerWithNullGroup( "red_vase_purple_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_PURPLE_SAPLING = register( "orange_vase_purple_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_PURPLE_SAPLING = registerWithNullGroup( "orange_vase_purple_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_PURPLE_SAPLING = register( "yellow_vase_purple_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_PURPLE_SAPLING = registerWithNullGroup( "yellow_vase_purple_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_PURPLE_SAPLING = register( "lime_vase_purple_sapling",
+    public static final RegistryObject<Block> LIME_VASE_PURPLE_SAPLING = registerWithNullGroup( "lime_vase_purple_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_PURPLE_SAPLING = register( "green_vase_purple_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_PURPLE_SAPLING = registerWithNullGroup( "green_vase_purple_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_PURPLE_SAPLING = register( "cyan_vase_purple_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_PURPLE_SAPLING = registerWithNullGroup( "cyan_vase_purple_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PURPLE_SAPLING = register( "light_blue_vase_purple_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PURPLE_SAPLING = registerWithNullGroup( "light_blue_vase_purple_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_PURPLE_SAPLING = register( "blue_vase_purple_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_PURPLE_SAPLING = registerWithNullGroup( "blue_vase_purple_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_PURPLE_SAPLING = register( "purple_vase_purple_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_PURPLE_SAPLING = registerWithNullGroup( "purple_vase_purple_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_PURPLE_SAPLING = register( "magenta_vase_purple_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_PURPLE_SAPLING = registerWithNullGroup( "magenta_vase_purple_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_PURPLE_SAPLING = register( "pink_vase_purple_sapling",
+    public static final RegistryObject<Block> PINK_VASE_PURPLE_SAPLING = registerWithNullGroup( "pink_vase_purple_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_PURPLE_SAPLING = register( "white_vase_purple_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_PURPLE_SAPLING = registerWithNullGroup( "white_vase_purple_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PURPLE_SAPLING = register( "light_gray_vase_purple_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PURPLE_SAPLING = registerWithNullGroup( "light_gray_vase_purple_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_PURPLE_SAPLING = register( "gray_vase_purple_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_PURPLE_SAPLING = registerWithNullGroup( "gray_vase_purple_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_PURPLE_SAPLING = register( "black_vase_purple_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_PURPLE_SAPLING = registerWithNullGroup( "black_vase_purple_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_PURPLE_SAPLING = register( "brown_vase_purple_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_PURPLE_SAPLING = registerWithNullGroup( "brown_vase_purple_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //PINK-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_PINK_SAPLING = register( "red_vase_pink_sapling",
+    public static final RegistryObject<Block> RED_VASE_PINK_SAPLING = registerWithNullGroup( "red_vase_pink_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_PINK_SAPLING = register( "orange_vase_pink_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_PINK_SAPLING = registerWithNullGroup( "orange_vase_pink_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_PINK_SAPLING = register( "yellow_vase_pink_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_PINK_SAPLING = registerWithNullGroup( "yellow_vase_pink_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_PINK_SAPLING = register( "lime_vase_pink_sapling",
+    public static final RegistryObject<Block> LIME_VASE_PINK_SAPLING = registerWithNullGroup( "lime_vase_pink_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_PINK_SAPLING = register( "green_vase_pink_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_PINK_SAPLING = registerWithNullGroup( "green_vase_pink_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_PINK_SAPLING = register( "cyan_vase_pink_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_PINK_SAPLING = registerWithNullGroup( "cyan_vase_pink_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PINK_SAPLING = register( "light_blue_vase_pink_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PINK_SAPLING = registerWithNullGroup( "light_blue_vase_pink_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_PINK_SAPLING = register( "blue_vase_pink_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_PINK_SAPLING = registerWithNullGroup( "blue_vase_pink_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_PINK_SAPLING = register( "purple_vase_pink_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_PINK_SAPLING = registerWithNullGroup( "purple_vase_pink_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_PINK_SAPLING = register( "magenta_vase_pink_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_PINK_SAPLING = registerWithNullGroup( "magenta_vase_pink_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_PINK_SAPLING = register( "pink_vase_pink_sapling",
+    public static final RegistryObject<Block> PINK_VASE_PINK_SAPLING = registerWithNullGroup( "pink_vase_pink_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_PINK_SAPLING = register( "white_vase_pink_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_PINK_SAPLING = registerWithNullGroup( "white_vase_pink_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PINK_SAPLING = register( "light_gray_vase_pink_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PINK_SAPLING = registerWithNullGroup( "light_gray_vase_pink_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_PINK_SAPLING = register( "gray_vase_pink_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_PINK_SAPLING = registerWithNullGroup( "gray_vase_pink_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_PINK_SAPLING = register( "black_vase_pink_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_PINK_SAPLING = registerWithNullGroup( "black_vase_pink_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_PINK_SAPLING = register( "brown_vase_pink_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_PINK_SAPLING = registerWithNullGroup( "brown_vase_pink_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //WHITE-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_WHITE_SAPLING = register( "red_vase_white_sapling",
+    public static final RegistryObject<Block> RED_VASE_WHITE_SAPLING = registerWithNullGroup( "red_vase_white_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_WHITE_SAPLING = register( "orange_vase_white_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_WHITE_SAPLING = registerWithNullGroup( "orange_vase_white_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_WHITE_SAPLING = register( "yellow_vase_white_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_WHITE_SAPLING = registerWithNullGroup( "yellow_vase_white_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_WHITE_SAPLING = register( "lime_vase_white_sapling",
+    public static final RegistryObject<Block> LIME_VASE_WHITE_SAPLING = registerWithNullGroup( "lime_vase_white_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_WHITE_SAPLING = register( "green_vase_white_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_WHITE_SAPLING = registerWithNullGroup( "green_vase_white_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_WHITE_SAPLING = register( "cyan_vase_white_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_WHITE_SAPLING = registerWithNullGroup( "cyan_vase_white_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_WHITE_SAPLING = register( "light_blue_vase_white_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_WHITE_SAPLING = registerWithNullGroup( "light_blue_vase_white_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_WHITE_SAPLING = register( "blue_vase_white_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_WHITE_SAPLING = registerWithNullGroup( "blue_vase_white_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_WHITE_SAPLING = register( "purple_vase_white_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_WHITE_SAPLING = registerWithNullGroup( "purple_vase_white_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_WHITE_SAPLING = register( "magenta_vase_white_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_WHITE_SAPLING = registerWithNullGroup( "magenta_vase_white_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_WHITE_SAPLING = register( "pink_vase_white_sapling",
+    public static final RegistryObject<Block> PINK_VASE_WHITE_SAPLING = registerWithNullGroup( "pink_vase_white_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_WHITE_SAPLING = register( "white_vase_white_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_WHITE_SAPLING = registerWithNullGroup( "white_vase_white_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_WHITE_SAPLING = register( "light_gray_vase_white_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_WHITE_SAPLING = registerWithNullGroup( "light_gray_vase_white_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_WHITE_SAPLING = register( "gray_vase_white_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_WHITE_SAPLING = registerWithNullGroup( "gray_vase_white_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_WHITE_SAPLING = register( "black_vase_white_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_WHITE_SAPLING = registerWithNullGroup( "black_vase_white_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_WHITE_SAPLING = register( "brown_vase_white_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_WHITE_SAPLING = registerWithNullGroup( "brown_vase_white_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //RED-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_APPLE_SAPLING = register( "red_vase_apple_sapling",
+    public static final RegistryObject<Block> RED_VASE_APPLE_SAPLING = registerWithNullGroup( "red_vase_apple_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_APPLE_SAPLING = register( "orange_vase_apple_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_APPLE_SAPLING = registerWithNullGroup( "orange_vase_apple_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_APPLE_SAPLING = register( "yellow_vase_apple_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_APPLE_SAPLING = registerWithNullGroup( "yellow_vase_apple_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_APPLE_SAPLING = register( "lime_vase_apple_sapling",
+    public static final RegistryObject<Block> LIME_VASE_APPLE_SAPLING = registerWithNullGroup( "lime_vase_apple_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_APPLE_SAPLING = register( "green_vase_apple_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_APPLE_SAPLING = registerWithNullGroup( "green_vase_apple_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_APPLE_SAPLING = register( "cyan_vase_apple_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_APPLE_SAPLING = registerWithNullGroup( "cyan_vase_apple_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_APPLE_SAPLING = register( "light_blue_vase_apple_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_APPLE_SAPLING = registerWithNullGroup( "light_blue_vase_apple_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_APPLE_SAPLING = register( "blue_vase_apple_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_APPLE_SAPLING = registerWithNullGroup( "blue_vase_apple_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_APPLE_SAPLING = register( "purple_vase_apple_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_APPLE_SAPLING = registerWithNullGroup( "purple_vase_apple_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_APPLE_SAPLING = register( "magenta_vase_apple_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_APPLE_SAPLING = registerWithNullGroup( "magenta_vase_apple_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_APPLE_SAPLING = register( "pink_vase_apple_sapling",
+    public static final RegistryObject<Block> PINK_VASE_APPLE_SAPLING = registerWithNullGroup( "pink_vase_apple_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_APPLE_SAPLING = register( "white_vase_apple_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_APPLE_SAPLING = registerWithNullGroup( "white_vase_apple_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_APPLE_SAPLING = register( "light_gray_vase_apple_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_APPLE_SAPLING = registerWithNullGroup( "light_gray_vase_apple_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_APPLE_SAPLING = register( "gray_vase_apple_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_APPLE_SAPLING = registerWithNullGroup( "gray_vase_apple_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_APPLE_SAPLING = register( "black_vase_apple_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_APPLE_SAPLING = registerWithNullGroup( "black_vase_apple_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_APPLE_SAPLING = register( "brown_vase_apple_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_APPLE_SAPLING = registerWithNullGroup( "brown_vase_apple_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
     //ORANGE-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_ORANGE_FRUIT_SAPLING = register( "red_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> RED_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "red_vase_orange_fruit_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_ORANGE_FRUIT_SAPLING = register( "orange_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "orange_vase_orange_fruit_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_ORANGE_FRUIT_SAPLING = register( "yellow_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "yellow_vase_orange_fruit_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_ORANGE_FRUIT_SAPLING = register( "lime_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> LIME_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "lime_vase_orange_fruit_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_ORANGE_FRUIT_SAPLING = register( "green_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "green_vase_orange_fruit_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_ORANGE_FRUIT_SAPLING = register( "cyan_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "cyan_vase_orange_fruit_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_ORANGE_FRUIT_SAPLING = register( "light_blue_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "light_blue_vase_orange_fruit_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_ORANGE_FRUIT_SAPLING = register( "blue_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "blue_vase_orange_fruit_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_ORANGE_FRUIT_SAPLING = register( "purple_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "purple_vase_orange_fruit_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_ORANGE_FRUIT_SAPLING = register( "magenta_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "magenta_vase_orange_fruit_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_ORANGE_FRUIT_SAPLING = register( "pink_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> PINK_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "pink_vase_orange_fruit_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_ORANGE_FRUIT_SAPLING = register( "white_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "white_vase_orange_fruit_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_ORANGE_FRUIT_SAPLING = register( "light_gray_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "light_gray_vase_orange_fruit_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_ORANGE_FRUIT_SAPLING = register( "gray_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "gray_vase_orange_fruit_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_ORANGE_FRUIT_SAPLING = register( "black_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "black_vase_orange_fruit_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_ORANGE_FRUIT_SAPLING = register( "brown_vase_orange_fruit_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_ORANGE_FRUIT_SAPLING = registerWithNullGroup( "brown_vase_orange_fruit_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //YELLOW-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_GRAPEFRUIT_SAPLING = register( "red_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> RED_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "red_vase_grapefruit_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_GRAPEFRUIT_SAPLING = register( "orange_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "orange_vase_grapefruit_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_GRAPEFRUIT_SAPLING = register( "yellow_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "yellow_vase_grapefruit_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_GRAPEFRUIT_SAPLING = register( "lime_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> LIME_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "lime_vase_grapefruit_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_GRAPEFRUIT_SAPLING = register( "green_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "green_vase_grapefruit_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_GRAPEFRUIT_SAPLING = register( "cyan_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "cyan_vase_grapefruit_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_GRAPEFRUIT_SAPLING = register( "light_blue_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "light_blue_vase_grapefruit_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_GRAPEFRUIT_SAPLING = register( "blue_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "blue_vase_grapefruit_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_GRAPEFRUIT_SAPLING = register( "purple_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "purple_vase_grapefruit_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_GRAPEFRUIT_SAPLING = register( "magenta_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "magenta_vase_grapefruit_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_GRAPEFRUIT_SAPLING = register( "pink_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> PINK_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "pink_vase_grapefruit_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_GRAPEFRUIT_SAPLING = register( "white_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "white_vase_grapefruit_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_GRAPEFRUIT_SAPLING = register( "light_gray_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "light_gray_vase_grapefruit_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_GRAPEFRUIT_SAPLING = register( "gray_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "gray_vase_grapefruit_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_GRAPEFRUIT_SAPLING = register( "black_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "black_vase_grapefruit_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_GRAPEFRUIT_SAPLING = register( "brown_vase_grapefruit_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_GRAPEFRUIT_SAPLING = registerWithNullGroup( "brown_vase_grapefruit_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //GREEN-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_LEMON_SAPLING = register( "red_vase_lemon_sapling",
+    public static final RegistryObject<Block> RED_VASE_LEMON_SAPLING = registerWithNullGroup( "red_vase_lemon_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_LEMON_SAPLING = register( "orange_vase_lemon_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_LEMON_SAPLING = registerWithNullGroup( "orange_vase_lemon_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_LEMON_SAPLING = register( "yellow_vase_lemon_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_LEMON_SAPLING = registerWithNullGroup( "yellow_vase_lemon_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_LEMON_SAPLING = register( "lime_vase_lemon_sapling",
+    public static final RegistryObject<Block> LIME_VASE_LEMON_SAPLING = registerWithNullGroup( "lime_vase_lemon_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_LEMON_SAPLING = register( "green_vase_lemon_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_LEMON_SAPLING = registerWithNullGroup( "green_vase_lemon_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_LEMON_SAPLING = register( "cyan_vase_lemon_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_LEMON_SAPLING = registerWithNullGroup( "cyan_vase_lemon_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_LEMON_SAPLING = register( "light_blue_vase_lemon_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_LEMON_SAPLING = registerWithNullGroup( "light_blue_vase_lemon_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_LEMON_SAPLING = register( "blue_vase_lemon_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_LEMON_SAPLING = registerWithNullGroup( "blue_vase_lemon_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_LEMON_SAPLING = register( "purple_vase_lemon_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_LEMON_SAPLING = registerWithNullGroup( "purple_vase_lemon_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_LEMON_SAPLING = register( "magenta_vase_lemon_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_LEMON_SAPLING = registerWithNullGroup( "magenta_vase_lemon_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_LEMON_SAPLING = register( "pink_vase_lemon_sapling",
+    public static final RegistryObject<Block> PINK_VASE_LEMON_SAPLING = registerWithNullGroup( "pink_vase_lemon_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_LEMON_SAPLING = register( "white_vase_lemon_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_LEMON_SAPLING = registerWithNullGroup( "white_vase_lemon_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_LEMON_SAPLING = register( "light_gray_vase_lemon_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_LEMON_SAPLING = registerWithNullGroup( "light_gray_vase_lemon_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_LEMON_SAPLING = register( "gray_vase_lemon_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_LEMON_SAPLING = registerWithNullGroup( "gray_vase_lemon_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_LEMON_SAPLING = register( "black_vase_lemon_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_LEMON_SAPLING = registerWithNullGroup( "black_vase_lemon_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_LEMON_SAPLING = register( "brown_vase_lemon_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_LEMON_SAPLING = registerWithNullGroup( "brown_vase_lemon_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //CYAN-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_LIME_FRUIT_SAPLING = register( "red_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> RED_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "red_vase_lime_fruit_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_LIME_FRUIT_SAPLING = register( "orange_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "orange_vase_lime_fruit_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_LIME_FRUIT_SAPLING = register( "yellow_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "yellow_vase_lime_fruit_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_LIME_FRUIT_SAPLING = register( "lime_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> LIME_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "lime_vase_lime_fruit_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_LIME_FRUIT_SAPLING = register( "green_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "green_vase_lime_fruit_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_LIME_FRUIT_SAPLING = register( "cyan_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "cyan_vase_lime_fruit_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_LIME_FRUIT_SAPLING = register( "light_blue_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "light_blue_vase_lime_fruit_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_LIME_FRUIT_SAPLING = register( "blue_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "blue_vase_lime_fruit_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_LIME_FRUIT_SAPLING = register( "purple_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "purple_vase_lime_fruit_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_LIME_FRUIT_SAPLING = register( "magenta_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "magenta_vase_lime_fruit_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_LIME_FRUIT_SAPLING = register( "pink_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> PINK_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "pink_vase_lime_fruit_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_LIME_FRUIT_SAPLING = register( "white_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "white_vase_lime_fruit_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_LIME_FRUIT_SAPLING = register( "light_gray_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "light_gray_vase_lime_fruit_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_LIME_FRUIT_SAPLING = register( "gray_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "gray_vase_lime_fruit_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_LIME_FRUIT_SAPLING = register( "black_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "black_vase_lime_fruit_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_LIME_FRUIT_SAPLING = register( "brown_vase_lime_fruit_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_LIME_FRUIT_SAPLING = registerWithNullGroup( "brown_vase_lime_fruit_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //BLUE-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_PLUM_SAPLING = register( "red_vase_plum_sapling",
+    public static final RegistryObject<Block> RED_VASE_PLUM_SAPLING = registerWithNullGroup( "red_vase_plum_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_PLUM_SAPLING = register( "orange_vase_plum_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_PLUM_SAPLING = registerWithNullGroup( "orange_vase_plum_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_PLUM_SAPLING = register( "yellow_vase_plum_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_PLUM_SAPLING = registerWithNullGroup( "yellow_vase_plum_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_PLUM_SAPLING = register( "lime_vase_plum_sapling",
+    public static final RegistryObject<Block> LIME_VASE_PLUM_SAPLING = registerWithNullGroup( "lime_vase_plum_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_PLUM_SAPLING = register( "green_vase_plum_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_PLUM_SAPLING = registerWithNullGroup( "green_vase_plum_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_PLUM_SAPLING = register( "cyan_vase_plum_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_PLUM_SAPLING = registerWithNullGroup( "cyan_vase_plum_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PLUM_SAPLING = register( "light_blue_vase_plum_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PLUM_SAPLING = registerWithNullGroup( "light_blue_vase_plum_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_PLUM_SAPLING = register( "blue_vase_plum_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_PLUM_SAPLING = registerWithNullGroup( "blue_vase_plum_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_PLUM_SAPLING = register( "purple_vase_plum_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_PLUM_SAPLING = registerWithNullGroup( "purple_vase_plum_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_PLUM_SAPLING = register( "magenta_vase_plum_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_PLUM_SAPLING = registerWithNullGroup( "magenta_vase_plum_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_PLUM_SAPLING = register( "pink_vase_plum_sapling",
+    public static final RegistryObject<Block> PINK_VASE_PLUM_SAPLING = registerWithNullGroup( "pink_vase_plum_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_PLUM_SAPLING = register( "white_vase_plum_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_PLUM_SAPLING = registerWithNullGroup( "white_vase_plum_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PLUM_SAPLING = register( "light_gray_vase_plum_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PLUM_SAPLING = registerWithNullGroup( "light_gray_vase_plum_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_PLUM_SAPLING = register( "gray_vase_plum_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_PLUM_SAPLING = registerWithNullGroup( "gray_vase_plum_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_PLUM_SAPLING = register( "black_vase_plum_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_PLUM_SAPLING = registerWithNullGroup( "black_vase_plum_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_PLUM_SAPLING = register( "brown_vase_plum_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_PLUM_SAPLING = registerWithNullGroup( "brown_vase_plum_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //PURPLE-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_PEAR_SAPLING = register( "red_vase_pear_sapling",
+    public static final RegistryObject<Block> RED_VASE_PEAR_SAPLING = registerWithNullGroup( "red_vase_pear_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_PEAR_SAPLING = register( "orange_vase_pear_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_PEAR_SAPLING = registerWithNullGroup( "orange_vase_pear_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_PEAR_SAPLING = register( "yellow_vase_pear_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_PEAR_SAPLING = registerWithNullGroup( "yellow_vase_pear_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_PEAR_SAPLING = register( "lime_vase_pear_sapling",
+    public static final RegistryObject<Block> LIME_VASE_PEAR_SAPLING = registerWithNullGroup( "lime_vase_pear_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_PEAR_SAPLING = register( "green_vase_pear_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_PEAR_SAPLING = registerWithNullGroup( "green_vase_pear_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_PEAR_SAPLING = register( "cyan_vase_pear_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_PEAR_SAPLING = registerWithNullGroup( "cyan_vase_pear_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PEAR_SAPLING = register( "light_blue_vase_pear_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PEAR_SAPLING = registerWithNullGroup( "light_blue_vase_pear_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_PEAR_SAPLING = register( "blue_vase_pear_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_PEAR_SAPLING = registerWithNullGroup( "blue_vase_pear_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_PEAR_SAPLING = register( "purple_vase_pear_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_PEAR_SAPLING = registerWithNullGroup( "purple_vase_pear_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_PEAR_SAPLING = register( "magenta_vase_pear_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_PEAR_SAPLING = registerWithNullGroup( "magenta_vase_pear_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_PEAR_SAPLING = register( "pink_vase_pear_sapling",
+    public static final RegistryObject<Block> PINK_VASE_PEAR_SAPLING = registerWithNullGroup( "pink_vase_pear_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_PEAR_SAPLING = register( "white_vase_pear_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_PEAR_SAPLING = registerWithNullGroup( "white_vase_pear_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PEAR_SAPLING = register( "light_gray_vase_pear_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PEAR_SAPLING = registerWithNullGroup( "light_gray_vase_pear_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_PEAR_SAPLING = register( "gray_vase_pear_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_PEAR_SAPLING = registerWithNullGroup( "gray_vase_pear_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_PEAR_SAPLING = register( "black_vase_pear_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_PEAR_SAPLING = registerWithNullGroup( "black_vase_pear_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_PEAR_SAPLING = register( "brown_vase_pear_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_PEAR_SAPLING = registerWithNullGroup( "brown_vase_pear_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //PINK-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_PEACH_SAPLING = register( "red_vase_peach_sapling",
+    public static final RegistryObject<Block> RED_VASE_PEACH_SAPLING = registerWithNullGroup( "red_vase_peach_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_PEACH_SAPLING = register( "orange_vase_peach_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_PEACH_SAPLING = registerWithNullGroup( "orange_vase_peach_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_PEACH_SAPLING = register( "yellow_vase_peach_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_PEACH_SAPLING = registerWithNullGroup( "yellow_vase_peach_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_PEACH_SAPLING = register( "lime_vase_peach_sapling",
+    public static final RegistryObject<Block> LIME_VASE_PEACH_SAPLING = registerWithNullGroup( "lime_vase_peach_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_PEACH_SAPLING = register( "green_vase_peach_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_PEACH_SAPLING = registerWithNullGroup( "green_vase_peach_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_PEACH_SAPLING = register( "cyan_vase_peach_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_PEACH_SAPLING = registerWithNullGroup( "cyan_vase_peach_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PEACH_SAPLING = register( "light_blue_vase_peach_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PEACH_SAPLING = registerWithNullGroup( "light_blue_vase_peach_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_PEACH_SAPLING = register( "blue_vase_peach_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_PEACH_SAPLING = registerWithNullGroup( "blue_vase_peach_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_PEACH_SAPLING = register( "purple_vase_peach_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_PEACH_SAPLING = registerWithNullGroup( "purple_vase_peach_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_PEACH_SAPLING = register( "magenta_vase_peach_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_PEACH_SAPLING = registerWithNullGroup( "magenta_vase_peach_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_PEACH_SAPLING = register( "pink_vase_peach_sapling",
+    public static final RegistryObject<Block> PINK_VASE_PEACH_SAPLING = registerWithNullGroup( "pink_vase_peach_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_PEACH_SAPLING = register( "white_vase_peach_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_PEACH_SAPLING = registerWithNullGroup( "white_vase_peach_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PEACH_SAPLING = register( "light_gray_vase_peach_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PEACH_SAPLING = registerWithNullGroup( "light_gray_vase_peach_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_PEACH_SAPLING = register( "gray_vase_peach_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_PEACH_SAPLING = registerWithNullGroup( "gray_vase_peach_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_PEACH_SAPLING = register( "black_vase_peach_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_PEACH_SAPLING = registerWithNullGroup( "black_vase_peach_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_PEACH_SAPLING = register( "brown_vase_peach_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_PEACH_SAPLING = registerWithNullGroup( "brown_vase_peach_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //WHITE-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_CHERRY_SAPLING = register( "red_vase_cherry_sapling",
+    public static final RegistryObject<Block> RED_VASE_CHERRY_SAPLING = registerWithNullGroup( "red_vase_cherry_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_CHERRY_SAPLING = register( "orange_vase_cherry_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_CHERRY_SAPLING = registerWithNullGroup( "orange_vase_cherry_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_CHERRY_SAPLING = register( "yellow_vase_cherry_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_CHERRY_SAPLING = registerWithNullGroup( "yellow_vase_cherry_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_CHERRY_SAPLING = register( "lime_vase_cherry_sapling",
+    public static final RegistryObject<Block> LIME_VASE_CHERRY_SAPLING = registerWithNullGroup( "lime_vase_cherry_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_CHERRY_SAPLING = register( "green_vase_cherry_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_CHERRY_SAPLING = registerWithNullGroup( "green_vase_cherry_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_CHERRY_SAPLING = register( "cyan_vase_cherry_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_CHERRY_SAPLING = registerWithNullGroup( "cyan_vase_cherry_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_CHERRY_SAPLING = register( "light_blue_vase_cherry_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_CHERRY_SAPLING = registerWithNullGroup( "light_blue_vase_cherry_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_CHERRY_SAPLING = register( "blue_vase_cherry_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_CHERRY_SAPLING = registerWithNullGroup( "blue_vase_cherry_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_CHERRY_SAPLING = register( "purple_vase_cherry_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_CHERRY_SAPLING = registerWithNullGroup( "purple_vase_cherry_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_CHERRY_SAPLING = register( "magenta_vase_cherry_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_CHERRY_SAPLING = registerWithNullGroup( "magenta_vase_cherry_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_CHERRY_SAPLING = register( "pink_vase_cherry_sapling",
+    public static final RegistryObject<Block> PINK_VASE_CHERRY_SAPLING = registerWithNullGroup( "pink_vase_cherry_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_CHERRY_SAPLING = register( "white_vase_cherry_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_CHERRY_SAPLING = registerWithNullGroup( "white_vase_cherry_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_CHERRY_SAPLING = register( "light_gray_vase_cherry_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_CHERRY_SAPLING = registerWithNullGroup( "light_gray_vase_cherry_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_CHERRY_SAPLING = register( "gray_vase_cherry_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_CHERRY_SAPLING = registerWithNullGroup( "gray_vase_cherry_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_CHERRY_SAPLING = register( "black_vase_cherry_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_CHERRY_SAPLING = registerWithNullGroup( "black_vase_cherry_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_CHERRY_SAPLING = register( "brown_vase_cherry_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_CHERRY_SAPLING = registerWithNullGroup( "brown_vase_cherry_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
     //RED-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_CEDAR_SAPLING = register( "red_vase_cedar_sapling",
+    public static final RegistryObject<Block> RED_VASE_CEDAR_SAPLING = registerWithNullGroup( "red_vase_cedar_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_CEDAR_SAPLING = register( "orange_vase_cedar_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_CEDAR_SAPLING = registerWithNullGroup( "orange_vase_cedar_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_CEDAR_SAPLING = register( "yellow_vase_cedar_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_CEDAR_SAPLING = registerWithNullGroup( "yellow_vase_cedar_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_CEDAR_SAPLING = register( "lime_vase_cedar_sapling",
+    public static final RegistryObject<Block> LIME_VASE_CEDAR_SAPLING = registerWithNullGroup( "lime_vase_cedar_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_CEDAR_SAPLING = register( "green_vase_cedar_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_CEDAR_SAPLING = registerWithNullGroup( "green_vase_cedar_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_CEDAR_SAPLING = register( "cyan_vase_cedar_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_CEDAR_SAPLING = registerWithNullGroup( "cyan_vase_cedar_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_CEDAR_SAPLING = register( "light_blue_vase_cedar_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_CEDAR_SAPLING = registerWithNullGroup( "light_blue_vase_cedar_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_CEDAR_SAPLING = register( "blue_vase_cedar_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_CEDAR_SAPLING = registerWithNullGroup( "blue_vase_cedar_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_CEDAR_SAPLING = register( "purple_vase_cedar_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_CEDAR_SAPLING = registerWithNullGroup( "purple_vase_cedar_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_CEDAR_SAPLING = register( "magenta_vase_cedar_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_CEDAR_SAPLING = registerWithNullGroup( "magenta_vase_cedar_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_CEDAR_SAPLING = register( "pink_vase_cedar_sapling",
+    public static final RegistryObject<Block> PINK_VASE_CEDAR_SAPLING = registerWithNullGroup( "pink_vase_cedar_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_CEDAR_SAPLING = register( "white_vase_cedar_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_CEDAR_SAPLING = registerWithNullGroup( "white_vase_cedar_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_CEDAR_SAPLING = register( "light_gray_vase_cedar_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_CEDAR_SAPLING = registerWithNullGroup( "light_gray_vase_cedar_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_CEDAR_SAPLING = register( "gray_vase_cedar_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_CEDAR_SAPLING = registerWithNullGroup( "gray_vase_cedar_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_CEDAR_SAPLING = register( "black_vase_cedar_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_CEDAR_SAPLING = registerWithNullGroup( "black_vase_cedar_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_CEDAR_SAPLING = register( "brown_vase_cedar_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_CEDAR_SAPLING = registerWithNullGroup( "brown_vase_cedar_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
     //ORANGE-SAPLING//
-    public static final RegistryObject<Block> RED_VASE_PALM_SAPLING = register( "red_vase_palm_sapling",
+    public static final RegistryObject<Block> RED_VASE_PALM_SAPLING = registerWithNullGroup( "red_vase_palm_sapling",
             () -> new BlockClayVaseRed(BlockClayVaseRed.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> ORANGE_VASE_PALM_SAPLING = register( "orange_vase_palm_sapling",
+    public static final RegistryObject<Block> ORANGE_VASE_PALM_SAPLING = registerWithNullGroup( "orange_vase_palm_sapling",
             () -> new BlockClayVaseOrange(BlockClayVaseOrange.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> YELLOW_VASE_PALM_SAPLING = register( "yellow_vase_palm_sapling",
+    public static final RegistryObject<Block> YELLOW_VASE_PALM_SAPLING = registerWithNullGroup( "yellow_vase_palm_sapling",
             () -> new BlockClayVaseYellow(BlockClayVaseYellow.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIME_VASE_PALM_SAPLING = register( "lime_vase_palm_sapling",
+    public static final RegistryObject<Block> LIME_VASE_PALM_SAPLING = registerWithNullGroup( "lime_vase_palm_sapling",
             () -> new BlockClayVaseLime(BlockClayVaseLime.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GREEN_VASE_PALM_SAPLING = register( "green_vase_palm_sapling",
+    public static final RegistryObject<Block> GREEN_VASE_PALM_SAPLING = registerWithNullGroup( "green_vase_palm_sapling",
             () -> new BlockClayVaseGreen(BlockClayVaseGreen.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> CYAN_VASE_PALM_SAPLING = register( "cyan_vase_palm_sapling",
+    public static final RegistryObject<Block> CYAN_VASE_PALM_SAPLING = registerWithNullGroup( "cyan_vase_palm_sapling",
             () -> new BlockClayVaseCyan(BlockClayVaseCyan.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PALM_SAPLING = register( "light_blue_vase_palm_sapling",
+    public static final RegistryObject<Block> LIGHT_BLUE_VASE_PALM_SAPLING = registerWithNullGroup( "light_blue_vase_palm_sapling",
             () -> new BlockClayVaseLightBlue(BlockClayVaseLightBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLUE_VASE_PALM_SAPLING = register( "blue_vase_palm_sapling",
+    public static final RegistryObject<Block> BLUE_VASE_PALM_SAPLING = registerWithNullGroup( "blue_vase_palm_sapling",
             () -> new BlockClayVaseBlue(BlockClayVaseBlue.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PURPLE_VASE_PALM_SAPLING = register( "purple_vase_palm_sapling",
+    public static final RegistryObject<Block> PURPLE_VASE_PALM_SAPLING = registerWithNullGroup( "purple_vase_palm_sapling",
             () -> new BlockClayVasePurple(BlockClayVasePurple.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> MAGENTA_VASE_PALM_SAPLING = register( "magenta_vase_palm_sapling",
+    public static final RegistryObject<Block> MAGENTA_VASE_PALM_SAPLING = registerWithNullGroup( "magenta_vase_palm_sapling",
             () -> new BlockClayVaseMagenta(BlockClayVaseMagenta.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> PINK_VASE_PALM_SAPLING = register( "pink_vase_palm_sapling",
+    public static final RegistryObject<Block> PINK_VASE_PALM_SAPLING = registerWithNullGroup( "pink_vase_palm_sapling",
             () -> new BlockClayVasePink(BlockClayVasePink.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> WHITE_VASE_PALM_SAPLING = register( "white_vase_palm_sapling",
+    public static final RegistryObject<Block> WHITE_VASE_PALM_SAPLING = registerWithNullGroup( "white_vase_palm_sapling",
             () -> new BlockClayVaseWhite(BlockClayVaseWhite.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PALM_SAPLING = register( "light_gray_vase_palm_sapling",
+    public static final RegistryObject<Block> LIGHT_GRAY_VASE_PALM_SAPLING = registerWithNullGroup( "light_gray_vase_palm_sapling",
             () -> new BlockClayVaseLightGray(BlockClayVaseLightGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> GRAY_VASE_PALM_SAPLING = register( "gray_vase_palm_sapling",
+    public static final RegistryObject<Block> GRAY_VASE_PALM_SAPLING = registerWithNullGroup( "gray_vase_palm_sapling",
             () -> new BlockClayVaseGray(BlockClayVaseGray.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BLACK_VASE_PALM_SAPLING = register( "black_vase_palm_sapling",
+    public static final RegistryObject<Block> BLACK_VASE_PALM_SAPLING = registerWithNullGroup( "black_vase_palm_sapling",
             () -> new BlockClayVaseBlack(BlockClayVaseBlack.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
-    public static final RegistryObject<Block> BROWN_VASE_PALM_SAPLING = register( "brown_vase_palm_sapling",
+    public static final RegistryObject<Block> BROWN_VASE_PALM_SAPLING = registerWithNullGroup( "brown_vase_palm_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
 
@@ -4865,6 +4880,7 @@ public static final RegistryObject<Block> RED_VASE_WHITE_FLOWER = register( "red
 
 
     public static void register(){};
+    public static void registerWithNullGroup(){}
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block){
 
@@ -4873,6 +4889,16 @@ public static final RegistryObject<Block> RED_VASE_WHITE_FLOWER = register( "red
                 new Item.Properties().group(MaidensMaterials.MAIDENS_BLOCKS_GROUP)));
         return toReturn;
     }
+
+    private static <R extends Block> RegistryObject<R> registerWithNullGroup(String name, Supplier<R> block){
+
+        RegistryObject<R> toReturn2 = Registration.BLOCKS.register(name, block);
+        Registration.ITEMS.register(name, ()-> new BlockItem(toReturn2.get(),
+                new Item.Properties().group(null)));
+        return toReturn2;
+    }
+
+
 
     public static List<Item> GATHERED_ORES = new ArrayList<>();
     public static List<String> ORES_TO_ADD = new ArrayList<>();

@@ -1,6 +1,6 @@
 {
     "name": "Colored Clay Vases",
-    "icon": "maidensmaterials:textures/item/vase_red.png",
+    "icon": "maidensmaterials:textures/item/red_clay_vase.png",
     "category": "items",
     "pages": [
         {

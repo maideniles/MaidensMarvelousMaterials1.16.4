@@ -5,30 +5,26 @@
     
     "pattern":
     [
-        "TTT",
-		"TST",
+        "T  ",
+		"TT ",
 		"TTT"
     ],
     
     "key":
     {
-        "S":
+        "T":
         {
-            "item": "maidensmaterials:stain_yellow"
-        },
+            "item": "maidensmaterials:yellow_clay_block"
+        }
 		
-		"T":
-		{
-			"item": "maidensmaterials:whitewashed_stairs"
-			
-		}
+		
 		
 		
     },
     
     "result":
     {
-        "item": "maidensmaterials:yellow_stained_stairs",
+        "item": "maidensmaterials:yellow_clay_stairs",
 	"count": 4
     }
 }

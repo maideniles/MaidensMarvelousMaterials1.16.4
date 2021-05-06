@@ -514,6 +514,10 @@ public class ModItems {
     public static final RegistryObject<Item> ROSE_QUARTZ_CHUNK = Registration.ITEMS.register("rose_quartz_chunk",
             () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
 
+    public static final RegistryObject<Item> MICA_CHUNK = Registration.ITEMS.register("mica_chunk",
+            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+
+
     //FRAGMENTS//
     public static final RegistryObject<Item> JASPER_FRAGMENTS = Registration.ITEMS.register("jasper_fragments",
             () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
@@ -546,6 +550,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> ROSE_QUARTZ_FRAGMENTS = Registration.ITEMS.register("rose_quartz_fragments",
+            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+
+    public static final RegistryObject<Item> MICA_FRAGMENTS = Registration.ITEMS.register("mica_fragments",
             () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
 
 

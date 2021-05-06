@@ -57,6 +57,7 @@ public class MaidensMaterials
         Registration.register();
         ModItems.register();
         ModBlocks.register();
+        ModBlocks.registerWithNullGroup();
         ModBiomes.register();
         ModSurfaceBuilders.register();
         ModEnchantments.register();

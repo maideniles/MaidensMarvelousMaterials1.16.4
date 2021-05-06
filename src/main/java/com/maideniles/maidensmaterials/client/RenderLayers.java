@@ -264,30 +264,30 @@ public class RenderLayers {
         RenderTypeLookup.setRenderLayer(ModBlocks.BROWN_VASE_WHITE_FLOWER.get(), RenderType.getCutoutMipped());
 
 //vases--fruit saplings  //
-/*
-        RenderTypeLookup.setRenderLayer(ModBlocks.RED_VASESAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_VASESAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_VASE_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASESAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASESAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CYANVASE_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_VASE_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_VASE_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_VASE_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.MAGENTA_VASE_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.PINK_VASE_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.WHITE_VASE_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_GRAY_VASE_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.GRAY_VASE_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_VASE_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.BROWN_VASE_SAPLING.get(), RenderType.getCutoutMipped());
+
+        RenderTypeLookup.setRenderLayer(ModBlocks.RED_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.MAGENTA_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.PINK_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.WHITE_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_GRAY_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.GRAY_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.BROWN_VASE_NO_FLOWER.get(), RenderType.getCutoutMipped());
 
         RenderTypeLookup.setRenderLayer(ModBlocks.RED_VASE_PEAR_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_VASE_PEAR_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_VASE_PEAR_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASE_PEAR_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASE_PEAR_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CYANVASE_PEAR_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_VASE_PEAR_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_VASE_PEAR_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_VASE_PEAR_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_VASE_PEAR_SAPLING.get(), RenderType.getCutoutMipped());
@@ -304,7 +304,7 @@ public class RenderLayers {
         RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_VASE_PEACH_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASE_PEACH_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASE_PEACH_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CYANVASE_PEACH_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_VASE_PEACH_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_VASE_PEACH_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_VASE_PEACH_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_VASE_PEACH_SAPLING.get(), RenderType.getCutoutMipped());
@@ -316,12 +316,12 @@ public class RenderLayers {
         RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_VASE_PEACH_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BROWN_VASE_PEACH_SAPLING.get(), RenderType.getCutoutMipped());
 
-        RenderTypeLookup.setRenderLayer(ModBlocks.RED_VASEPLUM_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_VASEPLUM_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.RED_VASE_PLUM_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_VASE_PLUM_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_VASE_PLUM_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASEPLUM_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASEPLUM_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CYANVASE_PLUM_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASE_PLUM_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASE_PLUM_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_VASE_PLUM_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_VASE_PLUM_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_VASE_PLUM_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_VASE_PLUM_SAPLING.get(), RenderType.getCutoutMipped());
@@ -338,7 +338,7 @@ public class RenderLayers {
         RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_VASE_GRAPEFRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASE_GRAPEFRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASE_GRAPEFRUIT_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CYANVASE_GRAPEFRUIT_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_VASE_GRAPEFRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_VASE_GRAPEFRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_VASE_GRAPEFRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_VASE_GRAPEFRUIT_SAPLING.get(), RenderType.getCutoutMipped());
@@ -355,7 +355,7 @@ public class RenderLayers {
         RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_VASE_ORANGE_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASE_ORANGE_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASE_ORANGE_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CYANVASE_ORANGE_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_VASE_ORANGE_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_VASE_ORANGE_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_VASE_ORANGE_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_VASE_ORANGE_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
@@ -367,12 +367,12 @@ public class RenderLayers {
         RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_VASE_ORANGE_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BROWN_VASE_ORANGE_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
 
-        RenderTypeLookup.setRenderLayer(ModBlocks.RED_VASELIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_VASELIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.RED_VASE_LIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_VASE_LIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_VASE_LIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASELIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASELIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CYANVASE_LIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASE_LIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASE_LIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_VASE_LIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_VASE_LIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_VASE_LIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_VASE_LIME_FRUIT_SAPLING.get(), RenderType.getCutoutMipped());
@@ -389,7 +389,7 @@ public class RenderLayers {
         RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_VASE_LEMON_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASE_LEMON_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASE_LEMON_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CYANVASE_LEMON_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_VASE_LEMON_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_VASE_LEMON_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_VASE_LEMON_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_VASE_LEMON_SAPLING.get(), RenderType.getCutoutMipped());
@@ -406,7 +406,7 @@ public class RenderLayers {
         RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_VASE_CHERRY_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIME_VASE_CHERRY_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_VASE_CHERRY_SAPLING.get(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(ModBlocks.CYANVASE_CHERRY_SAPLING.get(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_VASE_CHERRY_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_VASE_CHERRY_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_VASE_CHERRY_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_VASE_CHERRY_SAPLING.get(), RenderType.getCutoutMipped());
@@ -417,7 +417,7 @@ public class RenderLayers {
         RenderTypeLookup.setRenderLayer(ModBlocks.GRAY_VASE_CHERRY_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_VASE_CHERRY_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.BROWN_VASE_CHERRY_SAPLING.get(), RenderType.getCutoutMipped());
-*/
+
         //doors//
 
         RenderTypeLookup.setRenderLayer(ModBlocks.RED_STAINED_DOOR_1.get(), RenderType.getCutoutMipped());

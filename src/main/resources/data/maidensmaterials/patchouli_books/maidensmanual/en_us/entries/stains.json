@@ -1,6 +1,6 @@
 {
     "name": "Stains",
-    "icon": "maidensmaterials:textures/item/stain_green.png",
+    "icon": "maidensmaterials:textures/item/green_stain.png",
     "category": "smelting",
     "pages": [
 		{

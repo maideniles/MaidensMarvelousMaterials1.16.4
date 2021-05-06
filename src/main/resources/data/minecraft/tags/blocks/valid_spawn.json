@@ -2,7 +2,9 @@
   "replace": false,
   "values": [
     "maidensmaterials:ornamental_grass",
-	"maidensmaterials:sparkling_sand",
 	"minecraft:sand"
+	
+	
+	
   ]
 }

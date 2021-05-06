@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient":[ {
-    "item": "maidensmaterials:clay_vase_brown"
+    "item": "maidensmaterials:brown_clay_vase"
   }],
   "result": "maidensmaterials:brown_vase_no_flower",
   "experience": 0.1,

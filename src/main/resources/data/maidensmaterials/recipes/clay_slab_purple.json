@@ -5,30 +5,24 @@
     
     "pattern":
     [
-        "TTT",
-		"TST",
-		"TTT"
+        "SSS"
+		
+		
     ],
     
     "key":
     {
         "S":
         {
-            "item": "maidensmaterials:stain_purple"
-        },
-		
-		"T":
-		{
-			"item": "maidensmaterials:whitewashed_slab"
-			
-		}
+            "item": "maidensmaterials:purple_clay_block"
+        }
 		
 		
     },
     
     "result":
     {
-        "item": "maidensmaterials:purple_stained_slab",
+        "item": "maidensmaterials:purple_clay_slab",
 	"count": 6
     }
 }
