@@ -51,6 +51,8 @@
       },
 	  {"item": "maidensmaterials:paulownia_fence_gate"},
 	  {"item": "maidensmaterials:silverbell_fence_gate"},
+	  {"item": "minecraft:warped_fence_gate"},
+	  {"item": "minecraft:crimson_fence_gate"},
 	  {"item": "maidensmaterials:wisteria_fence_gate"}
 	  
     ],

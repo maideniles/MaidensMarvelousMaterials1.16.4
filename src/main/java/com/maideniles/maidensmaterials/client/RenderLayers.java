@@ -20,6 +20,10 @@ public class RenderLayers {
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.FAIRY_FLY.get(), FairyFlyRenderer::new);
         // Set the render layer of blocks that need transparency here
     ModSpawnEggItem.initSpawnEggs();
+
+
+
+
 //saplings
         RenderTypeLookup.setRenderLayer(ModBlocks.CRABAPPLE_SAPLING.get(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(ModBlocks.POINCIANA_SAPLING.get(), RenderType.getCutoutMipped());

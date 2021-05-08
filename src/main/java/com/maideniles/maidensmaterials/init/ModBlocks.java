@@ -2,10 +2,7 @@ package com.maideniles.maidensmaterials.init;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
 
-import com.maideniles.maidensmaterials.blocks.MaidensBookshelfBlock;
-import com.maideniles.maidensmaterials.blocks.MaidensDoorBlock;
-import com.maideniles.maidensmaterials.blocks.MaidensTrapDoorBlock;
-import com.maideniles.maidensmaterials.blocks.VineTieBlock;
+import com.maideniles.maidensmaterials.blocks.*;
 import com.maideniles.maidensmaterials.blocks.tree.leaves.MaidenLeavesBlock;
 import com.maideniles.maidensmaterials.blocks.tree.leaves.PalmLeavesBlock;
 import com.maideniles.maidensmaterials.blocks.tree.leaves.fruit.*;
@@ -22,6 +19,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.potion.Effects;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 
 import java.util.ArrayList;
@@ -4873,6 +4871,35 @@ public static final RegistryObject<Block> RED_VASE_NO_FLOWER = register( "red_va
     public static final RegistryObject<Block> BROWN_VASE_PALM_SAPLING = registerWithNullGroup( "brown_vase_palm_sapling",
             () -> new BlockClayVaseBrown(BlockClayVaseBrown.Properties.create(Material.CLAY).hardnessAndResistance(2.0F, 2.0F)));
 
+/*
+    public static final RegistryObject<Block> RED_CHEST = register("red_chest",
+            ()-> new MaidensChestBlock(AbstractBlock.Properties.create(Material.WOOD).notSolid().harvestTool(ToolType.AXE)));
+
+
+    public static final RegistryObject<Block> ORANGE_CHEST = register("orange_chest",
+            ()-> new MaidensChestBlock(AbstractBlock.Properties.create(Material.WOOD).notSolid().harvestTool(ToolType.AXE)));
+
+    public static final RegistryObject<Block> YELLOW_CHEST = register("yellow_chest",
+            ()-> new MaidensChestBlock(AbstractBlock.Properties.create(Material.WOOD).notSolid().harvestTool(ToolType.AXE)));
+
+    public static final RegistryObject<Block> GREEN_CHEST = register("green_chest",
+            ()-> new MaidensChestBlock(AbstractBlock.Properties.create(Material.WOOD).notSolid().harvestTool(ToolType.AXE)));
+
+    public static final RegistryObject<Block> CYAN_CHEST = register("cyan_chest",
+            ()-> new MaidensChestBlock(AbstractBlock.Properties.create(Material.WOOD).notSolid().harvestTool(ToolType.AXE)));
+
+    public static final RegistryObject<Block> BLUE_CHEST = register("blue_chest",
+            ()-> new MaidensChestBlock(AbstractBlock.Properties.create(Material.WOOD).notSolid().harvestTool(ToolType.AXE)));
+
+    public static final RegistryObject<Block> PURPLE_CHEST = register("purple_chest",
+            ()-> new MaidensChestBlock(AbstractBlock.Properties.create(Material.WOOD).notSolid().harvestTool(ToolType.AXE)));
+*/
+    public static final RegistryObject<Block> PINK_CHEST = register("pink_new_chest",
+            ()-> new MaidensChestBlock(AbstractBlock.Properties.create(Material.WOOD).notSolid().harvestTool(ToolType.AXE)));
+/*
+    public static final RegistryObject<Block> WHITE_CHEST = register("white_chest",
+            ()-> new MaidensChestBlock(AbstractBlock.Properties.create(Material.WOOD).notSolid().harvestTool(ToolType.AXE)));
+*/
 
 
 

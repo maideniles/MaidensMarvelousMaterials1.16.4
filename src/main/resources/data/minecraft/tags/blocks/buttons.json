@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
-    "maidensmaterials:crabapple_button"
+    "maidensmaterials:crabapple_button",
+	"maidensmaterials:poinciana_button",
+	"maidensmaterials:laburnum_button",
+	"maidensmaterials:jade_button",
+	"maidensmaterials:paulownia_button",
+	"maidensmaterials:wisteria_button",
+	"maidensmaterials:jacaranda_button",
+	"maidensmaterials:dogwood_button",
+	"maidensmaterials:silverbell_button",
+	"maidensmaterials:cedar_button"
+	
   ]
 }

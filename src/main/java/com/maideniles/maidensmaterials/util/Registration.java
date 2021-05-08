@@ -6,9 +6,11 @@ import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.MobEntity;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.Potion;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.feature.Feature;
@@ -54,6 +56,12 @@ public class Registration {
     public static final DeferredRegister<Feature<?>> FEATURES =
             DeferredRegister.create(ForgeRegistries.FEATURES, MaidensMaterials.MOD_ID);
 
+    public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPES =
+    DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, MaidensMaterials.MOD_ID);
+
+    public static final DeferredRegister<ContainerType<?>> CONTAINERS
+            = DeferredRegister.create(ForgeRegistries.CONTAINERS, MaidensMaterials.MOD_ID);
+
 
 
     public static void register(){
@@ -70,6 +78,8 @@ public class Registration {
         BIOMES.register(eventBus);
         SURFACE_BUILDERS.register(eventBus);
         FEATURES.register(eventBus);
+        TILE_ENTITY_TYPES.register(eventBus);
+        CONTAINERS.register(eventBus);
 
 
     }
