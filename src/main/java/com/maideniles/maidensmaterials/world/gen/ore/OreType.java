@@ -5,30 +5,31 @@ import com.maideniles.maidensmaterials.init.ModBlocks;
 import com.maideniles.maidensmaterials.util.KVP;
 
 import net.minecraft.block.Block;
+import net.minecraftforge.fml.RegistryObject;
 
 public enum OreType {
 
-    CITRINE("Citrine", ModBlocks.CITRINE_ORE.get(), 8,41,60),               //COMMON
-    JADE("Jade", ModBlocks.JADE_ORE.get(), 8,41,60),                        //COMMON
-    JASPER("Jasper", ModBlocks.JASPER_ORE.get(), 8,41,60),                  //COMMON
-    MOONSTONE("Moonstone", ModBlocks.MOONSTONE_ORE.get(), 8,41,60),         //COMMON
+    CITRINE("Citrine", ModBlocks.CITRINE_ORE, 8,41,60),               //COMMON
+    JADE("Jade", ModBlocks.JADE_ORE, 8,41,60),                        //COMMON
+    JASPER("Jasper", ModBlocks.JASPER_ORE, 8,41,60),                  //COMMON
+    MOONSTONE("Moonstone", ModBlocks.MOONSTONE_ORE, 8,41,60),         //COMMON
 
-    AVENTURINE("Aventurine", ModBlocks.AVENTURINE_ORE.get(), 6,21,40),      //UNCCOMMON
-    LABRADORITE("Labradorite", ModBlocks.LABRADORITE_ORE.get(), 6,21,40),   //UNCCOMMON
-    MICA("Mica", ModBlocks.MICA_ORE.get(), 6,21,40),                        //UNCCOMMON
-    ROSE_QUARTZ("Rose Quartz", ModBlocks.ROSE_QUARTZ_ORE.get(), 6,21,40),   //UNCCOMMON
+    AVENTURINE("Aventurine", ModBlocks.AVENTURINE_ORE, 6,21,40),      //UNCCOMMON
+    LABRADORITE("Labradorite", ModBlocks.LABRADORITE_ORE, 6,21,40),   //UNCCOMMON
+    MICA("Mica", ModBlocks.MICA_ORE, 6,21,40),                        //UNCCOMMON
+    ROSE_QUARTZ("Rose Quartz", ModBlocks.ROSE_QUARTZ_ORE, 6,21,40),   //UNCCOMMON
 
-    AMETHYST("Amethyst", ModBlocks.AMETHYST_ORE.get(), 4,0,20),              //RARE
-    CARNELIAN("Carnelian", ModBlocks.CARNELIAN_ORE.get(), 4,0,20),           //RARE
-    CHALCOPYRITE("Chalcopyrite", ModBlocks.CHALCOPYRITE_ORE.get(), 4,0,20),  //RARE
-    SODALITE("Sodalite", ModBlocks.SODALITE_ORE.get(), 4,0,20);              //RARE
+    AMETHYST("Amethyst", ModBlocks.AMETHYST_ORE, 4,0,20),              //RARE
+    CARNELIAN("Carnelian", ModBlocks.CARNELIAN_ORE, 4,0,20),           //RARE
+    CHALCOPYRITE("Chalcopyrite", ModBlocks.CHALCOPYRITE_ORE, 4,0,20),  //RARE
+    SODALITE("Sodalite", ModBlocks.SODALITE_ORE, 4,0,20);              //RARE
     
 	private final String name;
-	private final Block block;
+	private final RegistryObject<Block> block;
 	
     private int maxVeinSize, minHeight, maxHeight;
 
-    OreType(String name, Block Block , int maxVeinSize, int minHeight, int maxHeight)
+    OreType(String name, RegistryObject<Block> Block , int maxVeinSize, int minHeight, int maxHeight)
     {
 		this.name = name;
         this.block = Block;
@@ -38,7 +39,7 @@ public enum OreType {
     }
 
     public Block getBlock() {
-		return block;
+		return block.get();
     }
 
     public int getMaxVeinSize() {
@@ -57,11 +58,13 @@ public enum OreType {
         return name;
     }
 
+
+
 	public static OreType get(Block block)
     {
         for(OreType ore : values()){
 
-            if (block == ore.block){
+            if (block == ore.block.get()){
                 return ore;
             }
         }

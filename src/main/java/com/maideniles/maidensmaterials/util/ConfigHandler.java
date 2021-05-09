@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.Files;
+
+import com.maideniles.maidensmaterials.world.gen.ore.OreType;
 import net.minecraftforge.fml.loading.FMLConfig;
 import net.minecraftforge.fml.loading.FMLPaths;
 import static com.maideniles.maidensmaterials.util.ConfigHandler.ConfigKeys.*;
@@ -68,7 +70,8 @@ public class ConfigHandler {
 
                 "!Maiden's Marvelous Materials Config",
                 makeConfigEntry(MY_KEY_1, 1),
-                makeConfigEntry(MY_KEY_2, true)
+                makeConfigEntry(MY_KEY_2, true),
+                makeOreConfig()
 
                 //End of config file contents
         );
@@ -83,5 +86,22 @@ public static class ConfigKeys {
             MY_KEY_2 = "bar"
                     ;
 }
+
+
+    public static String makeOreConfig()
+    {
+        String result = "";
+        for(OreType ore : OreType.values()){
+            result += multilineString(
+                    "",
+                    "!" + ore.getName() + " Generation Options",
+                    makeConfigEntry(ore.getName() + " max vein size", ore.getMaxVeinSize()),
+                    makeConfigEntry(ore.getName() + " min height", ore.getMinHeight()),
+                    makeConfigEntry(ore.getName() + " max height", ore.getMaxHeight()),
+                    ""
+            );
+        }
+        return result;
+    }
 
 }
