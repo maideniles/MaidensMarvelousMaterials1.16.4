@@ -1,46 +1,5 @@
 {
-	"credit": "Made with Blockbench",
-	"parent": "block/block",
-	"textures": {
-		"0": "maidensmaterials:block/test_chest",
-		"1": "maidensmaterials:block/test_chest_side",
-		"2": "maidensmaterials:block/test_chest_bottom",
-		"3": "maidensmaterials:block/test_chest_lock",
-		"particle": "maidensmaterials:block/test_chest"
-	},
-	"elements": [
-		{
-			"from": [1, 0, 1],
-			"to": [15, 15, 15],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
-			"faces": {
-				"north": {"uv": [1, 1, 15, 16], "texture": "#1"},
-				"east": {"uv": [1, 1, 15, 16], "texture": "#1"},
-				"south": {"uv": [1, 1, 15, 16], "texture": "#1"},
-				"west": {"uv": [1, 1, 15, 16], "texture": "#0"},
-				"up": {"uv": [1, 1, 15, 15], "rotation": 90, "texture": "#2"},
-				"down": {"uv": [1, 1, 15, 15], "rotation": 270, "texture": "#2"}
-			}
-		},
-		{
-			"from": [0, 8, 7],
-			"to": [1, 12, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
-			"faces": {
-				"north": {"uv": [7, 6, 8, 10], "texture": "#3"},
-				"east": {"uv": [8, 6, 10, 10], "texture": "#3"},
-				"south": {"uv": [10, 6, 11, 10], "texture": "#3"},
-				"west": {"uv": [5, 6, 7, 10], "texture": "#3"},
-				"up": {"uv": [6, 10, 8, 11], "rotation": 90, "texture": "#3"},
-				"down": {"uv": [8, 10, 10, 11], "rotation": 270, "texture": "#3"}
-			}
-		}
-	],
-	"groups": [
-		{
-			"name": "VoxelShapes",
-			"origin": [0, 0, 0],
-			"children": [0, 1]
-		}
-	]
+  "textures": {
+    "particle": "maidensmaterials:model/purple_chest"
+  }
 }

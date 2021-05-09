@@ -6,6 +6,7 @@ import com.maideniles.maidensmaterials.init.ModBiomes;
 import com.maideniles.maidensmaterials.init.ModBlocks;
 import com.maideniles.maidensmaterials.world.biome.ModConfiguredSurfaceBuilders;
 import com.maideniles.maidensmaterials.world.biome.ModSurfaceBuilders;
+import com.maideniles.maidensmaterials.util.ConfigHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.RegistryKey;
@@ -49,11 +50,14 @@ public class ModBiomeGeneration
     {
         event.enqueueWork(() ->
         {
-            addBiome(ModBiomes.ORNAMENTAL_FOREST_BIOME.get(), BiomeManager.BiomeType.WARM, 100, MAGICAL, LUSH, FOREST);
+            addBiome(ModBiomes.ORNAMENTAL_FOREST_BIOME.get(), BiomeManager.BiomeType.WARM, MaidensMaterials.getInstance()
+                    .config.getInteger(ConfigHandler.ConfigKeys.ORNAMENTAL_FOREST_WEIGHT, 100), MAGICAL, LUSH, FOREST);
 
-            addBiome(ModBiomes.OASIS_SHORE_BIOME.get(), BiomeManager.BiomeType.WARM, 100, BEACH, SANDY, HOT );
+            addBiome(ModBiomes.OASIS_SHORE_BIOME.get(), BiomeManager.BiomeType.WARM, MaidensMaterials.getInstance()
+                    .config.getInteger(ConfigHandler.ConfigKeys.OASIS_SHORES_WEIGHT, 100), BEACH, SANDY, HOT);
 
-            addBiome(ModBiomes.ORNAMENTAL_ORCHARD_BIOME.get(), BiomeManager.BiomeType.WARM, 100, PLAINS, LUSH, RIVER );
+            addBiome(ModBiomes.ORNAMENTAL_ORCHARD_BIOME.get(), BiomeManager.BiomeType.WARM, MaidensMaterials.getInstance()
+                    .config.getInteger(ConfigHandler.ConfigKeys.ORNAMENTAL_ORCHARD_WEIGHT, 100), PLAINS, LUSH, RIVER);
         });
     }
 

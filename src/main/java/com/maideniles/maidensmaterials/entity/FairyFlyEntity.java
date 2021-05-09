@@ -128,12 +128,12 @@ public class FairyFlyEntity extends ParrotEntity implements IFlyingAnimal {
     @Nullable
     @Override
     public SoundEvent getAmbientSound() {
-        return ModSounds.FAIRY_FLY_AMBIENT.get();
+        return SoundEvents.ENTITY_BEE_LOOP;
     }
 
     @Override
     protected float playFlySound(float volume) {
-        this.playSound(ModSounds.FAIRY_FLY_AMBIENT.get(), 0.15F, 1.0F);
+        this.playSound(SoundEvents.ENTITY_BEE_LOOP, 0.15F, 1.0F);
         return volume + this.flapSpeed / 2.0F;
     }
 
@@ -152,6 +152,11 @@ public class FairyFlyEntity extends ParrotEntity implements IFlyingAnimal {
         @Override
     protected boolean makeFlySound() {
         return true;
+    }
+
+    @Override
+    protected float getSoundVolume() {
+        return 0.1F;
     }
 
     @Override

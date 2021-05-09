@@ -69,10 +69,12 @@ public class ConfigHandler {
                 //Start of config file contents
 
                 "!Maiden's Marvelous Materials Config",
-                makeConfigEntry(MY_KEY_1, 1),
-                makeConfigEntry(MY_KEY_2, true),
-                makeOreConfig()
 
+                "!Biome Weights",
+                makeConfigEntry(ORNAMENTAL_FOREST_WEIGHT, 100),
+                makeConfigEntry(ORNAMENTAL_ORCHARD_WEIGHT, 100),
+                makeConfigEntry(OASIS_SHORES_WEIGHT, 100),
+                makeOreConfig()
                 //End of config file contents
         );
     }
@@ -82,8 +84,10 @@ public class ConfigHandler {
 
 public static class ConfigKeys {
     public static final String
-            MY_KEY_1 = "foo",
-            MY_KEY_2 = "bar"
+
+            ORNAMENTAL_FOREST_WEIGHT = "Ornamental Forest Biome Weight",
+            ORNAMENTAL_ORCHARD_WEIGHT = "Ornamental Orchard Biome Weight",
+    OASIS_SHORES_WEIGHT = "Oasis Shores Biome Weight"
                     ;
 }
 

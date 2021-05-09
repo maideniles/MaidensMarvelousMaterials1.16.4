@@ -2,9 +2,9 @@ package com.maideniles.maidensmaterials.tileentity;
 
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
-import com.maideniles.maidensmaterials.blocks.TestChestBlock;
-import com.maideniles.maidensmaterials.blocks.TestChestTypes;
-import com.maideniles.maidensmaterials.container.TestChestContainer;
+import com.maideniles.maidensmaterials.blocks.BaseChestBlock;
+import com.maideniles.maidensmaterials.init.MaidensChestTypes;
+import com.maideniles.maidensmaterials.container.MaidensChestContainer;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -45,10 +45,10 @@ public class TestChestTileEntity extends LockableLootTileEntity implements IChes
     protected float prevLidAngle;
     protected int numPlayersUsing;
     private int ticksSinceSync;
-    private TestChestTypes chestType;
+    private MaidensChestTypes chestType;
     private Supplier<Block> blockToUse;
 
-    protected TestChestTileEntity(TileEntityType<?> typeIn, TestChestTypes chestTypeIn, Supplier<Block> blockToUseIn) {
+    protected TestChestTileEntity(TileEntityType<?> typeIn, MaidensChestTypes chestTypeIn, Supplier<Block> blockToUseIn) {
         super(typeIn);
 
         this.chestContents = NonNullList.<ItemStack>withSize(chestTypeIn.size, ItemStack.EMPTY);
@@ -148,7 +148,7 @@ public class TestChestTileEntity extends LockableLootTileEntity implements IChes
         int i = 0;
 
         for (PlayerEntity playerentity : world.getEntitiesWithinAABB(PlayerEntity.class, new AxisAlignedBB((double) ((float) x - 5.0F), (double) ((float) y - 5.0F), (double) ((float) z - 5.0F), (double) ((float) (x + 1) + 5.0F), (double) ((float) (y + 1) + 5.0F), (double) ((float) (z + 1) + 5.0F)))) {
-            if (playerentity.openContainer instanceof TestChestContainer) {
+            if (playerentity.openContainer instanceof MaidensChestContainer) {
                 ++i;
             }
         }
@@ -198,7 +198,7 @@ public class TestChestTileEntity extends LockableLootTileEntity implements IChes
     protected void onOpenOrClose() {
         Block block = this.getBlockState().getBlock();
 
-        if (block instanceof TestChestBlock) {
+        if (block instanceof BaseChestBlock) {
             this.world.addBlockEvent(this.pos, block, 1, this.numPlayersUsing);
             this.world.notifyNeighborsOfStateChange(this.pos, block);
         }
@@ -240,7 +240,7 @@ public class TestChestTileEntity extends LockableLootTileEntity implements IChes
 
     @Override
     protected Container createMenu(int windowId, PlayerInventory playerInventory) {
-        return TestChestContainer.createRedContainer(windowId, playerInventory, this);
+        return MaidensChestContainer.createRedContainer(windowId, playerInventory, this);
     }
 
     public void wasPlaced(LivingEntity livingEntity, ItemStack stack) {
@@ -249,11 +249,11 @@ public class TestChestTileEntity extends LockableLootTileEntity implements IChes
     public void removeAdornments() {
     }
 
-    public TestChestTypes getChestType() {
-        TestChestTypes type = TestChestTypes.RED;
+    public MaidensChestTypes getChestType() {
+        MaidensChestTypes type = MaidensChestTypes.RED;
 
         if (this.hasWorld()) {
-            TestChestTypes typeFromBlock = TestChestBlock.getTypeFromBlock(this.getBlockState().getBlock());
+            MaidensChestTypes typeFromBlock = BaseChestBlock.getTypeFromBlock(this.getBlockState().getBlock());
 
             if (typeFromBlock != null) {
                 type = typeFromBlock;

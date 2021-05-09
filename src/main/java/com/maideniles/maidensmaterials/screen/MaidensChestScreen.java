@@ -1,24 +1,35 @@
 package com.maideniles.maidensmaterials.screen;
 
-import com.maideniles.maidensmaterials.MaidensMaterials;
+import com.maideniles.maidensmaterials.init.MaidensChestTypes;
 import com.maideniles.maidensmaterials.container.MaidensChestContainer;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.IHasContainer;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
-import org.apache.logging.log4j.LogManager;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class MaidensChestScreen extends ContainerScreen<MaidensChestContainer>
-{
-    private final ResourceLocation GUI = new ResourceLocation(MaidensMaterials.MOD_ID,
-            "textures/gui/chest/pink_chest_gui.png");
+@OnlyIn(Dist.CLIENT)
+public class MaidensChestScreen extends ContainerScreen<MaidensChestContainer> implements IHasContainer<MaidensChestContainer> {
 
-    public MaidensChestScreen(MaidensChestContainer container, PlayerInventory inv, ITextComponent name)
-    {
-        super(container, inv, name);
+    private final MaidensChestTypes chestType;
+
+    private final int textureXSize;
+
+    private final int textureYSize;
+
+    public MaidensChestScreen(MaidensChestContainer container, PlayerInventory playerInventory, ITextComponent title) {
+        super(container, playerInventory, title);
+
+        this.chestType = container.getChestType();
+        this.xSize = container.getChestType().xSize;
+        this.ySize = container.getChestType().ySize;
+        this.textureXSize = container.getChestType().textureXSize;
+        this.textureYSize = container.getChestType().textureYSize;
+
+        this.passEvents = false;
     }
 
     @Override
@@ -30,20 +41,20 @@ public class MaidensChestScreen extends ContainerScreen<MaidensChestContainer>
 
     @Override
     protected void drawGuiContainerForegroundLayer(MatrixStack matrixStack, int mouseX, int mouseY) {
+        this.font.func_243248_b(matrixStack, this.title, 8.0F, 6.0F, 4210752);
 
-        drawString(matrixStack, Minecraft.getInstance().fontRenderer,"Energy: " +
-                container.getEnergyLevel(), 28, 10, 0xffffff);
+        this.font.func_243248_b(matrixStack, this.playerInventory.getDisplayName(), 8.0F, (float) (this.ySize - 96 + 2), 4210752);
     }
 
     @Override
-    protected void drawGuiContainerBackgroundLayer(MatrixStack matrixStack, float partialTicks, int x, int y)
-    {
+    protected void drawGuiContainerBackgroundLayer(MatrixStack matrixStack, float partialTicks, int mouseX, int mouseY) {
         RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-        this.minecraft.getTextureManager().bindTexture(GUI);
-        int i = this.guiLeft;
-        int j = this.guiTop;
-        this.blit(matrixStack, i, j, 0, 0, this.xSize, this.ySize);
 
-        this.blit(matrixStack, i + 13, j + 9, 176, 0, 11, 64 - container.getEnergyLevel());
+        this.minecraft.getTextureManager().bindTexture(this.chestType.guiTexture);
+
+        int x = (this.width - this.xSize) / 2;
+        int y = (this.height - this.ySize) / 2;
+
+        blit(matrixStack, x, y, 0, 0, this.xSize, this.ySize, this.textureXSize, this.textureYSize);
     }
 }

@@ -2,21 +2,21 @@ package com.maideniles.maidensmaterials.tileentity;
 
 
 
-import com.maideniles.maidensmaterials.container.TestChestContainer;
-import com.maideniles.maidensmaterials.init.TestChestBlocks;
-import com.maideniles.maidensmaterials.init.TestChestTileEntityTypes;
-import com.maideniles.maidensmaterials.blocks.TestChestTypes;
+import com.maideniles.maidensmaterials.container.MaidensChestContainer;
+import com.maideniles.maidensmaterials.init.MaidensChestTileEntityTypes;
+import com.maideniles.maidensmaterials.init.MaidensChestBlocks;
+import com.maideniles.maidensmaterials.init.MaidensChestTypes;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
 
 public class GreenChestTileEntity extends TestChestTileEntity {
 
     public GreenChestTileEntity() {
-        super(TestChestTileEntityTypes.GREEN_CHEST.get(), TestChestTypes.GREEN, TestChestBlocks.GREEN_CHEST::get);
+        super(MaidensChestTileEntityTypes.GREEN_CHEST.get(), MaidensChestTypes.GREEN, MaidensChestBlocks.GREEN_CHEST::get);
     }
 
     @Override
     protected Container createMenu(int id, PlayerInventory playerInventory) {
-        return TestChestContainer.createGreenContainer(id, playerInventory, this);
+        return MaidensChestContainer.createGreenContainer(id, playerInventory, this);
     }
 }

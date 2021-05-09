@@ -4,7 +4,6 @@ import com.maideniles.maidensmaterials.client.RenderLayers;
 import com.maideniles.maidensmaterials.entity.FairyFlyEntity;
 import com.maideniles.maidensmaterials.init.*;
 import com.maideniles.maidensmaterials.screen.MaidensChestScreen;
-import com.maideniles.maidensmaterials.screen.TestChestScreen;
 import com.maideniles.maidensmaterials.tileentity.TestChestTileEntityRenderer;
 import com.maideniles.maidensmaterials.util.KVP;
 import com.maideniles.maidensmaterials.util.Registration;
@@ -31,8 +30,6 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.loading.FMLConfig;
-import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -44,6 +41,8 @@ public class MaidensMaterials
 {
 
     public static final String MOD_ID = "maidensmaterials";
+
+    private static MaidensMaterials instance;
 
     public static final ItemGroup MAIDENS_BLOCKS_GROUP = new ItemGroup("maidens_blocks_group") {
     @Override
@@ -69,6 +68,7 @@ public class MaidensMaterials
         ConfigHandler.makeConfigIfAbsent();
         config = ConfigHandler.getConfig();
         OreType.loadFromConfig(config);
+        MaidensMaterials.instance = this;
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         Registration.register();
@@ -84,12 +84,12 @@ public class MaidensMaterials
         ModEntities.register();
         ModSounds.register();
         ModFeatures.register();
-        ModTileEntities.register();
-        ModContainers.register();
 
-        TestChestBlocks.BLOCKS.register(modBus);
-        TestChestTileEntityTypes.TILE_ENTITIES.register(modBus);
-        TestChestContainerTypes.CONTAINERS.register(modBus);
+
+
+        MaidensChestBlocks.BLOCKS.register(modBus);
+        MaidensChestTileEntityTypes.TILE_ENTITIES.register(modBus);
+        MaidensChestContainerTypes.CONTAINERS.register(modBus);
 
 
 
@@ -108,7 +108,7 @@ public class MaidensMaterials
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-
+    public static MaidensMaterials getInstance() { return instance; }
 
     private void setup(final FMLCommonSetupEvent event)
     {
@@ -117,41 +117,79 @@ public class MaidensMaterials
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
 
 
-        ScreenManager.registerFactory(ModContainers.PINK_CHEST_CONTAINER.get(), MaidensChestScreen:: new);
 
-        ScreenManager.registerFactory(TestChestContainerTypes.RED_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.ORANGE_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.YELLOW_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.LIME_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.GREEN_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.CYAN_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.LIGHT_BLUE_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.BLUE_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.PURPLE_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.MAGENTA_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.PINK_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.WHITE_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.LIGHT_GRAY_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.GRAY_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.BLACK_CHEST.get(), TestChestScreen::new);
-        ScreenManager.registerFactory(TestChestContainerTypes.BROWN_CHEST.get(), TestChestScreen::new);
 
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.RED_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.ORANGE_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.YELLOW_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.LIME_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.GREEN_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.CYAN_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.LIGHT_BLUE_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.BLUE_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.PURPLE_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.MAGENTA_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.PINK_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.WHITE_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.LIGHT_GRAY_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.GRAY_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.BLACK_CHEST.get(), TestChestTileEntityRenderer::new);
-        ClientRegistry.bindTileEntityRenderer(TestChestTileEntityTypes.BROWN_CHEST.get(), TestChestTileEntityRenderer::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.RED_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.ORANGE_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.YELLOW_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.LIME_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.GREEN_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.CYAN_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.LIGHT_BLUE_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.BLUE_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.PURPLE_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.MAGENTA_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.PINK_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.WHITE_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.LIGHT_GRAY_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.GRAY_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.BLACK_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.BROWN_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.CRABAPPLE_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.POINCIANA_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.LABURNUM_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.JADE_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.PAULOWNIA_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.WISTERIA_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.JACARANDA_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.DOGWOOD_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.SILVERBELL_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.CEDAR_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.PALM_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.ACACIA_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.BIRCH_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.OAK_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.JUNGLE_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.SPRUCE_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.DARK_OAK_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.CRIMSON_CHEST.get(), MaidensChestScreen::new);
+        ScreenManager.registerFactory(MaidensChestContainerTypes.WARPED_CHEST.get(), MaidensChestScreen::new);
+
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.RED_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.ORANGE_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.YELLOW_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.LIME_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.GREEN_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.CYAN_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.LIGHT_BLUE_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.BLUE_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.PURPLE_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.MAGENTA_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.PINK_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.WHITE_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.LIGHT_GRAY_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.GRAY_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.BLACK_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.BROWN_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.CRABAPPLE_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.POINCIANA_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.LABURNUM_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.JADE_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.PAULOWNIA_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.WISTERIA_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.JACARANDA_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.DOGWOOD_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.SILVERBELL_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.CEDAR_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.PALM_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.ACACIA_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.BIRCH_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.OAK_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.JUNGLE_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.SPRUCE_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.DARK_OAK_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.CRIMSON_CHEST.get(), TestChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(MaidensChestTileEntityTypes.WARPED_CHEST.get(), TestChestTileEntityRenderer::new);
 
         DeferredWorkQueue.runLater(() -> {
             // Done here to avoid race conditions and possible crashes if the WorldGenRegistry is accessed at same time.

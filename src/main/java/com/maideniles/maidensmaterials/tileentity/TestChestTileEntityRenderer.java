@@ -1,9 +1,9 @@
 package com.maideniles.maidensmaterials.tileentity;
 
-import com.maideniles.maidensmaterials.blocks.TestChestBlock;
-import com.maideniles.maidensmaterials.blocks.TestChestTypes;
+import com.maideniles.maidensmaterials.blocks.BaseChestBlock;
+import com.maideniles.maidensmaterials.init.MaidensChestTypes;
 
-import com.maideniles.maidensmaterials.client.TestChestModels;
+import com.maideniles.maidensmaterials.client.MaidensChestModels;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import net.minecraft.block.Block;
@@ -50,20 +50,20 @@ public class TestChestTileEntityRenderer<T extends TileEntity & IChestLid> exten
         World world = tileEntity.getWorld();
         boolean flag = world != null;
 
-        BlockState blockstate = flag ? tileEntity.getBlockState() : (BlockState) tileEntity.getBlockToUse().getDefaultState().with(TestChestBlock.FACING, Direction.SOUTH);
+        BlockState blockstate = flag ? tileEntity.getBlockState() : (BlockState) tileEntity.getBlockToUse().getDefaultState().with(BaseChestBlock.FACING, Direction.SOUTH);
         Block block = blockstate.getBlock();
-        TestChestTypes chestType = TestChestTypes.RED;
-        TestChestTypes actualType = TestChestBlock.getTypeFromBlock(block);
+        MaidensChestTypes chestType = MaidensChestTypes.RED;
+        MaidensChestTypes actualType = BaseChestBlock.getTypeFromBlock(block);
 
         if (actualType != null) {
             chestType = actualType;
         }
 
-        if (block instanceof TestChestBlock) {
-            TestChestBlock ironChestBlock = (TestChestBlock) block;
+        if (block instanceof BaseChestBlock) {
+            BaseChestBlock ironChestBlock = (BaseChestBlock) block;
 
             matrixStackIn.push();
-            float f = blockstate.get(TestChestBlock.FACING).getHorizontalAngle();
+            float f = blockstate.get(BaseChestBlock.FACING).getHorizontalAngle();
             matrixStackIn.translate(0.5D, 0.5D, 0.5D);
             matrixStackIn.rotate(Vector3f.YP.rotationDegrees(-f));
             matrixStackIn.translate(-0.5D, -0.5D, -0.5D);
@@ -76,12 +76,12 @@ public class TestChestTileEntityRenderer<T extends TileEntity & IChestLid> exten
                 iCallbackWrapper = TileEntityMerger.ICallback::func_225537_b_;
             }
 
-            float f1 = iCallbackWrapper.apply(TestChestBlock.getLid((IChestLid) tileEntity)).get(partialTicks);
+            float f1 = iCallbackWrapper.apply(BaseChestBlock.getLid((IChestLid) tileEntity)).get(partialTicks);
             f1 = 1.0F - f1;
             f1 = 1.0F - f1 * f1 * f1;
             int i = iCallbackWrapper.apply(new DualBrightnessCallback<>()).applyAsInt(combinedLightIn);
 
-            RenderMaterial material = new RenderMaterial(Atlases.CHEST_ATLAS, TestChestModels.chooseChestTexture(chestType));
+            RenderMaterial material = new RenderMaterial(Atlases.CHEST_ATLAS, MaidensChestModels.chooseChestTexture(chestType));
             IVertexBuilder ivertexbuilder = material.getBuffer(bufferIn, RenderType::getEntityCutout);
 
             this.handleModelRender(matrixStackIn, ivertexbuilder, this.chestLid, this.chestLock, this.chestBottom, f1, i, combinedOverlayIn);
