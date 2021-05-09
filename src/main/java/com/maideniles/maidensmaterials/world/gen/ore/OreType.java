@@ -2,40 +2,43 @@ package com.maideniles.maidensmaterials.world.gen.ore;
 
 import com.maideniles.maidensmaterials.init.ModBlocks;
 
+import com.maideniles.maidensmaterials.util.KVP;
+
 import net.minecraft.block.Block;
 
 public enum OreType {
 
-    CITRINE(ModBlocks.CITRINE_ORE.get(), 8,41,60),              //COMMON
-    JADE(ModBlocks.JADE_ORE.get(), 8,41,60),                    //COMMON
-    JASPER(ModBlocks.JASPER_ORE.get(), 8,41,60),                //COMMON
-    MOONSTONE(ModBlocks.MOONSTONE_ORE.get(), 8,41,60),          //COMMON
+    CITRINE("Citrine", ModBlocks.CITRINE_ORE.get(), 8,41,60),               //COMMON
+    JADE("Jade", ModBlocks.JADE_ORE.get(), 8,41,60),                        //COMMON
+    JASPER("Jasper", ModBlocks.JASPER_ORE.get(), 8,41,60),                  //COMMON
+    MOONSTONE("Moonstone", ModBlocks.MOONSTONE_ORE.get(), 8,41,60),         //COMMON
 
-    AVENTURINE(ModBlocks.AVENTURINE_ORE.get(), 6,21,40),        //UNCCOMMON
-    LABRADORITE(ModBlocks.LABRADORITE_ORE.get(), 6,21,40),      //UNCCOMMON
-    MICA(ModBlocks.MICA_ORE.get(), 6,21,40),                    //UNCCOMMON
-    ROSE_QUARTZ(ModBlocks.ROSE_QUARTZ_ORE.get(), 6,21,40),      //UNCCOMMON
+    AVENTURINE("Aventurine", ModBlocks.AVENTURINE_ORE.get(), 6,21,40),      //UNCCOMMON
+    LABRADORITE("Labradorite", ModBlocks.LABRADORITE_ORE.get(), 6,21,40),   //UNCCOMMON
+    MICA("Mica", ModBlocks.MICA_ORE.get(), 6,21,40),                        //UNCCOMMON
+    ROSE_QUARTZ("Rose Quartz", ModBlocks.ROSE_QUARTZ_ORE.get(), 6,21,40),   //UNCCOMMON
 
-    AMETHYST(ModBlocks.AMETHYST_ORE.get(), 4,0,20),            //RARE
-    CARNELIAN(ModBlocks.CARNELIAN_ORE.get(), 4,0,20),          //RARE
-    CHALCOPYRITE(ModBlocks.CHALCOPYRITE_ORE.get(), 4,0,20),    //RARE
-    SODALITE(ModBlocks.SODALITE_ORE.get(), 4,0,20);            //RARE
-    private final Block block;
-    private final int maxVeinSize;
-    private final int minHeight;
-    private final int maxHeight;
+    AMETHYST("Amethyst", ModBlocks.AMETHYST_ORE.get(), 4,0,20),              //RARE
+    CARNELIAN("Carnelian", ModBlocks.CARNELIAN_ORE.get(), 4,0,20),           //RARE
+    CHALCOPYRITE("Chalcopyrite", ModBlocks.CHALCOPYRITE_ORE.get(), 4,0,20),  //RARE
+    SODALITE("Sodalite", ModBlocks.SODALITE_ORE.get(), 4,0,20);              //RARE
+    
+	private final String name;
+	private final Block block;
+	
+    private int maxVeinSize, minHeight, maxHeight;
 
-    OreType( Block Block , int maxVeinSize, int minHeight, int maxHeight)
+    OreType(String name, Block Block , int maxVeinSize, int minHeight, int maxHeight)
     {
-        this.block = Block;
+		this.name = name;
+        this.block = block;
         this.maxVeinSize = maxVeinSize;
         this.minHeight = minHeight;
         this.maxHeight = maxHeight;
     }
 
-
     public Block getBlock() {
-        return block;
+		return block;
     }
 
     public int getMaxVeinSize() {
@@ -50,7 +53,7 @@ public enum OreType {
         return maxHeight;
     }
 
-    public static OreType get(Block block)
+	public static OreType get(Block block)
     {
         for(OreType ore : values()){
 
@@ -59,5 +62,14 @@ public enum OreType {
             }
         }
         return null;
+    }
+
+    public static void loadFromConfig(KVP config)
+    {
+        for(OreType ore : values()){
+			ore.maxVeinSize = config.getInteger(ore.name + " max vein size", ore.maxVeinSize);
+			ore.minHeight = config.getInteger(ore.name + " min height", ore.minHeight);
+			ore.maxHeight = config.getInteger(ore.name + " max height", ore.maxHeight);
+        }
     }
 }
