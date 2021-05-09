@@ -6,8 +6,11 @@ import com.maideniles.maidensmaterials.init.*;
 import com.maideniles.maidensmaterials.screen.MaidensChestScreen;
 import com.maideniles.maidensmaterials.screen.TestChestScreen;
 import com.maideniles.maidensmaterials.tileentity.TestChestTileEntityRenderer;
+import com.maideniles.maidensmaterials.util.KVP;
 import com.maideniles.maidensmaterials.util.Registration;
 import com.maideniles.maidensmaterials.world.biome.ModSurfaceBuilders;
+import com.maideniles.maidensmaterials.util.ConfigHandler;
+import com.maideniles.maidensmaterials.world.gen.ore.OreType;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.ScreenManager;
@@ -56,11 +59,16 @@ public class MaidensMaterials
         }
     };
 
+    public KVP config;
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
     public MaidensMaterials() {
+
+        ConfigHandler.makeConfigIfAbsent();
+        config = ConfigHandler.getConfig();
+        OreType.loadFromConfig(config);
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         Registration.register();
@@ -82,6 +90,7 @@ public class MaidensMaterials
         TestChestBlocks.BLOCKS.register(modBus);
         TestChestTileEntityTypes.TILE_ENTITIES.register(modBus);
         TestChestContainerTypes.CONTAINERS.register(modBus);
+
 
 
 
@@ -177,7 +186,6 @@ public class MaidensMaterials
         LOGGER.info("HELLO from server starting");
 
    //testing config for steve
-        System.out.print(FMLPaths.GAMEDIR.get().resolve(FMLConfig.defaultConfigPath()).resolve(MOD_ID + "HERE I AM, SEARCH FOR ME! .kvp"));
 
 
 

@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 import java.nio.file.Files;
 import net.minecraftforge.fml.loading.FMLConfig;
 import net.minecraftforge.fml.loading.FMLPaths;
-import static com.maideniles.maidensmaterials.util.ConfigKeys.*;
+import static com.maideniles.maidensmaterials.util.ConfigHandler.ConfigKeys.*;
 import static com.maideniles.maidensmaterials.MaidensMaterials.MOD_ID;
 
 public class ConfigHandler {
@@ -39,7 +39,7 @@ public class ConfigHandler {
     }
 
     private static String makeConfigEntry(String key, Object value) {
-        return key + ": " + value.toString();
+        return KVP.escape(key) + ": " + KVP.escape(value.toString());
     }
 
 
@@ -75,11 +75,13 @@ public class ConfigHandler {
     }
 
 
-}
+
 
 public static class ConfigKeys {
     public static final String
             MY_KEY_1 = "foo",
             MY_KEY_2 = "bar"
                     ;
+}
+
 }

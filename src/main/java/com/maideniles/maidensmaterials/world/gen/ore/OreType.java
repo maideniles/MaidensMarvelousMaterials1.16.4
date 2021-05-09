@@ -31,7 +31,7 @@ public enum OreType {
     OreType(String name, Block Block , int maxVeinSize, int minHeight, int maxHeight)
     {
 		this.name = name;
-        this.block = block;
+        this.block = Block;
         this.maxVeinSize = maxVeinSize;
         this.minHeight = minHeight;
         this.maxHeight = maxHeight;
@@ -51,6 +51,10 @@ public enum OreType {
 
     public int getMaxHeight() {
         return maxHeight;
+    }
+
+    public String getName(){
+        return name;
     }
 
 	public static OreType get(Block block)
