@@ -1,8 +1,5 @@
 {
-  "variants": {
-    "facing=north": { "model": "maidensmaterials:block/red_chest", "y": 90 },
-    "facing=south": { "model": "maidensmaterials:block/red_chest", "y": 270 },
-    "facing=west": { "model": "maidensmaterials:block/red_chest", "y": 0 },
-    "facing=east": { "model": "maidensmaterials:block/red_chest", "y": 180 }
-  }
+    "variants": {
+        "": { "model": "maidensmaterials:block/red_chest" }
+    }
 }

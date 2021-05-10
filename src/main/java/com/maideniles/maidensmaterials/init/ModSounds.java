@@ -18,6 +18,9 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> FAIRY_FLY_DIE = Registration.SOUNDS.register("fairy_fly_die",
             () -> new SoundEvent(new ResourceLocation(MaidensMaterials.MOD_ID, "fairy_fly_die")));
 
+    public static final RegistryObject<SoundEvent> FAIRY_FLY_EAT = Registration.SOUNDS.register("fairy_fly_eat",
+            () -> new SoundEvent(new ResourceLocation(MaidensMaterials.MOD_ID, "fairy_fly_eat")));
+
 
     public static void register(){}
 }

@@ -19,6 +19,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.tags.BlockTags;
@@ -41,6 +42,9 @@ public class FairyFlyEntity extends ParrotEntity implements IFlyingAnimal {
 
     private static final Item TAME_ITEMS = ModItems.FLORAL_ESSENCE.get();
     private static final Item DEADLY_ITEM = ModItems.EARTHEN_ESSENCE.get();
+    private static final Ingredient TEMPTATION_ITEMS = Ingredient.fromItems(ModItems.FLORAL_ESSENCE.get(),
+            ModItems.EARTHEN_ESSENCE.get());
+
 
     public FairyFlyEntity(EntityType<? extends ParrotEntity> type, World worldIn) {
         super(type, worldIn);
@@ -80,8 +84,9 @@ public class FairyFlyEntity extends ParrotEntity implements IFlyingAnimal {
         this.goalSelector.addGoal(2, new SitGoal(this));
         this.goalSelector.addGoal(1, new LookAtGoal(this, PlayerEntity.class, 8.0F));
         this.goalSelector.addGoal(0, new PanicGoal(this, 1.25D));
+        this.goalSelector.addGoal(3, new TemptGoal(this, 1.0D, false, TEMPTATION_ITEMS));
     }
-
+@Override
     public ActionResultType func_230254_b_(PlayerEntity p_230254_1_, Hand p_230254_2_) {
         ItemStack itemstack = p_230254_1_.getHeldItem(p_230254_2_);
         if (!this.isTamed() && TAME_ITEMS==(itemstack.getItem())) {
@@ -90,7 +95,7 @@ public class FairyFlyEntity extends ParrotEntity implements IFlyingAnimal {
             }
 
             if (!this.isSilent()) {
-                this.world.playSound((PlayerEntity)null, this.getPosX(), this.getPosY(), this.getPosZ(), SoundEvents.ENTITY_PARROT_EAT, this.getSoundCategory(), 1.0F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.2F);
+                this.world.playSound((PlayerEntity)null, this.getPosX(), this.getPosY(), this.getPosZ(), ModSounds.FAIRY_FLY_EAT.get(), this.getSoundCategory(), 1.0F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.2F);
             }
 
             if (!this.world.isRemote) {
@@ -128,12 +133,12 @@ public class FairyFlyEntity extends ParrotEntity implements IFlyingAnimal {
     @Nullable
     @Override
     public SoundEvent getAmbientSound() {
-        return SoundEvents.ENTITY_BEE_LOOP;
+        return ModSounds.FAIRY_FLY_AMBIENT.get();
     }
 
     @Override
     protected float playFlySound(float volume) {
-        this.playSound(SoundEvents.ENTITY_BEE_LOOP, 0.15F, 1.0F);
+        this.playSound(ModSounds.FAIRY_FLY_AMBIENT.get(), 0.15F, 1.0F);
         return volume + this.flapSpeed / 2.0F;
     }
 
@@ -151,7 +156,7 @@ public class FairyFlyEntity extends ParrotEntity implements IFlyingAnimal {
 
         @Override
     protected boolean makeFlySound() {
-        return true;
+        return false;
     }
 
     @Override

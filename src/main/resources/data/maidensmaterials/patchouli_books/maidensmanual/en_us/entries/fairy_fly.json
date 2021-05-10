@@ -1,0 +1,24 @@
+{
+    "name": "Fairy Fly",
+    "icon": "maidensmaterials:fairy_fly_spawn_egg",
+    "category": "entities",
+    "pages": [
+	
+	{
+			"type": "spotlight",
+			"item": "maidensmaterials:fairy_fly_spawn_egg",
+			"text": "The Fairy Fly makes its home among the bright trees of the Ornamental Forest.$(br2) This sweet little bug has an appetite for floral essence, and it will love you forever if you feed it."
+		},
+	
+        {
+    "type": "entity",
+	"entity": "maidensmaterials:fairy_fly",
+	"name": "Fairy Fly"
+    
+        }
+		
+		
+		
+		
+    ]
+}

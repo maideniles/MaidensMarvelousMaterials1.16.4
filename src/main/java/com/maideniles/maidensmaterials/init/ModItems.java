@@ -1,6 +1,7 @@
 package com.maideniles.maidensmaterials.init;
 
 import com.maideniles.maidensmaterials.MaidensMaterials;
+import com.maideniles.maidensmaterials.items.MarvelousManualItem;
 import com.maideniles.maidensmaterials.items.ModSpawnEggItem;
 import com.maideniles.maidensmaterials.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -15,6 +16,9 @@ public class ModItems {
     public static final RegistryObject<ModSpawnEggItem> FAIRY_FLY_SPAWN_EGG = Registration.ITEMS.register("fairy_fly_spawn_egg",
             () -> new ModSpawnEggItem(ModEntities.FAIRY_FLY, 0xee2964, 0x00ffe3,
                     new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+
+    public static final RegistryObject<Item> MARVELOUS_MANUAL = Registration.ITEMS.register("marvelous_manual",
+            ()-> new MarvelousManualItem(new Item.Properties().group(null).maxStackSize(1)));
 
 
     //TOOLS//
@@ -561,22 +565,22 @@ public class ModItems {
     public static final RegistryObject<Item> AMETHYST_HELMET =
             Registration.ITEMS.register("amethyst_helmet",
                     () -> new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.HEAD,
-                            new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+                            new Item.Properties().group(null)));
 
     public static final RegistryObject<Item> AMETHYST_CHESTPLATE =
             Registration.ITEMS.register("amethyst_chestplate",
                     () -> new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.CHEST,
-                            new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+                            new Item.Properties().group(null)));
 
     public static final RegistryObject<Item> AMETHYST_LEGGINGS =
             Registration.ITEMS.register("amethyst_leggings",
                     () -> new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.LEGS,
-                            new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+                            new Item.Properties().group(null)));
 
     public static final RegistryObject<Item> AMETHYST_BOOTS =
             Registration.ITEMS.register("amethyst_boots",
                     () -> new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.FEET,
-                            new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+                            new Item.Properties().group(null)));
 
 
     public static void register() {

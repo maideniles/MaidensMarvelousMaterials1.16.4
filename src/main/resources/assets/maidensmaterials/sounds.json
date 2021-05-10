@@ -16,6 +16,12 @@
 	"category": "neutral",
 	"subtitle": "maidensmaterials.fairy_fly_die",
 	"sounds": ["maidensmaterials:fairy_fly_die"]
+	},
+	
+	"fairy_fly_eat": {
+	"category": "neutral",
+	"subtitle": "maidensmaterials.fairy_fly_eat",
+	"sounds": ["maidensmaterials:fairy_fly_eat"]
 	}
 
 }

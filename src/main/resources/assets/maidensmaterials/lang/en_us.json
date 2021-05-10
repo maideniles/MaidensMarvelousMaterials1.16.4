@@ -803,6 +803,7 @@
 	"block.maidensmaterials.crabapple_planks": "Crabapple Planks",
 	"block.maidensmaterials.silverbell_planks": "SilverBell Planks",
 	"block.maidensmaterials.cedar_planks": "Cedar Planks",
+	"block.maidensmaterials.palm_planks": "Palm Planks",
 	"block.maidensmaterials.whitewashed_planks": "Whitewashed Planks",
 
 	"block.maidensmaterials.paulownia_bookshelf": "Paulownia Bookshelf",
@@ -815,6 +816,7 @@
 	"block.maidensmaterials.crabapple_bookshelf": "Crabapple Bookshelf",
 	"block.maidensmaterials.silverbell_bookshelf": "SilverBell Bookshelf",
 	"block.maidensmaterials.cedar_bookshelf": "Cedar Bookshelf",
+	"block.maidensmaterials.palm_bookshelf": "Palm Bookshelf",
 
 	"block.maidensmaterials.acacia_bookshelf": "Acacia Bookshelf",
 	"block.maidensmaterials.birch_bookshelf": "Birch Bookshelf",
@@ -835,6 +837,7 @@
 	"block.maidensmaterials.crabapple_pressure_plate": "Crabapple Pressure Plate",
 	"block.maidensmaterials.silverbell_pressure_plate": "SilverBell Pressure Plate",
 	"block.maidensmaterials.cedar_pressure_plate": "Cedar Pressure Plate",
+	"block.maidensmaterials.palm_pressure_plate": "Palm Pressure Plate",
 
 	"block.maidensmaterials.acacia_pressure_plate": "Acacia Pressure Plate",
 	"block.maidensmaterials.birch_pressure_plate": "Birch Pressure Plate",
@@ -853,6 +856,7 @@
 	"block.maidensmaterials.crabapple_button": "Crabapple Button",
 	"block.maidensmaterials.silverbell_button": "SilverBell Button",
 	"block.maidensmaterials.cedar_button": "Cedar Button",
+	"block.maidensmaterials.palm_button": "Palm Button",
 
 	"block.maidensmaterials.acacia_button": "Acacia Button",
 	"block.maidensmaterials.birch_button": "Birch Button",
@@ -871,6 +875,7 @@
 	"block.maidensmaterials.wisteria_slab": "Wisteria Slab",
 	"block.maidensmaterials.silverbell_slab": "SilverBell Slab",
 	"block.maidensmaterials.cedar_slab": "Cedar Slab",
+	"block.maidensmaterials.palm_slab": "Palm Slab",
 	"block.maidensmaterials.whitewashed_slab": "Whitewashed Slab",
 
 	"block.maidensmaterials.paulownia_stairs": "Paulownia Stairs",
@@ -883,6 +888,7 @@
 	"block.maidensmaterials.wisteria_stairs": "Wisteria Stairs",
 	"block.maidensmaterials.silverbell_stairs": "SilverBell Stairs",
 	"block.maidensmaterials.cedar_stairs": "Cedar Stairs",
+	"block.maidensmaterials.palm_stairs": "Palm Stairs",
 	"block.maidensmaterials.whitewashed_stairs": "Whitewashed Stairs",
 
 	"block.maidensmaterials.paulownia_fence": "Paulownia Fence",
@@ -895,6 +901,7 @@
 	"block.maidensmaterials.wisteria_fence": "Wisteria Fence",
 	"block.maidensmaterials.silverbell_fence": "Silverbell Fence",
 	"block.maidensmaterials.cedar_fence": "Cedar Fence",
+	"block.maidensmaterials.palm_fence": "Palm Fence",
 	"block.maidensmaterials.whitewashed_fence": "Whitewashed Fence",
 
 	"block.maidensmaterials.paulownia_fence_gate": "Paulownia Fence Gate",
@@ -907,6 +914,7 @@
 	"block.maidensmaterials.wisteria_fence_gate": "Wisteria Fence Gate",
 	"block.maidensmaterials.silverbell_fence_gate": "SilverBell Fence Gate",
 	"block.maidensmaterials.cedar_fence_gate": "Cedar Fence Gate",
+	"block.maidensmaterials.palm_fence_gate": "Palm Fence Gate",
 	"block.maidensmaterials.whitewashed_fence_gate": "Whitewashed Fence Gate",
 
 
@@ -949,6 +957,18 @@
 	"block.maidensmaterials.cedar_stripped_wood": "Cedar Stripped Wood",
 
 	"block.maidensmaterials.palm_stripped_wood": "Palm Stripped Wood",
+	"block.maidensmaterials.paulownia_wood": "Paulownia Wood",
+	"block.maidensmaterials.poinciana_wood": "Poinciana Wood",
+	"block.maidensmaterials.jade_wood": "Jade Wood",
+	"block.maidensmaterials.laburnum_wood": "Laburnum Wood",
+	"block.maidensmaterials.jacaranda_wood": "Jacaranda Wood",
+	"block.maidensmaterials.wisteria_wood": "Wisteria Wood",
+	"block.maidensmaterials.silverbell_wood": "Carolina SilverBell Wood",
+	"block.maidensmaterials.crabapple_wood": "Crabapple Wood",
+	"block.maidensmaterials.dogwood_wood": "Dogwood Wood",
+	"block.maidensmaterials.cedar_wood": "Cedar Wood",
+
+	"block.maidensmaterials.palm_wood": "Palm Wood",
 	
 	
 
@@ -1175,6 +1195,7 @@
 	"block.maidensmaterials.crimson_door_1": "Crimson Door 1",
 	"block.maidensmaterials.paulownia_door_1": "Paulownia Door 1",
 	"block.maidensmaterials.cedar_door_1": "Cedar Door 1",
+	"block.maidensmaterials.palm_door_1": "Palm Door 1",
 	"block.maidensmaterials.crabapple_door_1": "Crabapple Door 1",
 	"block.maidensmaterials.dogwood_door_1": "Dogwood Door 1",
 	"block.maidensmaterials.laburnum_door_1": "Laburnum Door 1",
@@ -1211,6 +1232,7 @@
 	"block.maidensmaterials.paulownia_door_2": "Paulownia Door 2",
 	"block.maidensmaterials.crabapple_door_2": "Crabapple Door 2",
 	"block.maidensmaterials.cedar_door_2": "Cedar Door 2",
+	"block.maidensmaterials.palm_door_2": "Palm Door 2",
 	"block.maidensmaterials.dogwood_door_2": "Dogwood Door 2",
 	"block.maidensmaterials.laburnum_door_2": "Laburnum Door 2",
 	"block.maidensmaterials.jacaranda_door_2": "Jacaranda Door 2",
@@ -1246,6 +1268,7 @@
 	"block.maidensmaterials.paulownia_door_3": "Paulownia Door 3",
 	"block.maidensmaterials.crabapple_door_3": "Crabapple Door 3",
 	"block.maidensmaterials.cedar_door_3": "Cedar Door 3",
+	"block.maidensmaterials.palm_door_3": "Palm Door 3",
 	"block.maidensmaterials.dogwood_door_3": "Dogwood Door 3",
 	"block.maidensmaterials.laburnum_door_3": "Laburnum Door 3",
 	"block.maidensmaterials.jacaranda_door_3": "Jacaranda Door 3",
@@ -1282,6 +1305,7 @@
 	"block.maidensmaterials.paulownia_door_4": "Paulownia Door 4",
 	"block.maidensmaterials.crabapple_door_4": "Crabapple Door 4",
 	"block.maidensmaterials.cedar_door_4": "Cedar Door 4",
+	"block.maidensmaterials.palm_door_4": "Palm Door 4",
 	"block.maidensmaterials.dogwood_door_4": "Dogwood Door 4",
 	"block.maidensmaterials.laburnum_door_4": "Laburnum Door 4",
 	"block.maidensmaterials.jacaranda_door_4": "Jacaranda Door 4",
@@ -1317,6 +1341,7 @@
 	"block.maidensmaterials.paulownia_door_5": "Paulownia Door 5",
 	"block.maidensmaterials.crabapple_door_5": "Crabapple Door 5",
 	"block.maidensmaterials.cedar_door_5": "Cedar Door 5",
+	"block.maidensmaterials.palm_door_5": "Palm Door 5",
 	"block.maidensmaterials.dogwood_door_5": "Dogwood Door 5",
 	"block.maidensmaterials.laburnum_door_5": "Laburnum Door 5",
 	"block.maidensmaterials.jacaranda_door_5": "Jacaranda Door 5",
@@ -1352,6 +1377,7 @@
 	"block.maidensmaterials.paulownia_door_6": "Paulownia Door 6",
 	"block.maidensmaterials.crabapple_door_6": "Crabapple Door 6",
 	"block.maidensmaterials.cedar_door_6": "Cedar Door 6",
+	"block.maidensmaterials.palm_door_6": "Palm Door 6",
 	"block.maidensmaterials.dogwood_door_6": "Dogwood Door 6",
 	"block.maidensmaterials.laburnum_door_6": "Laburnum Door 6",
 	"block.maidensmaterials.jacaranda_door_6": "Jacaranda Door 6",
@@ -1386,6 +1412,7 @@
 	"block.maidensmaterials.crimson_trapdoordoor_1": "Crimson Door 1",
 	"block.maidensmaterials.paulownia_trapdoor_1": "Paulownia Trapdoor 1",
 	"block.maidensmaterials.cedar_trapdoor_1": "Cedar Trapdoor 1",
+	"block.maidensmaterials.palm_trapdoor_1": "Palm Trapdoor 1",
 	"block.maidensmaterials.crabapple_trapdoor_1": "Crabapple Trapdoor 1",
 	"block.maidensmaterials.dogwood_trapdoor_1": "Dogwood Trapdoor 1",
 	"block.maidensmaterials.laburnum_trapdoor_1": "Laburnum Trapdoor 1",
@@ -1422,6 +1449,7 @@
 	"block.maidensmaterials.paulownia_trapdoor_2": "Paulownia Trapdoor 2",
 	"block.maidensmaterials.crabapple_trapdoor_2": "Crabapple Trapdoor 2",
 	"block.maidensmaterials.cedar_trapdoor_2": "Cedar Trapdoor 2",
+	"block.maidensmaterials.palm_trapdoor_2": "Palm Trapdoor 2",
 	"block.maidensmaterials.dogwood_trapdoor_2": "Dogwood Trapdoor 2",
 	"block.maidensmaterials.laburnum_trapdoor_2": "Laburnum Trapdoor 2",
 	"block.maidensmaterials.jacaranda_trapdoor_2": "Jacaranda Trapdoor 2",
@@ -1457,6 +1485,7 @@
 	"block.maidensmaterials.paulownia_trapdoor_3": "Paulownia Trapdoor 3",
 	"block.maidensmaterials.crabapple_trapdoor_3": "Crabapple Trapdoor 3",
 	"block.maidensmaterials.cedar_trapdoor_3": "Cedar Trapdoor 3",
+	"block.maidensmaterials.palm_trapdoor_3": "Palm Trapdoor 3",
 	"block.maidensmaterials.dogwood_trapdoor_3": "Dogwood Trapdoor 3",
 	"block.maidensmaterials.laburnum_trapdoor_3": "Laburnum Trapdoor 3",
 	"block.maidensmaterials.jacaranda_trapdoor_3": "Jacaranda Trapdoor 3",
@@ -1493,6 +1522,7 @@
 	"block.maidensmaterials.paulownia_trapdoor_4": "Paulownia Trapdoor 4",
 	"block.maidensmaterials.crabapple_trapdoor_4": "Crabapple Trapdoor 4",
 	"block.maidensmaterials.cedar_trapdoor_4": "Cedar Trapdoor 4",
+	"block.maidensmaterials.palm_trapdoor_4": "Palm Trapdoor 4",
 	"block.maidensmaterials.dogwood_trapdoor_4": "Dogwood Trapdoor 4",
 	"block.maidensmaterials.laburnum_trapdoor_4": "Laburnum Trapdoor 4",
 	"block.maidensmaterials.jacaranda_trapdoor_4": "Jacaranda Trapdoor 4",

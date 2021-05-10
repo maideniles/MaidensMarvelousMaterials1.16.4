@@ -582,8 +582,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> CEDAR_PLANKS = register("cedar_planks",
             ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
-//    public static final RegistryObject<Block> PALM_PLANKS = register("palm_planks",
-    //           ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
+    public static final RegistryObject<Block> PALM_PLANKS = register("palm_planks",
+               ()-> new Block(AbstractBlock.Properties.create(Material.CLAY).hardnessAndResistance(1.0f, 1.0f)));
 
 
     //SLABS//
@@ -993,6 +993,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> CEDAR_SLAB_ = register("cedar_slab",
             () -> new SlabBlock(Block.Properties.from(ModBlocks.CEDAR_PLANKS.get()).hardnessAndResistance(1.5F)));
 
+    public static final RegistryObject<Block> PALM_SLAB_ = register("palm_slab",
+            () -> new SlabBlock(Block.Properties.from(ModBlocks.CEDAR_PLANKS.get()).hardnessAndResistance(1.5F)));
+
+
     public static final RegistryObject<Block> WHITEWASHED_SLAB_ = register( "whitewashed_slab",
             () -> new SlabBlock(Block.Properties.from(ModBlocks.RED_STAINED_PLANKS.get()).hardnessAndResistance(1.5F)));
 
@@ -1076,6 +1080,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CEDAR_STAIRS = register( "cedar_stairs",
             () -> new StairsBlock(() -> ModBlocks.CEDAR_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
+    public static final RegistryObject<Block> PALM_STAIRS = register( "palm_stairs",
+            () -> new StairsBlock(() -> ModBlocks.PALM_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F)));
+
 
     //STAIRS//
 
@@ -1538,6 +1546,10 @@ public class ModBlocks {
     public static final RegistryObject<Block>   CEDAR_BOOKSHELF = register("cedar_bookshelf",
             () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
 
+    public static final RegistryObject<Block>   PALM_BOOKSHELF = register("palm_bookshelf",
+            () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+
     //BOOKSHELVES--TREES//
     public static final RegistryObject<Block>  BIRCH_BOOKSHELF = register("birch_bookshelf",
             () -> new MaidensBookshelfBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
@@ -1645,6 +1657,10 @@ public class ModBlocks {
     public static final RegistryObject<Block>   CEDAR_FENCE = register("cedar_fence",
             () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
 
+    public static final RegistryObject<Block>   PALM_FENCE = register("palm_fence",
+            () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+
     public static final RegistryObject<Block>  WHITEWASHED_FENCE = register("whitewashed_fence",
             () -> new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
 
@@ -1730,6 +1746,10 @@ public class ModBlocks {
     public static final RegistryObject<Block>   CEDAR_FENCE_GATE = register("cedar_fence_gate",
             () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
 
+    public static final RegistryObject<Block>   PALM_FENCE_GATE = register("palm_fence_gate",
+            () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+
     public static final RegistryObject<Block>  WHITEWASHED_FENCE_GATE = register("whitewashed_fence_gate",
             () -> new FenceGateBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
 
@@ -1814,6 +1834,9 @@ public class ModBlocks {
     public static final RegistryObject<Block>   CEDAR_PRESSURE_PLATE = register("cedar_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
 
+    public static final RegistryObject<Block>   PALM_PRESSURE_PLATE = register("palm_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
 
     //PRESSURE_PLATES--STAINED//
     public static final RegistryObject<Block> RED_STAINED_PRESSURE_PLATE = register(  "red_stained_pressure_plate",
@@ -1895,6 +1918,10 @@ public class ModBlocks {
     public static final RegistryObject<Block>   CEDAR_BUTTON = register("cedar_button",
             () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
 
+    public static final RegistryObject<Block>   PALM_BUTTON = register("palm_button",
+            () -> new WoodButtonBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.5F, 2.0F)));
+
+
 
     //BUTTONS--STAINED//
     public static final RegistryObject<Block> RED_STAINED_BUTTON = register(  "red_stained_button",
@@ -1974,6 +2001,9 @@ public class ModBlocks {
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block>   CEDAR_DOOR_1 = register("cedar_door_1",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PALM_DOOR_1 = register("palm_door_1",
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block> ACACIA_DOOR_1 = register("acacia_door_1",
@@ -2081,6 +2111,9 @@ public class ModBlocks {
     public static final RegistryObject<Block>   CEDAR_DOOR_2 = register("cedar_door_2",
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
 
+    public static final RegistryObject<Block>   PALM_DOOR_2 = register("palm_door_2",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
     public static final RegistryObject<Block> ACACIA_DOOR_2 = register("acacia_door_2",
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
 
@@ -2183,6 +2216,9 @@ public class ModBlocks {
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block>   CEDAR_DOOR_3 = register("cedar_door_3",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PALM_DOOR_3 = register("palm_door_3",
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block> ACACIA_DOOR_3 = register("acacia_door_3",
@@ -2288,6 +2324,9 @@ public class ModBlocks {
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block>   CEDAR_DOOR_4 = register("cedar_door_4",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PALM_DOOR_4 = register("palm_door_4",
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block> ACACIA_DOOR_4 = register("acacia_door_4",
@@ -2397,6 +2436,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CEDAR_DOOR_5 = register("cedar_door_5",
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
 
+    public static final RegistryObject<Block> PALM_DOOR_5 = register("palm_door_5",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
     public static final RegistryObject<Block> ACACIA_DOOR_5 = register("acacia_door_5",
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)));
 
@@ -2501,6 +2543,9 @@ public class ModBlocks {
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block> CEDAR_DOOR_6 = register("cedar_door_6",
+            () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block> PALM_DOOR_6 = register("palm_door_6",
             () -> new MaidensDoorBlock(Block.Properties.from(Blocks.OAK_DOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block> ACACIA_DOOR_6 = register("acacia_door_6",
@@ -2608,6 +2653,9 @@ public class ModBlocks {
     public static final RegistryObject<Block>   CEDAR_TRAPDOOR_1 = register("cedar_trapdoor_1",
             () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
 
+    public static final RegistryObject<Block>   PALM_TRAPDOOR_1 = register("palm_trapdoor_1",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
     public static final RegistryObject<Block> ACACIA_TRAPDOOR_1 = register("acacia_trapdoor_1",
             () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
 
@@ -2711,6 +2759,9 @@ public class ModBlocks {
             () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block>   CEDAR_TRAPDOOR_2 = register("cedar_trapdoor_2",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PALM_TRAPDOOR_2 = register("palm_trapdoor_2",
             () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block> ACACIA_TRAPDOOR_2 = register("acacia_trapdoor_2",
@@ -2818,6 +2869,9 @@ public class ModBlocks {
     public static final RegistryObject<Block>   CEDAR_TRAPDOOR_3 = register("cedar_trapdoor_3",
             () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
 
+    public static final RegistryObject<Block>   PALM_TRAPDOOR_3 = register("palm_trapdoor_3",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
     public static final RegistryObject<Block> ACACIA_TRAPDOOR_3 = register("acacia_trapdoor_3",
             () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
 
@@ -2920,6 +2974,9 @@ public class ModBlocks {
             () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block>   CEDAR_TRAPDOOR_4 = register("cedar_trapdoor_4",
+            () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
+
+    public static final RegistryObject<Block>   PALM_TRAPDOOR_4 = register("palm_trapdoor_4",
             () -> new MaidensTrapDoorBlock(Block.Properties.from(Blocks.OAK_TRAPDOOR).hardnessAndResistance(1.5F, 2.0F)));
 
     public static final RegistryObject<Block> ACACIA_TRAPDOOR_4 = register("acacia_trapdoor_4",
