@@ -160,6 +160,18 @@ public class BlockClayVaseLime extends Block {
                 worldIn.setBlockState(pos, ModBlocks.LIME_VASE_WHITE_SAPLING.get().getDefaultState());
             }
 
+            if (blossom.getItem() == Item.getItemFromBlock(ModBlocks.PALM_SAPLING.get())){
+
+                //         System.out.println("PALM_SAPLING!");
+                worldIn.setBlockState(pos, ModBlocks.LIME_VASE_PALM_SAPLING.get().getDefaultState());
+            }
+
+            if (blossom.getItem() == Item.getItemFromBlock(ModBlocks.CEDAR_SAPLING.get())){
+
+                //        System.out.println("CEDAR SAPLING!");
+                worldIn.setBlockState(pos, ModBlocks.LIME_VASE_CEDAR_SAPLING.get().getDefaultState());
+            }
+
             if (blossom.getItem() == Item.getItemFromBlock(ModBlocks.APPLE_SAPLING.get())){
 
      //           System.out.println("APPLE SAPLING!");

@@ -449,32 +449,34 @@ public class ModItems {
 
 //FRUITS//
 
+
+
     public static final RegistryObject<Item> PEAR = Registration.ITEMS.register("pear",
-            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP).food(Foods.COOKED_SALMON)));
 
     public static final RegistryObject<Item> PEACH = Registration.ITEMS.register("peach",
-            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP).food(Foods.COOKED_SALMON)));
 
     public static final RegistryObject<Item> PLUM = Registration.ITEMS.register("plum",
-            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP).food(Foods.COOKED_SALMON)));
 
     public static final RegistryObject<Item> ORANGE = Registration.ITEMS.register("orange",
-            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP).food(Foods.COOKED_SALMON)));
 
     public static final RegistryObject<Item> GRAPEFRUIT = Registration.ITEMS.register("grapefruit",
-            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP).food(Foods.COOKED_SALMON)));
 
     public static final RegistryObject<Item> LEMON = Registration.ITEMS.register("lemon",
-            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP).food(Foods.COOKED_SALMON)));
 
     public static final RegistryObject<Item> LIME = Registration.ITEMS.register("lime",
-            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP).food(Foods.COOKED_SALMON)));
 
     public static final RegistryObject<Item> CHERRIES = Registration.ITEMS.register("cherries",
-            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP).food(Foods.COOKED_SALMON)));
 
     public static final RegistryObject<Item> COCONUT = Registration.ITEMS.register("coconut",
-            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new Item(new Item.Properties().group(MaidensMaterials.MAIDENS_ITEMS_GROUP).food(Foods.COOKED_SALMON)));
 
     //GROUT//
     public static final RegistryObject<Item> GROUT = Registration.ITEMS.register("grout",

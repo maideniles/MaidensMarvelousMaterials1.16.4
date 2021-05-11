@@ -12,6 +12,7 @@
 			"name": "plant1",
 			"from": [8, 0, 1],
 			"to": [8, 16, 15],
+			"shade": false,
 			"faces": {
 				"north": {"uv": [0, 0, 0, 0], "texture": "#0"},
 				"east": {"uv": [1, 0, 15, 16], "texture": "#0"},
@@ -25,6 +26,7 @@
 			"name": "plant2",
 			"from": [1, 0, 8],
 			"to": [15, 16, 8],
+			"shade": false,
 			"faces": {
 				"north": {"uv": [1, 0, 15, 16], "texture": "#0"},
 				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},

@@ -9,7 +9,7 @@
 	},
 	"elements": [
 		{
-			"name": "plant1",
+			"name": "plant1", "shade": false,
 			"from": [8, 0, 1],
 			"to": [8, 16, 15],
 			"faces": {
@@ -22,7 +22,7 @@
 			}
 		},
 		{
-			"name": "plant2",
+			"name": "plant2", "shade": false,
 			"from": [1, 0, 8],
 			"to": [15, 16, 8],
 			"faces": {

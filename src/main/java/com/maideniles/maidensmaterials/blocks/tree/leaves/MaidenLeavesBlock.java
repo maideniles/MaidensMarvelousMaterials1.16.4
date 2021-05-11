@@ -1,6 +1,7 @@
 package com.maideniles.maidensmaterials.blocks.tree.leaves;
 
 import com.maideniles.maidensmaterials.init.ModBlocks;
+import com.maideniles.maidensmaterials.init.ModEntities;
 import com.maideniles.maidensmaterials.init.ModItems;
 import com.maideniles.maidensmaterials.init.ModPotions;
 import net.minecraft.block.*;
@@ -60,7 +61,7 @@ public class MaidenLeavesBlock extends LeavesBlock {
             shears.damageItem(1, player, p -> p.sendBreakAnimation(EquipmentSlotType.MAINHAND));
 
             // Essence
-            if(worldIn.getRandom().nextInt(100) < 9) {
+            if(worldIn.getRandom().nextInt(100) < 5) {
                 ItemEntity essenceEntity = new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.FLORAL_ESSENCE.get(), 1));
                 essenceEntity.setPickupDelay(0);
                 worldIn.addEntity(essenceEntity); // Spawn essence
@@ -81,7 +82,7 @@ public class MaidenLeavesBlock extends LeavesBlock {
 
 
     public boolean canEntitySpawn(BlockState state, IBlockReader worldIn, BlockPos pos, EntityType<?> type) {
-        return  type == EntityType.PARROT;
+        return  type == EntityType.PARROT || type == ModEntities.FAIRY_FLY.get();
     }
 
 
