@@ -4,10 +4,10 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "maideniles.refmap.json",
   "mixins": [
-    "BushBlockMixin"
+   
   ],
   "client": [
-    "ExampleMixin"
+    
   ],
   "injectors": {
     "defaultRequire": 1

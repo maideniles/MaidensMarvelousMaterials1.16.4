@@ -1,6 +1,6 @@
 {
     "name": "Wood Stairs Recipe",
-    "icon": "maidensmaterials:textures/block/laburnum_stairs.png",
+    "icon": "maidensmaterials:laburnum_stairs",
     "category": "recipes",
     "pages": [
 	

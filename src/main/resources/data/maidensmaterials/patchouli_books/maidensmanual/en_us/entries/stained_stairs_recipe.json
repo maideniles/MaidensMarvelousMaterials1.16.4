@@ -1,6 +1,6 @@
 {
     "name": "Stained Stairs Recipe",
-    "icon": "maidensmaterials:textures/block/lime_stained_stairs.png",
+    "icon": "maidensmaterials:lime_stained_stairs",
     "category": "recipes",
     "pages": [
 	

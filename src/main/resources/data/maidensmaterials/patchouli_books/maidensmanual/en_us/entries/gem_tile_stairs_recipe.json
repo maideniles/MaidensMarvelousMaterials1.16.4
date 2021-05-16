@@ -1,6 +1,6 @@
 {
     "name": "Gemstone Tile Stairs Recipe",
-    "icon": "maidensmaterials:textures/block/labradorite_tile_5_stairs.png",
+    "icon": "maidensmaterials:labradorite_tile_5_stairs",
     "category": "recipes",
     "pages": [
 		
