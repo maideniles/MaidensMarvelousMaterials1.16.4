@@ -2,20 +2,20 @@
 	"itemGroup.maidens_blocks_group": "Marvelous Materials Blocks",
 	"itemGroup.maidens_items_tab": "Marvelous Materials Items",
 
-	"effect.maidensmaterials.gatherer": "Gatherer's Glee",
+	"effect.maidensmaterials.gatherers_glee": "Gatherer's Glee",
 	"effect.maidensmaterials.floral_fortune": "Floral Fortune",
 
-	"potion.maidensmaterials.effect.gatherer": "Potion of Gatherer's Glee",
-	"potion.maidensmaterials.effect.floral_fortune": "Potion of Floral Fortune",
+	"item.minecraft.potion.effect.gatherers_glee": "Potion of Gatherer's Glee",
+	"item.minecraft.potion.effect.floral_fortune": "Potion of Floral Fortune",
 
-	"splash_potion.maidensmaterials.effect.gatherer": "Splash Potion of Gatherer's Glee",
-	"splash_potion.maidensmaterials.effect.floral_fortune": "Splash Potion of Floral Fortune",
+	"item.minecraft.splash_potion.effect.gatherers_glee": "Splash Potion of Gatherer's Glee",
+	"item.minecraft.splash_potion.effect.floral_fortune": "Splash Potion of Floral Fortune",
 
-	"lingering_potion.maidensmaterials.effect.gatherer": "Lingering Potion of Gatherer's Glee",
-	"lingering_potion.maidensmaterials.effect.floral_fortune": "Lingering Potion of Floral Fortune",
+	"item.minecraft.lingering_potion.effect.gatherers_glee": "Lingering Potion of Gatherer's Glee",
+	"item.minecraft.lingering_potion.effect.floral_fortune": "Lingering Potion of Floral Fortune",
 
-	"tipped_arrow.maidensmaterials.effect.gatherer": "Arrow of Gatherer's Glee",
-	"tipped_arrow.maidensmaterials.effect.floral_fortune": "Arrow of Floral Fortune",
+	"item.minecraft.tipped_arrow.effect.gatherers_glee": "Arrow of Gatherer's Glee",
+	"item.minecraft.tipped_arrow.effect.floral_fortune": "Arrow of Floral Fortune",
 
 	"enchantment.maidensmaterials.fancy_feet": "Fancy Feet",
 	"enchantment.maidensmaterials.flower_power": "Flower Power",

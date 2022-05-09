@@ -87,6 +87,7 @@ public class MaidensMaterials
 
 
 
+
         MaidensChestBlocks.BLOCKS.register(modBus);
         MaidensChestTileEntityTypes.TILE_ENTITIES.register(modBus);
         MaidensChestContainerTypes.CONTAINERS.register(modBus);
@@ -195,6 +196,7 @@ public class MaidensMaterials
             // Done here to avoid race conditions and possible crashes if the WorldGenRegistry is accessed at same time.
             // Forge regsitries are safe. WorldGenRegistries is said to not be threadsafe.
             ModConfiguredFeatures.registerCFs();
+            ModPotions.addPotionRecipes();
             GlobalEntityTypeAttributes.put(ModEntities.FAIRY_FLY.get(), FairyFlyEntity.setCustomAttributes().create());
         });
     }
