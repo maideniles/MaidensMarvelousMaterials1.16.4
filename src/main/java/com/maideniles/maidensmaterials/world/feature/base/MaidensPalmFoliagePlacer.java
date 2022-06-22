@@ -23,10 +23,7 @@ public class MaidensPalmFoliagePlacer extends AcaciaFoliagePlacer {
         super(p_i241999_1_, p_i241999_2_);
     }
 
-    @Override
-    protected FoliagePlacerType<?> func_230371_a_() {
-        return null;
-    }
+
 
 
 

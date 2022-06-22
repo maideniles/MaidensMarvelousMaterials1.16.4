@@ -11,7 +11,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 import java.util.function.Supplier;
 
-@OnlyIn(Dist.CLIENT)
+
 public class ItemStackRenderer<T extends TileEntity> extends ItemStackTileEntityRenderer {
 
     private final Supplier<T> te;

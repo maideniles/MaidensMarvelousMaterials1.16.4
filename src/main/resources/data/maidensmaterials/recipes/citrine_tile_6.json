@@ -5,9 +5,9 @@
     
     "pattern":
     [
-    " F ",
-	"FMF",
-	" B "
+       "FFF",		
+	   "FMF",
+	   "FBF"
     ],
     
     "key":
@@ -26,7 +26,6 @@
 		"B":
 		{
 			"item": "minecraft:stone"
-			
 		}
 		
 		
@@ -35,6 +34,6 @@
     "result":
     {
         "item": "maidensmaterials:citrine_tile_6",
-        "count": 64
+        "count": 16
     }
 }

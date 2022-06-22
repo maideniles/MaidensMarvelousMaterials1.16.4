@@ -87,48 +87,48 @@ public class FairyFlyEntity extends ParrotEntity implements IFlyingAnimal {
         this.goalSelector.addGoal(3, new TemptGoal(this, 1.0D, false, TEMPTATION_ITEMS));
     }
 @Override
-    public ActionResultType func_230254_b_(PlayerEntity p_230254_1_, Hand p_230254_2_) {
-        ItemStack itemstack = p_230254_1_.getHeldItem(p_230254_2_);
-        if (!this.isTamed() && TAME_ITEMS==(itemstack.getItem())) {
-            if (!p_230254_1_.abilities.isCreativeMode) {
-                itemstack.shrink(1);
-            }
-
-            if (!this.isSilent()) {
-                this.world.playSound((PlayerEntity)null, this.getPosX(), this.getPosY(), this.getPosZ(), ModSounds.FAIRY_FLY_EAT.get(), this.getSoundCategory(), 1.0F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.2F);
-            }
-
-            if (!this.world.isRemote) {
-                if (this.rand.nextInt(10) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, p_230254_1_)) {
-                    this.setTamedBy(p_230254_1_);
-                    this.world.setEntityState(this, (byte)7);
-                } else {
-                    this.world.setEntityState(this, (byte)6);
-                }
-            }
-
-            return ActionResultType.func_233537_a_(this.world.isRemote);
-        } else if (itemstack.getItem() == DEADLY_ITEM) {
-            if (!p_230254_1_.abilities.isCreativeMode) {
-                itemstack.shrink(1);
-            }
-
-            this.addPotionEffect(new EffectInstance(Effects.POISON, 900));
-            if (p_230254_1_.isCreative() || !this.isInvulnerable()) {
-                this.attackEntityFrom(DamageSource.causePlayerDamage(p_230254_1_), Float.MAX_VALUE);
-            }
-
-            return ActionResultType.func_233537_a_(this.world.isRemote);
-        } else if (!this.isFlying() && this.isTamed() && this.isOwner(p_230254_1_)) {
-            if (!this.world.isRemote) {
-                this.func_233687_w_(!this.isSitting());
-            }
-
-            return ActionResultType.func_233537_a_(this.world.isRemote);
-        } else {
-            return super.func_230254_b_(p_230254_1_, p_230254_2_);
+public ActionResultType getEntityInteractionResult(PlayerEntity playerIn, Hand hand) {
+    ItemStack itemstack = playerIn.getHeldItem(hand);
+    if (!this.isTamed() && TAME_ITEMS==(itemstack.getItem())) {
+        if (!playerIn.abilities.isCreativeMode) {
+            itemstack.shrink(1);
         }
+
+        if (!this.isSilent()) {
+            this.world.playSound((PlayerEntity)null, this.getPosX(), this.getPosY(), this.getPosZ(), SoundEvents.ENTITY_PARROT_EAT, this.getSoundCategory(), 1.0F, 1.0F + (this.rand.nextFloat() - this.rand.nextFloat()) * 0.2F);
+        }
+
+        if (!this.world.isRemote) {
+            if (this.rand.nextInt(10) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, playerIn)) {
+                this.setTamedBy(playerIn);
+                this.world.setEntityState(this, (byte)7);
+            } else {
+                this.world.setEntityState(this, (byte)6);
+            }
+        }
+
+        return ActionResultType.func_233537_a_(this.world.isRemote);
+    } else if (itemstack.getItem() == DEADLY_ITEM) {
+        if (!playerIn.abilities.isCreativeMode) {
+            itemstack.shrink(1);
+        }
+
+        this.addPotionEffect(new EffectInstance(Effects.POISON, 900));
+        if (playerIn.isCreative() || !this.isInvulnerable()) {
+            this.attackEntityFrom(DamageSource.causePlayerDamage(playerIn), Float.MAX_VALUE);
+        }
+
+        return ActionResultType.func_233537_a_(this.world.isRemote);
+    } else if (!this.isFlying() && this.isTamed() && this.isOwner(playerIn)) {
+        if (!this.world.isRemote) {
+            this.setSitting(!this.isQueuedToSit());
+        }
+
+        return ActionResultType.func_233537_a_(this.world.isRemote);
+    } else {
+        return super.getEntityInteractionResult(playerIn, hand);
     }
+}
 
     @Nullable
     @Override
@@ -169,14 +169,14 @@ public class FairyFlyEntity extends ParrotEntity implements IFlyingAnimal {
         return !this.onGround;
     }
 
-    @OnlyIn(Dist.CLIENT)
+
     public Vector3d func_241205_ce_() {
         return new Vector3d(0.0D, (double)(0.5F * this.getEyeHeight()), (double)(this.getWidth() * 0.4F));
     }
 
     @Nullable
     @Override
-    public AgeableEntity func_241840_a(ServerWorld p_241840_1_, AgeableEntity p_241840_2_)
+    public AgeableEntity createChild(ServerWorld world, AgeableEntity mate)
     {
         return ModEntities.FAIRY_FLY.get().create(this.world);
     }

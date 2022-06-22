@@ -28,13 +28,18 @@ public class MaidensLeafVineDecorator extends TreeDecorator {
 
     }
 
+    @Override
+    protected TreeDecoratorType<?> getDecoratorType() {
+        return MaidensTreeDecoratorTypes.MAIDENS_LEAF_VINE.get();
+    }
+
     public <T> MaidensLeafVineDecorator(Dynamic<T> p_i225870_1_) {
         this();
     }
 
-    protected TreeDecoratorType<?> func_230380_a_() {
-        return MaidensTreeDecoratorTypes.MAIDENS_LEAF_VINE.get();
-    }
+
+
+
 
     @Override
     public void func_225576_a_(ISeedReader p_225576_1_, Random p_225576_2_, List<BlockPos> p_225576_3_, List<BlockPos> blockPos, Set<BlockPos> p_225576_5_, MutableBoundingBox p_225576_6_) {

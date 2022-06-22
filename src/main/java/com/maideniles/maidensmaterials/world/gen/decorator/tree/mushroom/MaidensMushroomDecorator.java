@@ -31,7 +31,10 @@ public class MaidensMushroomDecorator extends TreeDecorator {
         this.field_227417_b_ = p_i225868_1_;
     }
 
-    protected TreeDecoratorType<?> func_230380_a_() {
+
+
+    @Override
+    protected TreeDecoratorType<?> getDecoratorType() {
         return MaidensTreeDecoratorTypes.MAIDENS_MUSHROOM.get();
     }
 

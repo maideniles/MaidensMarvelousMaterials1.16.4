@@ -3318,43 +3318,43 @@ public static final RegistryObject<Block> GROWING_APPLE_LEAVES = register("apple
     //SAPLINGS//
     public static final RegistryObject<Block> CRABAPPLE_SAPLING = register("crabapple_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new CrabappleTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                   new CrabappleTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> POINCIANA_SAPLING = register("poinciana_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new PoincianaTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new PoincianaTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> LABURNUM_SAPLING = register("laburnum_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new LaburnumTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new LaburnumTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> JADE_SAPLING = register("jade_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new JadeTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                   new JadeTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> PAULOWNIA_SAPLING = register("paulownia_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new PaulowniaTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new PaulowniaTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> WISTERIA_SAPLING = register("wisteria_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new WisteriaTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new WisteriaTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> JACARANDA_SAPLING = register("jacaranda_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new JacarandaTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                   new JacarandaTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> DOGWOOD_SAPLING = register("dogwood_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new DogwoodTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new DogwoodTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> SILVERBELL_SAPLING = register("silverbell_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new SilverbellTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new SilverbellTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> CEDAR_SAPLING = register("cedar_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new CedarTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new CedarTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
   //TODO
   public static final RegistryObject<SaplingBlock> PALM_SAPLING = register(
@@ -3362,39 +3362,39 @@ public static final RegistryObject<Block> GROWING_APPLE_LEAVES = register("apple
 
     public static final RegistryObject<Block> APPLE_SAPLING = register("apple_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new AppleTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new AppleTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> CHERRY_SAPLING = register("cherry_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new CherryTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new CherryTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> PEACH_SAPLING = register("peach_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new PeachTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new PeachTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> ORANGE_FRUIT_SAPLING = register("orange_fruit_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new OrangeTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new OrangeTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> GRAPEFRUIT_SAPLING = register("grapefruit_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new GrapefruitTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                   new GrapefruitTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> LEMON_SAPLING = register("lemon_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new LemonTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                   new LemonTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> LIME_SAPLING = register("lime_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new LimeTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new LimeTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> PEAR_SAPLING = register("pear_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new PearTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                   new PearTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
     public static final RegistryObject<Block> PLUM_SAPLING = register("plum_sapling",
             ()-> new OrnamentalSaplingBlock(
-                    ()-> new PlumTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
+                    new PlumTree(),AbstractBlock.Properties.from(Blocks.OAK_SAPLING).notSolid()));
 
 
 

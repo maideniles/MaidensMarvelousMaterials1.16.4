@@ -65,7 +65,7 @@ public class OrnamentalOrchardBiome {
                         .withSkyColor(getSkyColorWithTemperatureModifier(0.8F))
                         .withFoliageColor(0x3a7511).withGrassColor(0x3a7511)
                         .setMoodSound(MoodSoundAmbience.DEFAULT_CAVE).build())
-                .withMobSpawnSettings(mobspawninfo$builder.copy())
+                .withMobSpawnSettings(mobspawninfo$builder.build())
                 .withGenerationSettings(biomegenerationsettings$builder.build()).build();
     }
 

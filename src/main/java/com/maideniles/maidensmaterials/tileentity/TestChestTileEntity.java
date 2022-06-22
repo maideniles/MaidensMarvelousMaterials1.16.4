@@ -221,7 +221,7 @@ public class TestChestTileEntity extends LockableLootTileEntity implements IChes
     }
 
     @Override
-    @OnlyIn(Dist.CLIENT)
+    @OnlyIn(value = Dist.CLIENT)
     public float getLidAngle(float partialTicks) {
         return MathHelper.lerp(partialTicks, this.prevLidAngle, this.lidAngle);
     }

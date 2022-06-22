@@ -32,14 +32,16 @@ public class MaidensTrunkVineDecorator extends TreeDecorator {
     public MaidensTrunkVineDecorator() {
     }
 
+    @Override
+    protected TreeDecoratorType<?> getDecoratorType() {
+        return MaidensTreeDecoratorTypes.MAIDENS_TRUNK_VINE.get();
+    }
+
 
     public <T> MaidensTrunkVineDecorator(Dynamic<T> p_i225870_1_) {
         this();
     }
 
-    protected TreeDecoratorType<?> func_230380_a_() {
-        return MaidensTreeDecoratorTypes.MAIDENS_TRUNK_VINE.get();
-    }
 
     @Override
     public void func_225576_a_(ISeedReader p_225576_1_, Random p_225576_2_, List<BlockPos> blockPos, List<BlockPos> p_225576_4_, Set<BlockPos> p_225576_5_, MutableBoundingBox p_225576_6_) {

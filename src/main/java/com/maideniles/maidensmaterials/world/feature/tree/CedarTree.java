@@ -13,6 +13,7 @@ import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
 import net.minecraft.world.gen.treedecorator.BeehiveTreeDecorator;
+import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 
 import javax.annotation.Nullable;
 import java.util.Random;
@@ -30,9 +31,9 @@ public class CedarTree extends Tree {
     public static final BaseTreeFeatureConfig CEDAR_TREE_CONFIG = (new BaseTreeFeatureConfig.Builder(
             new SimpleBlockStateProvider(ModBlocks.CEDAR_LOG.get().getDefaultState()),
             new SimpleBlockStateProvider(ModBlocks.CEDAR_LEAVES.get().getDefaultState()),
-            new BlobFoliagePlacer(FeatureSpread.func_242252_a(LEAVES_RADIUS),
-                    FeatureSpread.func_242252_a(LEAVES_OFFSET), LEAVES_HEIGHT),
-            new MaidensStraightTrunkPlacer(BASE_HEIGHT, FIRST_RANDOM_HEIGHT, SECOND_RANDOM_HEIGHT),
+            new BlobFoliagePlacer(FeatureSpread.create(LEAVES_RADIUS),
+                    FeatureSpread.create(LEAVES_OFFSET), LEAVES_HEIGHT),
+            new StraightTrunkPlacer(BASE_HEIGHT, FIRST_RANDOM_HEIGHT, SECOND_RANDOM_HEIGHT),
 
             new TwoLayerFeature(1,0,1)))
             .setDecorators(ImmutableList.of( new MaidensMushroomDecorator(0.25f),
@@ -42,9 +43,9 @@ public class CedarTree extends Tree {
     public static final BaseTreeFeatureConfig CEDAR_TREE_VINES_CONFIG = (new BaseTreeFeatureConfig.Builder(
             new SimpleBlockStateProvider(ModBlocks.CEDAR_LOG.get().getDefaultState()),
             new SimpleBlockStateProvider(ModBlocks.CEDAR_LEAVES.get().getDefaultState()),
-            new BlobFoliagePlacer(FeatureSpread.func_242252_a(LEAVES_RADIUS),
-                    FeatureSpread.func_242252_a(LEAVES_OFFSET), LEAVES_HEIGHT),
-            new MaidensStraightTrunkPlacer(BASE_HEIGHT, FIRST_RANDOM_HEIGHT, SECOND_RANDOM_HEIGHT),
+            new BlobFoliagePlacer(FeatureSpread.create(LEAVES_RADIUS),
+                    FeatureSpread.create(LEAVES_OFFSET), LEAVES_HEIGHT),
+            new StraightTrunkPlacer(BASE_HEIGHT, FIRST_RANDOM_HEIGHT, SECOND_RANDOM_HEIGHT),
             new TwoLayerFeature(1, 0, 1)))
             .setDecorators(ImmutableList.of(MaidensLeafVineDecorator.field_236871_b_,
                     MaidensTrunkVineDecorator.field_236871_b_,

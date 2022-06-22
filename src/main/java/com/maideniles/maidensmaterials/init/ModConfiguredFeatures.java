@@ -31,35 +31,35 @@ public class ModConfiguredFeatures {
 
     public static final ConfiguredFeature<?, ?> ORNAMENTAL_MUSHROOM_FEATURE = Feature.FLOWER.withConfiguration(
             (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(mushroom), SimpleBlockPlacer.PLACER))
-                    .tries(64).func_227317_b_().build())
+                    .tries(64).preventProjection().build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-            .func_242731_b(2);
+            .count(2);
 
 
     public static final ConfiguredFeature<?, ?> ORCHID_CONFIG = Feature.FLOWER.withConfiguration(
             (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(orchid), SimpleBlockPlacer.PLACER))
-                    .tries(64).func_227317_b_().build())
+                    .tries(64).preventProjection().build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-            .func_242731_b(2);
+            .count(2);
 
     public static final ConfiguredFeature<?, ?> FOREST_FLOWERS_CONFIG = Feature.FLOWER.withConfiguration(
             (new BlockClusterFeatureConfig.Builder(ForestFlowerBlockStateProvider.PROVIDER, SimpleBlockPlacer.PLACER))
                     .tries(64).build())
             .withPlacement(Features.Placements.VEGETATION_PLACEMENT)
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-            .func_242731_b(50);
+            .count(50);
 
     //SPECIAL CONFIG FOR ORCHARD BIOME//
     public static final ConfiguredFeature<?, ?> ORNAMENTAL_MUSHROOM_ORCHARD_FEATURE = Feature.FLOWER.withConfiguration(
             (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(mushroom), SimpleBlockPlacer.PLACER))
-                    .tries(64).func_227317_b_().build())
+                    .tries(64).preventProjection().build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
             .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.2F, 1)));
 
 
     public static final ConfiguredFeature<?, ?> ORCHID_ORCHARD_CONFIG = Feature.FLOWER.withConfiguration(
             (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(orchid), SimpleBlockPlacer.PLACER))
-                    .tries(64).func_227317_b_().build())
+                    .tries(64).preventProjection().build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
             .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.2F, 1)));
 
@@ -73,13 +73,13 @@ public class ModConfiguredFeatures {
     //SPECIAL CONFIG FOR OASIS BIOME//
     public static final ConfiguredFeature<?, ?> ORNAMENTAL_MUSHROOM_OASIS_FEATURE = Feature.FLOWER.withConfiguration(
             (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(mushroom), SimpleBlockPlacer.PLACER))
-                    .tries(64).func_227317_b_().build())
+                    .tries(64).preventProjection().build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
             .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.2F, 1)));
 
     public static final ConfiguredFeature<?, ?> ORCHID_OASIS_CONFIG = Feature.FLOWER.withConfiguration(
             (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(orchid), SimpleBlockPlacer.PLACER))
-                    .tries(64).func_227317_b_().build())
+                    .tries(64).preventProjection().build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
             .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.2F, 1)));
 
@@ -97,14 +97,14 @@ public class ModConfiguredFeatures {
     public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> PALM_TREE_CONFIGURED_FEATURE = ModFeatures.PALM_TREE_INSTANCE.withConfiguration(
             new BaseTreeFeatureConfig.Builder(
                     new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()), new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()),
-                    new BlobFoliagePlacer(FeatureSpread.func_242252_a(1), FeatureSpread.func_242252_a(1), 1),
+                    new BlobFoliagePlacer(FeatureSpread.create(1), FeatureSpread.create(1), 1),
                     new StraightTrunkPlacer(1, 1, 1),
                     new TwoLayerFeature(1, 1, 1)).setIgnoreVines().build());
 
     public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> PALM_TREE_CONFIGURED_FEATURE_BEES = ModFeatures.PALM_TREE_INSTANCE.withConfiguration(
             new BaseTreeFeatureConfig.Builder(
                     new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()), new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()),
-                    new BlobFoliagePlacer(FeatureSpread.func_242252_a(1), FeatureSpread.func_242252_a(1), 1),
+                    new BlobFoliagePlacer(FeatureSpread.create(1), FeatureSpread.create(1), 1),
                     new StraightTrunkPlacer(1, 1, 1),
               //place decorator when figured out//
                     new TwoLayerFeature(1, 1, 1)).setIgnoreVines()

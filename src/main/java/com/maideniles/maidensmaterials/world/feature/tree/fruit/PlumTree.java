@@ -33,8 +33,8 @@ public class PlumTree extends Tree {
     public static final BaseTreeFeatureConfig PLUM_TREE_CONFIG = (new BaseTreeFeatureConfig.Builder(
             new SimpleBlockStateProvider(ModBlocks.CEDAR_LOG.get().getDefaultState()),
             new SimpleBlockStateProvider(ModBlocks.GROWING_PLUM_LEAVES.get().getDefaultState()),
-            new BlobFoliagePlacer(FeatureSpread.func_242252_a(LEAVES_RADIUS),
-                    FeatureSpread.func_242252_a(LEAVES_OFFSET), LEAVES_HEIGHT),
+            new BlobFoliagePlacer(FeatureSpread.create(LEAVES_RADIUS),
+                    FeatureSpread.create(LEAVES_OFFSET), LEAVES_HEIGHT),
             new StraightTrunkPlacer(BASE_HEIGHT, FIRST_RANDOM_HEIGHT, SECOND_RANDOM_HEIGHT),
 
             new TwoLayerFeature(1,0,1)))
@@ -45,10 +45,10 @@ public class PlumTree extends Tree {
     public static final BaseTreeFeatureConfig PLUM_TREE_BIG_CONFIG = (new BaseTreeFeatureConfig.Builder(
             new SimpleBlockStateProvider(ModBlocks.CEDAR_LOG.get().getDefaultState()),
             new SimpleBlockStateProvider(ModBlocks.GROWING_PLUM_LEAVES.get().getDefaultState()),
-            new FancyFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(4), 4),
+            new FancyFoliagePlacer(FeatureSpread.create(2), FeatureSpread.create(4), 4),
             new FancyTrunkPlacer(3, 11, 0),
             new TwoLayerFeature(0, 0, 0, OptionalInt.of(4))))
-            .setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING)
+            .setIgnoreVines().setHeightmap(Heightmap.Type.MOTION_BLOCKING)
             .setDecorators(ImmutableList.of(new MaidensMushroomDecorator(0.25f),
                     new BeehiveTreeDecorator(0.02f))).build();
 

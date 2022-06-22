@@ -26,7 +26,6 @@
 		"B":
 		{
 			"item": "minecraft:stone"
-			
 		}
 		
 		
@@ -35,6 +34,6 @@
     "result":
     {
         "item": "maidensmaterials:citrine_tile_1",
-        "count": 64
+        "count": 16
     }
 }

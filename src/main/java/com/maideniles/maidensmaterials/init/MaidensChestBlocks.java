@@ -165,6 +165,7 @@ public class MaidensChestBlocks {
             "warped_chest", () -> new WarpedChestBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0F)),
             () -> warpedChestRenderer());
 
+
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<? extends T> sup, Supplier<Callable<ItemStackTileEntityRenderer>> renderMethod) {
         return register(name, sup, block -> item(block, renderMethod));
     }
@@ -178,6 +179,7 @@ public class MaidensChestBlocks {
     private static <T extends Block> RegistryObject<T> registerNoItem(String name, Supplier<? extends T> sup) {
         return BLOCKS.register(name, sup);
     }
+
 
     private static Supplier<BlockItem> item(final RegistryObject<? extends Block> block, final Supplier<Callable<ItemStackTileEntityRenderer>> renderMethod) {
         return () -> new BlockItem(block.get(), new Item.Properties().group(MaidensMaterials.MAIDENS_BLOCKS_GROUP).setISTER(renderMethod));

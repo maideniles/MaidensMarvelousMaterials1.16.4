@@ -23,7 +23,7 @@ import net.minecraftforge.fml.common.Mod;
 public class EnchantmentFlowerPower extends Enchantment {
 
     public EnchantmentFlowerPower() {
-        super(Enchantment.Rarity.UNCOMMON, EnchantmentType.WEAPON, new EquipmentSlotType[]{EquipmentSlotType.MAINHAND});
+        super(Enchantment.Rarity.UNCOMMON, EnchantmentType.DIGGER, new EquipmentSlotType[]{EquipmentSlotType.MAINHAND});
 
 
     }
@@ -36,7 +36,7 @@ public class EnchantmentFlowerPower extends Enchantment {
 
     @Override
     public boolean canApply(ItemStack stack) {
-        return stack.getItem().getToolTypes(stack).contains("shovel");
+        return true;
     }
 
 

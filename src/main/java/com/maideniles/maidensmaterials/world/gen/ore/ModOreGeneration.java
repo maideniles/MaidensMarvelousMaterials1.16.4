@@ -40,7 +40,7 @@ public class ModOreGeneration
             Registry.register(WorldGenRegistries.CONFIGURED_FEATURE,
                     ore.getBlock().getRegistryName(),
                     Feature.ORE.withConfiguration(oreFeature).withPlacement(configuredPlacement)
-                            .square().func_242731_b(ore.getMaxVeinSize()));
+                            .square().count(ore.getMaxVeinSize()));
 
             for (Biome biome : ForgeRegistries.BIOMES)
             {

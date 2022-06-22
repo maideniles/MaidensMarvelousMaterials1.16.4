@@ -35,9 +35,9 @@ public class WisteriaTree extends Tree {
     public static final BaseTreeFeatureConfig WISTERIA_TREE_CONFIG = (new BaseTreeFeatureConfig.Builder(
             new SimpleBlockStateProvider(ModBlocks.WISTERIA_LOG.get().getDefaultState()),
             new SimpleBlockStateProvider(ModBlocks.WISTERIA_LEAVES.get().getDefaultState()),
-            new BlobFoliagePlacer(FeatureSpread.func_242252_a(LEAVES_RADIUS),
-                    FeatureSpread.func_242252_a(LEAVES_OFFSET), LEAVES_HEIGHT),
-            new MaidensStraightTrunkPlacer(BASE_HEIGHT, FIRST_RANDOM_HEIGHT, SECOND_RANDOM_HEIGHT),
+            new BlobFoliagePlacer(FeatureSpread.create(LEAVES_RADIUS),
+                    FeatureSpread.create(LEAVES_OFFSET), LEAVES_HEIGHT),
+            new StraightTrunkPlacer(BASE_HEIGHT, FIRST_RANDOM_HEIGHT, SECOND_RANDOM_HEIGHT),
 
             new TwoLayerFeature(1,0,1)))
             .setDecorators(ImmutableList.of( new MaidensMushroomDecorator(0.25f),new BeehiveTreeDecorator(0.02f)))
@@ -47,9 +47,9 @@ public class WisteriaTree extends Tree {
     public static final BaseTreeFeatureConfig WISTERIA_TREE_VINES_CONFIG = (new BaseTreeFeatureConfig.Builder(
             new SimpleBlockStateProvider(ModBlocks.WISTERIA_LOG.get().getDefaultState()),
             new SimpleBlockStateProvider(ModBlocks.WISTERIA_LEAVES.get().getDefaultState()),
-            new BlobFoliagePlacer(FeatureSpread.func_242252_a(LEAVES_RADIUS),
-                    FeatureSpread.func_242252_a(LEAVES_OFFSET), LEAVES_HEIGHT),
-            new MaidensStraightTrunkPlacer(BASE_HEIGHT, FIRST_RANDOM_HEIGHT, SECOND_RANDOM_HEIGHT),
+            new BlobFoliagePlacer(FeatureSpread.create(LEAVES_RADIUS),
+                    FeatureSpread.create(LEAVES_OFFSET), LEAVES_HEIGHT),
+            new StraightTrunkPlacer(BASE_HEIGHT, FIRST_RANDOM_HEIGHT, SECOND_RANDOM_HEIGHT),
             new TwoLayerFeature(1, 0, 1)))
             .setDecorators(ImmutableList.of( new MaidensMushroomDecorator(0.25f),MaidensLeafVineDecorator.field_236871_b_,
                MaidensTrunkVineDecorator.field_236871_b_, new BeehiveTreeDecorator(0.02f))).build();

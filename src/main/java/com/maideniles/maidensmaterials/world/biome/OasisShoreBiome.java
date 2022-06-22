@@ -83,7 +83,7 @@ public class OasisShoreBiome {
                         .withSkyColor(getSkyColorWithTemperatureModifier(0.8F))
                         .withFoliageColor(0x84cc55).withGrassColor(0x84cc55)
                         .setMoodSound(MoodSoundAmbience.DEFAULT_CAVE).build())
-                .withMobSpawnSettings(mobspawninfo$builder.copy())
+                .withMobSpawnSettings(mobspawninfo$builder.build())
                 .withGenerationSettings(biomegenerationsettings$builder.build()).build();
     }
 
